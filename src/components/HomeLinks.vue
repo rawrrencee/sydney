@@ -2,8 +2,8 @@
 import { links } from '@/constants/links';
 import { ArrowUturnLeftIcon } from '@heroicons/vue/24/outline';
 import { useRouter } from 'vue-router';
-import AnimatedButton from './AnimatedButton.vue';
 import AnimatedLink from './AnimatedLink.vue';
+import AnimatedButton from './Buttons/AnimatedButton.vue';
 
 defineProps({
   showBackButton: Boolean

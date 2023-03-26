@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import AnimatedButton from '@/components/AnimatedButton.vue';
 import AnimatedSpinner from '@/components/AnimatedSpinner.vue';
+import AnimatedButton from '@/components/Buttons/AnimatedButton.vue';
 import HomeContent from '@/components/HomeContent.vue';
 import HomeHeader from '@/components/HomeHeader.vue';
 import HomeLinks from '@/components/HomeLinks.vue';
