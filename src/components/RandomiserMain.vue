@@ -14,7 +14,6 @@ import type { Ref } from 'vue';
 import { computed, ref } from 'vue';
 
 const passengerList = [...peopleList];
-
 const passengersAllocated = computed(
   () => carOnePassengers.value.length > 0 && carTwoPassengers.value.length > 0
 );
@@ -48,7 +47,7 @@ const randomisePassengers = () => {
 };
 </script>
 <template>
-  <div class="flex grow flex-col gap-y-5 overflow-y-auto px-4 py-4">
+  <div class="flex grow flex-col gap-y-5 px-4 py-4">
     <div>
       <div class="flex flex-row justify-between items-center">
         <span class="text-sm font-semibold text-neutral-500">Car Allocation</span>
@@ -67,11 +66,28 @@ const randomisePassengers = () => {
           Start Again
         </button>
       </div>
-      <div class="mt-10 flex flex-row flex-wrap gap-y-4 gap-x-10 justify-center md:justify-start">
+      <div
+        class="mt-8 grid grid-cols-1 md:flex md:flex-row md:flex-wrap gap-y-4 gap-x-10 justify-center md:justify-start"
+      >
         <template v-for="(driver, index) in drivers" :key="driver?.selectedDriver?.handle ?? index">
-          <div class="flex items-center" v-if="driver.selectedDriver">
-            <img class="w-12 h-12 rounded-full" :src="driver?.selectedDriver?.image ?? ''" alt="" />
-            <div class="ml-3 flex flex-col gap-1">
+          <div
+            class="grid grid-cols-10 md:flex items-center justify-center"
+            v-if="driver.selectedDriver"
+            v-motion
+            :initial="{ opacity: 0, y: 100 }"
+            :enter="{
+              opacity: 1,
+              y: 0,
+              scale: 1
+            }"
+            :delay="index * 100"
+          >
+            <img
+              class="w-12 h-12 col-span-4 rounded-full justify-self-end"
+              :src="driver?.selectedDriver?.image ?? ''"
+              alt=""
+            />
+            <div class="ml-3 col-span-6 flex flex-col gap-1 justify-self-start">
               <span class="text-sm font-semibold text-neutral-700 break-all">
                 {{ driver?.selectedDriver?.handle ?? '' }}
               </span>
@@ -92,23 +108,11 @@ const randomisePassengers = () => {
           </div>
           <div v-else class="basis-full md:basis-2/6">
             <Listbox as="div" v-model="driver.selectedDriver" nullable>
-              <ListboxLabel class="block text-sm font-medium leading-6 text-neutral-900"
-                ><div class="flex flex-row justify-between">
+              <ListboxLabel class="block text-sm font-medium leading-6 text-neutral-900">
+                <div class="flex flex-row justify-between">
                   <span>Driver {{ index + 1 }}</span>
-                  <button
-                    type="button"
-                    class="text-xs font-semibold text-neutral-500 inline-flex items-center gap-x-1.5"
-                    @click="
-                      () => {
-                        driver.selectedDriver = null;
-                      }
-                    "
-                  >
-                    <XCircleIcon class="h-3 w-3" />
-                    <span>Reset</span>
-                  </button>
-                </div></ListboxLabel
-              >
+                </div>
+              </ListboxLabel>
 
               <div class="relative mt-2">
                 <ListboxButton
@@ -216,10 +220,10 @@ const randomisePassengers = () => {
       <template v-if="passengersAllocated">
         <div v-for="(car, i) in cars" :key="i">
           <div class="mt-6 text-sm font-semibold text-neutral-500 text-center md:text-start">
-            Car {{ i + 1 }}
+            {{ i === 0 ? '🚗' : '🚙' }} Car {{ i + 1 }}
           </div>
           <div
-            class="mt-2 border border-dashed rounded-md border-stone-900 flex flex-row flex-wrap gap-y-4 gap-x-10 justify-center md:justify-start md:flex-none md:w-full"
+            class="mt-2 px-2 border border-dashed rounded-md border-stone-900 flex flex-row flex-wrap gap-y-4 gap-x-10 justify-center md:justify-start md:flex-none md:w-full"
           >
             <div
               class="my-2 flex flex-row flex-wrap gap-4 justify-center md:w-full md:flex-none md:grid md:grid-cols-3"
@@ -229,8 +233,23 @@ const randomisePassengers = () => {
                 v-for="(passenger, j) in car"
                 :key="j"
               >
-                <img class="w-12 h-12 rounded-full" :src="passenger?.image" alt="" />
-                <span class="text-xs font-semibold break-all">{{ passenger?.handle ?? '' }}</span>
+                <img
+                  v-motion
+                  :initial="{ opacity: 0, y: 100 }"
+                  :enter="{ opacity: 1, y: 0, scale: 1 }"
+                  :delay="j * 200"
+                  class="w-12 h-12 rounded-full"
+                  :src="passenger?.image"
+                  alt=""
+                />
+                <span
+                  v-motion
+                  :initial="{ opacity: 0, y: 100 }"
+                  :enter="{ opacity: 1, y: 0, scale: 1 }"
+                  :delay="j * 200"
+                  class="text-xs font-semibold break-all"
+                  >{{ passenger?.handle ?? '' }}</span
+                >
               </div>
             </div>
           </div>
