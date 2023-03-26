@@ -12,7 +12,6 @@ defineProps({
     v-motion
     :initial="{ opacity: 0, y: 100 }"
     :enter="{ opacity: 1, y: 0, scale: 1 }"
-    :variants="{ custom: { scale: 2 } }"
   >
     <AvatarRow />
     <p class="mt-1 text-xs font-semibold leading-8 text-neutral-200">15 - 22 Apr 2023</p>
