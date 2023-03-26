@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-import HomeHeader from '../components/HomeHeader.vue'
-import HomeLinks from '../components/HomeLinks.vue'
+import { ref } from 'vue';
+import HomeHeader from '../components/HomeHeader.vue';
+import HomeLinks from '../components/HomeLinks.vue';
 
-const showRandomiser = ref(false)
+const showRandomiser = ref(false);
 </script>
 
 <template>
@@ -15,7 +15,7 @@ const showRandomiser = ref(false)
     />
     <div class="mx-auto max-w-7xl px-6 py-14 text-center lg:px-8">
       <HomeHeader />
-      <HomeLinks :show-randomiser="showRandomiser" />
+      <HomeLinks v-model:show-randomiser="showRandomiser" />
     </div>
   </main>
 </template>
