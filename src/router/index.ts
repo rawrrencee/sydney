@@ -8,6 +8,16 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: HomeView
+    },
+    {
+      path: '/randomiser',
+      name: 'randomiser',
+      component: HomeView
+    },
+    {
+      path: '/itinerary',
+      name: 'itinerary',
+      component: HomeView
     }
   ]
 });

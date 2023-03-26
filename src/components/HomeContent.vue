@@ -10,7 +10,7 @@ defineProps({
     :initial="{ opacity: 0, y: 100 }"
     :enter="{ opacity: 1, y: 0, scale: 1 }"
     :variants="{ custom: { scale: 2 } }"
-    class="px-2 flex-1 flex flex-col"
+    class="flex-1 flex flex-col"
     :class="styleClass ?? []"
   >
     <slot></slot>
