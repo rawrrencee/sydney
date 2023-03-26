@@ -1,61 +1,78 @@
 <script setup lang="ts">
-const openSpotify = () => {
-  window.open(
-    'https://open.spotify.com/playlist/2Pf2okUszPTNqrReCnTNvH?si=e3a2c8fb7eec41cb&pt=4d7dd2d64cd83379b1da8d4b36addcc6'
-  );
-};
-const openItinerary = () => {
-  window.open(
-    'https://docs.google.com/spreadsheets/d/1KVS71TrUDjYuXcF2W4Sxc251-p_VnGUN1CTv-jugnZE/edit?usp=sharing'
-  );
-};
-const openGoogleMaps = () => {
-  window.open('https://goo.gl/maps/CruPaSrA1jDkwAuX6');
-};
+import { links } from '@/constants/links';
+import { ArrowUturnLeftIcon } from '@heroicons/vue/24/outline';
+import AnimatedButton from './AnimatedButton.vue';
+import AnimatedLink from './AnimatedLink.vue';
+
 defineProps({
-  showRandomiser: Boolean
+  currentView: String,
+  showBackButton: Boolean
 });
 
-defineEmits(['update:show-randomiser']);
+const emit = defineEmits(['update:current-view']);
+
+const menuItems: {
+  key: string;
+  url: string | null;
+  emoji: string;
+  label: string;
+  onClick: Function;
+}[] = [
+  {
+    key: links.spotify.key,
+    url: links.spotify.url,
+    emoji: links.spotify.emoji,
+    label: links.spotify.label,
+    onClick: () => window.open(links.spotify.url)
+  },
+  {
+    key: links.itinerary.key,
+    url: links.itinerary.url,
+    emoji: links.itinerary.emoji,
+    label: links.itinerary.label,
+    onClick: () => emit('update:current-view', links.itinerary.key)
+  },
+  {
+    key: links.maps.key,
+    url: links.maps.url,
+    emoji: links.maps.emoji,
+    label: links.maps.label,
+    onClick: () => window.open(links.maps.url)
+  },
+  {
+    key: links.randomiser.key,
+    url: links.randomiser.url,
+    emoji: links.randomiser.emoji,
+    label: links.randomiser.label,
+    onClick: () => emit('update:current-view', links.randomiser.key)
+  }
+];
 </script>
 
 <template>
   <div
-    class="mt-10 flex flex-col md:flex-row gap-2 justify-center"
+    class="mt-10 flex flex-wrap md:flex-row gap-2 justify-center"
+    v-if="!showBackButton"
     v-motion
     :initial="{ opacity: 0, y: 100 }"
     :enter="{ opacity: 1, y: 0, scale: 1 }"
-    :variants="{ custom: { scale: 2 } }"
-    :delay="300"
   >
-    <a
-      v-if="!showRandomiser"
-      href="https://open.spotify.com/playlist/2Pf2okUszPTNqrReCnTNvH?si=e3a2c8fb7eec41cb&pt=4d7dd2d64cd83379b1da8d4b36addcc6"
-      class="transition-colors text-sm font-semibold leading-7 text-neutral-900 bg-neutral-50 rounded-md px-2 py-3 shadow-md hover:bg-gray-200"
-      @click.prevent="openSpotify"
-      ><span aria-hidden="true">🎵</span>&nbsp;Spotify Playlist</a
-    >
-    <a
-      v-if="!showRandomiser"
-      href="https://docs.google.com/spreadsheets/d/1KVS71TrUDjYuXcF2W4Sxc251-p_VnGUN1CTv-jugnZE/edit?usp=sharing"
-      class="transition-colors text-sm font-semibold leading-7 text-neutral-900 bg-neutral-50 rounded-md px-2 py-3 shadow-md hover:bg-gray-200"
-      @click.prevent="openItinerary"
-      ><span aria-hidden="true">📄</span>&nbsp;Itinerary</a
-    >
-    <a
-      v-if="!showRandomiser"
-      href="https://goo.gl/maps/CruPaSrA1jDkwAuX6"
-      class="transition-colors text-sm font-semibold leading-7 text-neutral-900 bg-neutral-50 rounded-md px-2 py-3 shadow-md hover:bg-gray-200"
-      @click.prevent="openGoogleMaps"
-      ><span aria-hidden="true">🗺️</span>&nbsp;Google Maps</a
-    >
-    <a
-      href="#"
-      v-if="!showRandomiser"
-      class="transition-colors text-sm font-semibold leading-7 text-neutral-900 bg-neutral-50 rounded-md px-2 py-3 shadow-md hover:bg-gray-200"
-      @click.prevent="$emit('update:randomiser', !showRandomiser)"
-      ><span aria-hidden="true">🥴</span>&nbsp;Randomiser</a
-    >
-    <a href="#" v-if="showRandomiser"> Back </a>
+    <template v-for="item in menuItems" :key="item.key">
+      <AnimatedLink :href="item.url" :on-click="item.onClick">
+        <span aria-hidden="true">{{ item.emoji }}</span
+        ><span class="break-all">&nbsp;{{ item.label }}</span>
+      </AnimatedLink>
+    </template>
   </div>
+  <div class="mt-6 mb-4 flex flex-row justify-center gap-4">
+    <AnimatedButton
+      v-if="showBackButton"
+      :on-click="() => $emit('update:current-view', 'dashboard')"
+    >
+      <ArrowUturnLeftIcon class="-ml-0.5 h-5 w-5" aria-hidden="true" />
+      Back
+    </AnimatedButton>
+    <slot name="extra" />
+  </div>
+  <slot name="content"></slot>
 </template>
