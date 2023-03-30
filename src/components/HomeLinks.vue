@@ -55,7 +55,7 @@ const menuItems: {
 
 <template>
   <div
-    class="mt-10 flex flex-wrap md:flex-row gap-2 justify-center"
+    class="mt-10 flex flex-wrap justify-center gap-2 md:flex-row"
     v-if="!showBackButton"
     v-motion
     :initial="{ opacity: 0, y: 100 }"

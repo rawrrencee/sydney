@@ -15,8 +15,6 @@ defineProps({
   >
     <AvatarRow />
     <p class="mt-1 text-xs font-semibold leading-8 text-neutral-200">15 - 22 Apr 2023</p>
-    <h1 class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-5xl focus:animate-spin">
-      Sydney 🇦🇺
-    </h1>
+    <h1 class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-5xl">Sydney 🇦🇺</h1>
   </div>
 </template>
