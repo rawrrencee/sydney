@@ -7,7 +7,7 @@ defineProps({
 <template>
   <button
     type="button"
-    class="group relative inline-flex items-center justify-center overflow-hidden rounded-md bg-neutral-900 px-6 py-3 font-bold text-white shadow-2xl"
+    class="group relative inline-flex items-center justify-center overflow-hidden rounded-md bg-neutral-900 px-6 py-3 text-sm font-bold text-white shadow-lg"
     @click="onClick ? onClick() : null"
   >
     <span

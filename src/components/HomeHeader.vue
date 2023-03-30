@@ -9,7 +9,7 @@ defineProps({
 <template>
   <div
     v-if="currentPath === '/'"
-    v-motion
+    text-neutral-600
     :initial="{ opacity: 0, y: 100 }"
     :enter="{ opacity: 1, y: 0, scale: 1 }"
   >

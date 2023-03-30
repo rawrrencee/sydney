@@ -50,10 +50,10 @@ const randomisePassengers = () => {
   <div class="flex grow flex-col gap-y-5 px-4 py-4">
     <div>
       <div class="flex flex-row items-center justify-between">
-        <span class="text-sm font-semibold text-neutral-500">Car Allocation</span>
+        <span class="text-md font-semibold text-neutral-500">Car Allocation</span>
         <button
           type="button"
-          class="inline-flex items-center gap-x-1.5 text-xs font-normal text-neutral-500"
+          class="inline-flex items-center gap-x-1.5 rounded-md px-2 py-2 text-xs font-normal text-neutral-500 hover:bg-neutral-200"
           @click="
             () => {
               drivers.forEach((d) => (d.selectedDriver = null));
@@ -73,7 +73,7 @@ const randomisePassengers = () => {
           <div
             class="grid grid-cols-10 items-center justify-center md:flex"
             v-if="driver.selectedDriver"
-            v-motion
+            text-neutral-600
             :initial="{ opacity: 0, y: 100 }"
             :enter="{
               opacity: 1,
@@ -108,7 +108,7 @@ const randomisePassengers = () => {
           </div>
           <div v-else class="basis-full md:basis-2/6">
             <Listbox as="div" v-model="driver.selectedDriver" nullable>
-              <ListboxLabel class="block text-sm font-medium leading-6 text-neutral-900">
+              <ListboxLabel class="block text-sm font-medium leading-6 text-neutral-500">
                 <div class="flex flex-row justify-between">
                   <span>Driver {{ index + 1 }}</span>
                 </div>
@@ -116,7 +116,7 @@ const randomisePassengers = () => {
 
               <div class="relative mt-2">
                 <ListboxButton
-                  class="relative w-full cursor-default rounded-md bg-white py-1.5 pl-3 pr-10 text-left text-neutral-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-400 sm:text-sm sm:leading-6"
+                  class="relative w-full cursor-default rounded-md bg-white py-1.5 pl-3 pr-10 text-left text-neutral-500 shadow-sm ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-400 sm:text-sm sm:leading-6"
                 >
                   <span class="flex items-center">
                     <img
@@ -167,7 +167,7 @@ const randomisePassengers = () => {
                       <li
                         :class="[
                           active ? 'bg-indigo-400 text-white' : '',
-                          disabled ? 'text-neutral-200' : 'text-neutral-900',
+                          disabled ? 'text-neutral-200' : 'text-neutral-500',
                           'relative cursor-default select-none py-2 pl-3 pr-9'
                         ]"
                       >
@@ -212,7 +212,7 @@ const randomisePassengers = () => {
           <div class="w-full border-t border-gray-300" />
         </div>
         <div class="relative flex justify-start">
-          <span class="bg-neutral-50 pr-3 text-base font-semibold leading-6 text-neutral-900"
+          <span class="text-md bg-neutral-50 pr-3 font-semibold leading-6 text-neutral-500"
             >Passengers</span
           >
         </div>
@@ -234,7 +234,7 @@ const randomisePassengers = () => {
                 :key="j"
               >
                 <img
-                  v-motion
+                  text-neutral-600
                   :initial="{ opacity: 0, y: 100 }"
                   :enter="{ opacity: 1, y: 0, scale: 1 }"
                   :delay="j * 200"
@@ -243,7 +243,7 @@ const randomisePassengers = () => {
                   alt=""
                 />
                 <span
-                  v-motion
+                  text-neutral-600
                   :initial="{ opacity: 0, y: 100 }"
                   :enter="{ opacity: 1, y: 0, scale: 1 }"
                   :delay="j * 200"
