@@ -58,6 +58,7 @@ const menuItems: {
     class="mt-10 grid grid-cols-1 justify-center gap-2 md:grid-cols-2"
     v-if="!showBackButton"
     text-neutral-600
+    v-motion
     :initial="{ opacity: 0, y: 100 }"
     :enter="{ opacity: 1, y: 0, scale: 1 }"
   >

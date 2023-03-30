@@ -74,6 +74,7 @@ const randomisePassengers = () => {
             class="grid grid-cols-10 items-center justify-center md:flex"
             v-if="driver.selectedDriver"
             text-neutral-600
+            v-motion
             :initial="{ opacity: 0, y: 100 }"
             :enter="{
               opacity: 1,
@@ -235,6 +236,7 @@ const randomisePassengers = () => {
               >
                 <img
                   text-neutral-600
+                  v-motion
                   :initial="{ opacity: 0, y: 100 }"
                   :enter="{ opacity: 1, y: 0, scale: 1 }"
                   :delay="j * 200"
@@ -244,6 +246,7 @@ const randomisePassengers = () => {
                 />
                 <span
                   text-neutral-600
+                  v-motion
                   :initial="{ opacity: 0, y: 100 }"
                   :enter="{ opacity: 1, y: 0, scale: 1 }"
                   :delay="j * 200"
