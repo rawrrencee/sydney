@@ -8,42 +8,48 @@ const climbingLocations = [
     subtitle: 'via Westpac Lifesaver Helicopter Base',
     href: '#',
     current: false,
-    imageSrc: new URL('../assets/climbing/cape-banks.png', import.meta.url).href
+    imageSrc:
+      'https://raw.githubusercontent.com/rawrrencee/sydney/main/src/assets/climbing/cape-banks.png'
   },
   {
     name: 'Queens Park',
     subtitle: 'via Victoria Park',
     href: '#',
     current: false,
-    imageSrc: new URL('../assets/climbing/queens-park.png', import.meta.url).href
+    imageSrc:
+      'https://raw.githubusercontent.com/rawrrencee/sydney/main/src/assets/climbing/queens-park.png'
   },
   {
     name: 'The Frontline, Balkans',
     subtitle: 'via 8 Larra Cres',
     href: '#',
     current: true,
-    imageSrc: new URL('../assets/climbing/frontline.png', import.meta.url).href
+    imageSrc:
+      'https://raw.githubusercontent.com/rawrrencee/sydney/main/src/assets/climbing/frontline.png'
   },
   {
     name: 'Black Cave',
     subtitle: 'via Beatty St',
     href: '#',
     current: false,
-    imageSrc: new URL('../assets/climbing/black-cave.png', import.meta.url).href
+    imageSrc:
+      'https://raw.githubusercontent.com/rawrrencee/sydney/main/src/assets/climbing/black-cave.png'
   },
   {
     name: 'Sissy Crag',
     subtitle: 'via Bridgeview Cres',
     href: '#',
     current: false,
-    imageSrc: new URL('../assets/climbing/sissy-crag.png', import.meta.url).href
+    imageSrc:
+      'https://raw.githubusercontent.com/rawrrencee/sydney/main/src/assets/climbing/sissy-crag.png'
   },
   {
     name: 'Lindfield Rocks',
     subtitle: 'via Tryon Road Tennis Courts',
     href: '#',
     current: false,
-    imageSrc: new URL('../assets/climbing/lindfield-rocks.png', import.meta.url).href
+    imageSrc:
+      'https://raw.githubusercontent.com/rawrrencee/sydney/main/src/assets/climbing/lindfield-rocks.png'
   }
 ];
 </script>
