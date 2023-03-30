@@ -73,7 +73,6 @@ const randomisePassengers = () => {
           <div
             class="grid grid-cols-10 items-center justify-center md:flex"
             v-if="driver.selectedDriver"
-            text-neutral-600
             v-motion
             :initial="{ opacity: 0, y: 100 }"
             :enter="{
@@ -89,7 +88,7 @@ const randomisePassengers = () => {
               alt=""
             />
             <div class="col-span-6 ml-3 flex flex-col gap-1 justify-self-start">
-              <span class="break-all text-sm font-semibold text-neutral-700">
+              <span class="break-all text-sm font-semibold text-neutral-500">
                 {{ driver?.selectedDriver?.handle ?? '' }}
               </span>
               <button
@@ -235,7 +234,6 @@ const randomisePassengers = () => {
                 :key="j"
               >
                 <img
-                  text-neutral-600
                   v-motion
                   :initial="{ opacity: 0, y: 100 }"
                   :enter="{ opacity: 1, y: 0, scale: 1 }"
@@ -245,7 +243,6 @@ const randomisePassengers = () => {
                   alt=""
                 />
                 <span
-                  text-neutral-600
                   v-motion
                   :initial="{ opacity: 0, y: 100 }"
                   :enter="{ opacity: 1, y: 0, scale: 1 }"

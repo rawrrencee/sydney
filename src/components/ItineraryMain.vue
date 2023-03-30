@@ -87,7 +87,7 @@ const climbingLocations = [
                   <img :src="location.imageSrc" class="h-full w-full object-cover object-center" />
                 </div>
                 <div class="flex flex-1 flex-col space-y-2 p-4">
-                  <h3 class="text-sm font-medium text-neutral-500">
+                  <h3 class="text-sm font-medium text-neutral-900">
                     <a :href="location.href">
                       <span aria-hidden="true" class="absolute inset-0" />
                       {{ location.name }}
