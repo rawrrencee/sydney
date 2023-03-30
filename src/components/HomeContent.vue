@@ -6,10 +6,10 @@ defineProps({
 
 <template>
   <div
-    v-motion
+    text-neutral-600
     :initial="{ opacity: 0, y: 100 }"
     :enter="{ opacity: 1, y: 0, scale: 1 }"
-    class="flex-1 flex flex-col overflow-y-scroll"
+    class="flex flex-1 flex-col overflow-y-scroll"
     :class="styleClass ?? []"
   >
     <slot></slot>
