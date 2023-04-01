@@ -23,7 +23,7 @@ export const links = {
   randomiser: {
     key: 'randomiser',
     routeParam: '/randomiser',
-    url: '#',
+    url: '/randomiser',
     emoji: '🥴',
     label: 'Randomiser'
   }

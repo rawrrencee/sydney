@@ -9,6 +9,7 @@ defineProps({
   showBackButton: Boolean
 });
 
+const windowHistory = window.history;
 const router = useRouter();
 const menuItems: {
   key: string;
@@ -73,8 +74,8 @@ const menuItems: {
       v-if="showBackButton"
       :on-click="
         () => {
-          $emit('update:current-view', 'dashboard');
-          $router.push('/');
+          if (windowHistory?.length > 2) $router.back();
+          else $router.push('/');
         }
       "
     >
