@@ -22,7 +22,7 @@ watch(selectedChild, (val) => {
     >
       <li
         v-if="breadcrumbs.itinerary?.sectionTitle"
-        class="flex w-full flex-shrink-0 cursor-pointer place-items-center gap-2 rounded-md bg-indigo-50 p-3 text-sm font-medium text-indigo-600 hover:bg-indigo-100 sm:w-fit sm:px-2 sm:py-1.5 md:pl-2"
+        class="flex w-full flex-shrink-0 cursor-pointer place-items-center gap-2 rounded-md bg-indigo-100 p-3 text-sm font-medium text-indigo-600 hover:bg-indigo-200 sm:w-fit sm:px-2 sm:py-1.5 md:pl-2"
         @click="() => $router.replace('/itinerary')"
       >
         <Bars3Icon class="h-3 w-3" @click="() => {}" />
@@ -37,7 +37,7 @@ watch(selectedChild, (val) => {
             <Listbox as="div" class="flex-grow-[1]" v-model="selectedChild">
               <div class="relative items-center">
                 <ListboxButton
-                  class="flex w-full cursor-default rounded-md bg-neutral-100 py-3 sm:py-1.5 pl-2 pr-10 text-left text-sm font-medium text-gray-700 hover:bg-neutral-100 md:bg-neutral-50 md:pr-20"
+                  class="flex w-full cursor-default rounded-md bg-neutral-100 py-3 pl-2 pr-10 text-left text-sm font-medium text-gray-700 hover:bg-neutral-100 sm:py-1.5 md:bg-neutral-50 md:pr-20"
                 >
                   <span class="block truncate">{{ selectedChild.name }}</span>
                   <span

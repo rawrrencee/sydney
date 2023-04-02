@@ -7,15 +7,15 @@ import GridItem from './GridItem.vue';
 const props = defineProps({
   itinerary: Object
 });
-const openMap = ref(false);
+const isExpanded = ref(false);
 const getStorageKey = (key: string) => `itinerary__${key}`;
 
 onMounted(() => {
-  openMap.value =
+  isExpanded.value =
     localStorage.getItem(getStorageKey(props.itinerary?.id)) === 'true' ? true : false;
 });
 
-watch(openMap, (val) => {
+watch(isExpanded, (val) => {
   localStorage.setItem(getStorageKey(props.itinerary?.id), val ? 'true' : 'false');
 });
 </script>
@@ -25,10 +25,13 @@ watch(openMap, (val) => {
     <DisclosureButton as="template">
       <div
         class="flex w-full justify-between rounded-lg bg-indigo-100 px-4 py-3 text-left text-sm font-medium text-indigo-900 hover:bg-indigo-200 hover:text-indigo-600 focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 focus-visible:ring-opacity-75"
-        @click="() => (openMap = !openMap)"
+        @click="() => (isExpanded = !isExpanded)"
       >
         <span>{{ itinerary?.sectionTitle }}</span>
-        <ChevronRightIcon class="h-5 w-5 text-indigo-500 ui-open:rotate-90 ui-open:transform" />
+        <ChevronRightIcon
+          class="h-5 w-5 transform text-indigo-500"
+          :class="isExpanded && 'rotate-90 transform'"
+        />
       </div>
     </DisclosureButton>
     <TransitionRoot
@@ -38,7 +41,7 @@ watch(openMap, (val) => {
       leave="transition duration-100 ease-out"
       leave-from="transform scale-100 opacity-100"
       leave-to="transform scale-95 opacity-0"
-      :show="openMap"
+      :show="isExpanded"
     >
       <DisclosurePanel static>
         <div
