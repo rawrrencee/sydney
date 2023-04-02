@@ -47,7 +47,7 @@ for anno in wall_annotations:
         routeName = route.find('span', {'class': 'name'}).find('span', {'class': 'primary-node-name'}).text
         routeAscents = route.find('span', {'class': 'r-pop'}).find('a').get('title')
 
-        route_data = { 'id': routeNumber, 'grade': routeGrade, 'url': routeUrl, 'quality': routeQuality, 'name': routeName, 'routeAscents': routeAscents }
+        route_data = { 'id': routeNumber, 'grade': routeGrade, 'url': routeUrl, 'quality': routeQuality, 'name': routeName, 'ascents': routeAscents }
         wall_routes.append(route_data)
 
     wall_data = {'id': id, 'slug': slug, 'title': title, 'description': description, 'routes': wall_routes}

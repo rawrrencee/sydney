@@ -12,7 +12,10 @@ export const climbingLocations = [
         title: 'The Big Straight Wall',
         description: 'Good sector in high tide and high swell. Good warm ups.',
         imageSrc: null,
-        relativePath: new URL('@/assets/climbing/cape-banks/walls/the-big-straight-wall-1.png', import.meta.url).href,
+        relativePath: new URL(
+          '@/assets/climbing/cape-banks/walls/the-big-straight-wall-1.png',
+          import.meta.url
+        ).href,
         routes: [
           {
             id: '2',
@@ -20,7 +23,12 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1051474095',
             quality: '51',
             name: 'CBA',
-            routeAscents: 'Relative popularity (90) - 50 ascents'
+            ascents: 'Relative popularity (90) - 50 ascents',
+            imageSrc: null,
+            relativePath: new URL(
+              '@/assets/climbing/cape-banks/walls/brad-sector-1.png',
+              import.meta.url
+            ).href
           },
           {
             id: '3',
@@ -28,7 +36,12 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1168915674',
             quality: '',
             name: '9 3/4 Bank',
-            routeAscents: 'Relative popularity (68) - 18 ascents'
+            ascents: 'Relative popularity (68) - 18 ascents',
+            imageSrc: null,
+            relativePath: new URL(
+              '@/assets/climbing/cape-banks/walls/brad-sector-6.png',
+              import.meta.url
+            ).href
           },
           {
             id: '4',
@@ -36,7 +49,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1168915845',
             quality: '50',
             name: 'Gringotts',
-            routeAscents: 'Relative popularity (64) - 16 ascents'
+            ascents: 'Relative popularity (64) - 16 ascents'
           },
           {
             id: '5',
@@ -44,7 +57,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1109276439',
             quality: '56',
             name: 'NAB',
-            routeAscents: 'Relative popularity (79) - 31 ascents'
+            ascents: 'Relative popularity (79) - 31 ascents'
           },
           {
             id: '6',
@@ -52,7 +65,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1168916001',
             quality: '',
             name: 'CitiBank',
-            routeAscents: 'Relative popularity (55) - 11 ascents'
+            ascents: 'Relative popularity (55) - 11 ascents'
           },
           {
             id: '7',
@@ -60,7 +73,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1109303775',
             quality: '',
             name: 'ANZ',
-            routeAscents: 'Relative popularity (61) - 14 ascents'
+            ascents: 'Relative popularity (61) - 14 ascents'
           },
           {
             id: '8',
@@ -68,7 +81,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1168916163',
             quality: '',
             name: 'Hop Step Banking Corp',
-            routeAscents: 'Relative popularity (43) - 6 ascents'
+            ascents: 'Relative popularity (43) - 6 ascents'
           },
           {
             id: '9',
@@ -76,7 +89,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1117617651',
             quality: '',
             name: 'HSBC',
-            routeAscents: 'Relative popularity (62) - 15 ascents'
+            ascents: 'Relative popularity (62) - 15 ascents'
           },
           {
             id: '10',
@@ -84,7 +97,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1117617768',
             quality: '',
             name: 'AMP',
-            routeAscents: 'Relative popularity (46) - 7 ascents'
+            ascents: 'Relative popularity (46) - 7 ascents'
           },
           {
             id: '11',
@@ -92,7 +105,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1117617885',
             quality: '50',
             name: 'ABN AMRO',
-            routeAscents: 'Relative popularity (42) - 6 ascents'
+            ascents: 'Relative popularity (42) - 6 ascents'
           }
         ]
       },
@@ -102,7 +115,10 @@ export const climbingLocations = [
         title: 'Suncorp Block',
         description: 'Good sector even at high tide and large swell.',
         imageSrc: null,
-        relativePath: new URL('@/assets/climbing/cape-banks/walls/suncorp-block-1.png', import.meta.url).href,
+        relativePath: new URL(
+          '@/assets/climbing/cape-banks/walls/suncorp-block-1.png',
+          import.meta.url
+        ).href,
         routes: [
           {
             id: '13',
@@ -110,7 +126,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1051476333',
             quality: '54',
             name: 'St George',
-            routeAscents: 'Relative popularity (100) - 77 ascents'
+            ascents: 'Relative popularity (100) - 77 ascents'
           },
           {
             id: '14',
@@ -118,7 +134,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1077083268',
             quality: '66',
             name: 'Suncorp',
-            routeAscents: 'Relative popularity (93) - 56 ascents'
+            ascents: 'Relative popularity (93) - 56 ascents'
           },
           {
             id: '15',
@@ -126,7 +142,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1211286459',
             quality: '65',
             name: 'Bank of China',
-            routeAscents: 'Relative popularity (89) - 48 ascents'
+            ascents: 'Relative popularity (89) - 48 ascents'
           },
           {
             id: '16',
@@ -134,7 +150,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1221780366',
             quality: '50',
             name: 'Internet banking',
-            routeAscents: 'Relative popularity (46) - 7 ascents'
+            ascents: 'Relative popularity (46) - 7 ascents'
           }
         ]
       },
@@ -145,7 +161,8 @@ export const climbingLocations = [
         description:
           'Around the corner heading towards the ocean (East) past ABN AMRO you find the following problems on a large overhanging boulder.',
         imageSrc: null,
-        relativePath: new URL('@/assets/climbing/cape-banks/walls/cape-town-1.png', import.meta.url).href,
+        relativePath: new URL('@/assets/climbing/cape-banks/walls/cape-town-1.png', import.meta.url)
+          .href,
         routes: [
           {
             id: '18',
@@ -153,7 +170,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1122166017',
             quality: '',
             name: 'Cape Town',
-            routeAscents: 'Relative popularity (38) - 5 ascents'
+            ascents: 'Relative popularity (38) - 5 ascents'
           },
           {
             id: '19',
@@ -161,7 +178,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1363106229',
             quality: '72',
             name: 'Whale of a time',
-            routeAscents: 'Relative popularity (49) - 8 ascents'
+            ascents: 'Relative popularity (49) - 8 ascents'
           },
           {
             id: '20',
@@ -169,7 +186,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1363106355',
             quality: '50',
             name: 'Whale of a time direct',
-            routeAscents: 'Relative popularity (32) - 4 ascents'
+            ascents: 'Relative popularity (32) - 4 ascents'
           },
           {
             id: '21',
@@ -177,7 +194,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1363120002',
             quality: '50',
             name: 'Whale Tail',
-            routeAscents: 'Relative popularity (26) - 3 ascents'
+            ascents: 'Relative popularity (26) - 3 ascents'
           },
           {
             id: '22',
@@ -185,7 +202,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1363120167',
             quality: '50',
             name: 'Beached whale',
-            routeAscents: 'Relative popularity (60) - 13 ascents'
+            ascents: 'Relative popularity (60) - 13 ascents'
           },
           {
             id: '23',
@@ -193,7 +210,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1122166134',
             quality: '',
             name: 'EsCape',
-            routeAscents: 'Relative popularity (17) - 2 ascents'
+            ascents: 'Relative popularity (17) - 2 ascents'
           },
           {
             id: '24',
@@ -201,7 +218,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1363143381',
             quality: '50',
             name: 'Blow hole',
-            routeAscents: 'Relative popularity (49) - 8 ascents'
+            ascents: 'Relative popularity (49) - 8 ascents'
           },
           {
             id: '25',
@@ -209,7 +226,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1122166257',
             quality: '',
             name: 'Capers',
-            routeAscents: 'Relative popularity (37) - 5 ascents'
+            ascents: 'Relative popularity (37) - 5 ascents'
           },
           {
             id: '26',
@@ -217,7 +234,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/7159190955',
             quality: '50',
             name: 'Crabs R Hilarious',
-            routeAscents: 'Relative popularity (0) - 1 ascent'
+            ascents: 'Relative popularity (0) - 1 ascent'
           }
         ]
       },
@@ -228,7 +245,10 @@ export const climbingLocations = [
         description:
           'Back at The Big Straight Wall, the following routes are on the back of the Suncorp boulder',
         imageSrc: null,
-        relativePath: new URL('@/assets/climbing/cape-banks/walls/ing-direct-1.png', import.meta.url).href,
+        relativePath: new URL(
+          '@/assets/climbing/cape-banks/walls/ing-direct-1.png',
+          import.meta.url
+        ).href,
         routes: [
           {
             id: '28',
@@ -236,7 +256,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/2975204238',
             quality: '50',
             name: 'Westpock',
-            routeAscents: 'Relative popularity (26) - 3 ascents'
+            ascents: 'Relative popularity (26) - 3 ascents'
           },
           {
             id: '29',
@@ -244,7 +264,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1051473756',
             quality: '57',
             name: 'ING',
-            routeAscents: 'Relative popularity (67) - 18 ascents'
+            ascents: 'Relative popularity (67) - 18 ascents'
           },
           {
             id: '30',
@@ -252,7 +272,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1109275701',
             quality: '',
             name: 'ING direct',
-            routeAscents: 'Relative popularity (33) - 4 ascents'
+            ascents: 'Relative popularity (33) - 4 ascents'
           },
           {
             id: '31',
@@ -260,7 +280,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1051473879',
             quality: '65',
             name: 'Reserve Bank',
-            routeAscents: 'Relative popularity (87) - 44 ascents'
+            ascents: 'Relative popularity (87) - 44 ascents'
           },
           {
             id: '32',
@@ -268,7 +288,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/6855033573',
             quality: '50',
             name: '2Up',
-            routeAscents: 'Relative popularity (0) - 1 ascent'
+            ascents: 'Relative popularity (0) - 1 ascent'
           },
           {
             id: '33',
@@ -276,7 +296,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1109275524',
             quality: '67',
             name: 'Colonial Bank',
-            routeAscents: 'Relative popularity (48) - 8 ascents'
+            ascents: 'Relative popularity (48) - 8 ascents'
           },
           {
             id: '34',
@@ -284,7 +304,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/6823800102',
             quality: '58',
             name: 'Noorseekee',
-            routeAscents: 'Relative popularity (37) - 5 ascents'
+            ascents: 'Relative popularity (37) - 5 ascents'
           },
           {
             id: '35',
@@ -292,7 +312,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/6797022240',
             quality: '',
             name: 'Cashed Up Bogan',
-            routeAscents: 'Relative popularity (41) - 6 ascents'
+            ascents: 'Relative popularity (41) - 6 ascents'
           },
           {
             id: '36',
@@ -300,7 +320,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/2056881501',
             quality: '44',
             name: 'Two Small Gulps',
-            routeAscents: 'Relative popularity (46) - 7 ascents'
+            ascents: 'Relative popularity (46) - 7 ascents'
           },
           {
             id: '37',
@@ -308,7 +328,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/6823808304',
             quality: '50',
             name: 'Ponzi',
-            routeAscents: 'Relative popularity (0) - 1 ascent'
+            ascents: 'Relative popularity (0) - 1 ascent'
           }
         ]
       },
@@ -319,7 +339,10 @@ export const climbingLocations = [
         description:
           'Pyramid shaped boulder hidden away between sectors ING Direct and BRAD Sector',
         imageSrc: null,
-        relativePath: new URL('@/assets/climbing/cape-banks/walls/the-pyramids-1.png', import.meta.url).href,
+        relativePath: new URL(
+          '@/assets/climbing/cape-banks/walls/the-pyramids-1.png',
+          import.meta.url
+        ).href,
         routes: [
           {
             id: '39',
@@ -327,7 +350,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1109275887',
             quality: '17',
             name: 'Pyramid Principle',
-            routeAscents: 'Relative popularity (26) - 3 ascents'
+            ascents: 'Relative popularity (26) - 3 ascents'
           },
           {
             id: '40',
@@ -335,7 +358,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1109276073',
             quality: '57',
             name: 'Pyramid Scheme',
-            routeAscents: 'Relative popularity (57) - 12 ascents'
+            ascents: 'Relative popularity (57) - 12 ascents'
           },
           {
             id: '41',
@@ -343,7 +366,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1109276262',
             quality: '',
             name: 'Pyramid Scam',
-            routeAscents: 'Relative popularity (0) - 1 ascent'
+            ascents: 'Relative popularity (0) - 1 ascent'
           }
         ]
       },
@@ -354,7 +377,10 @@ export const climbingLocations = [
         description:
           'Shaded sector with some great overhanging sloper action. About 20m south of Pyramid Scheme on a raised platform that stays shaded and dry (even in high swell), and can be accessed from the top directly.',
         imageSrc: null,
-        relativePath: new URL('@/assets/climbing/cape-banks/walls/brad-sector-1.png', import.meta.url).href,
+        relativePath: new URL(
+          '@/assets/climbing/cape-banks/walls/brad-sector-1.png',
+          import.meta.url
+        ).href,
         routes: [
           {
             id: '43',
@@ -362,7 +388,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1112917605',
             quality: '67',
             name: 'THIS IS DOGS',
-            routeAscents: 'Relative popularity (17) - 2 ascents'
+            ascents: 'Relative popularity (17) - 2 ascents'
           },
           {
             id: '44',
@@ -370,7 +396,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1475663769',
             quality: '',
             name: 'IS',
-            routeAscents: 'Relative popularity (0) - 1 ascent'
+            ascents: 'Relative popularity (0) - 1 ascent'
           },
           {
             id: '45',
@@ -378,7 +404,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1112917488',
             quality: '59',
             name: 'BRAD MAM',
-            routeAscents: 'Relative popularity (63) - 15 ascents'
+            ascents: 'Relative popularity (63) - 15 ascents'
           },
           {
             id: '46',
@@ -386,7 +412,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1112917365',
             quality: '74',
             name: 'BRAD BRAD',
-            routeAscents: 'Relative popularity (91) - 53 ascents'
+            ascents: 'Relative popularity (91) - 53 ascents'
           },
           {
             id: '47',
@@ -394,7 +420,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1221785520',
             quality: '56',
             name: 'BRAD left me',
-            routeAscents: 'Relative popularity (68) - 19 ascents'
+            ascents: 'Relative popularity (68) - 19 ascents'
           },
           {
             id: '48',
@@ -402,7 +428,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1112917242',
             quality: '55',
             name: 'BRAD',
-            routeAscents: 'Relative popularity (88) - 46 ascents'
+            ascents: 'Relative popularity (88) - 46 ascents'
           },
           {
             id: '49',
@@ -410,7 +436,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1382314839',
             quality: '50',
             name: 'BRAD is right',
-            routeAscents: 'Relative popularity (48) - 8 ascents'
+            ascents: 'Relative popularity (48) - 8 ascents'
           },
           {
             id: '50',
@@ -418,7 +444,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/3415956549',
             quality: '50',
             name: "BRAD's Right SHOE",
-            routeAscents: 'Relative popularity (68) - 19 ascents'
+            ascents: 'Relative popularity (68) - 19 ascents'
           },
           {
             id: '51',
@@ -426,7 +452,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1374352959',
             quality: '54',
             name: 'SHOER',
-            routeAscents: 'Relative popularity (65) - 17 ascents'
+            ascents: 'Relative popularity (65) - 17 ascents'
           },
           {
             id: '52',
@@ -434,7 +460,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1051473990',
             quality: '69',
             name: 'Run The Line',
-            routeAscents: 'Relative popularity (61) - 14 ascents'
+            ascents: 'Relative popularity (61) - 14 ascents'
           },
           {
             id: '53',
@@ -442,7 +468,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1475667630',
             quality: '69',
             name: 'DARB',
-            routeAscents: 'Relative popularity (51) - 9 ascents'
+            ascents: 'Relative popularity (51) - 9 ascents'
           },
           {
             id: '54',
@@ -450,7 +476,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/6823828158',
             quality: '',
             name: 'Monte',
-            routeAscents: 'Relative popularity (25) - 3 ascents'
+            ascents: 'Relative popularity (25) - 3 ascents'
           },
           {
             id: '55',
@@ -458,7 +484,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/6825660663',
             quality: '50',
             name: 'Bunco',
-            routeAscents: 'Relative popularity (37) - 5 ascents'
+            ascents: 'Relative popularity (37) - 5 ascents'
           },
           {
             id: '56',
@@ -466,7 +492,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/6825664239',
             quality: '67',
             name: 'Barnacle',
-            routeAscents: 'Relative popularity (37) - 5 ascents'
+            ascents: 'Relative popularity (37) - 5 ascents'
           },
           {
             id: '57',
@@ -474,7 +500,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1112920629',
             quality: '53',
             name: 'Express Corner',
-            routeAscents: 'Relative popularity (69) - 20 ascents'
+            ascents: 'Relative popularity (69) - 20 ascents'
           },
           {
             id: '58',
@@ -482,7 +508,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1699588644',
             quality: '',
             name: 'Money change',
-            routeAscents: 'Relative popularity (32) - 4 ascents'
+            ascents: 'Relative popularity (32) - 4 ascents'
           },
           {
             id: '59',
@@ -490,7 +516,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1641691401',
             quality: '',
             name: 'In the pocket',
-            routeAscents: 'Relative popularity (0) - 1 ascent'
+            ascents: 'Relative popularity (0) - 1 ascent'
           }
         ]
       },
@@ -501,7 +527,8 @@ export const climbingLocations = [
         description:
           'Walk about 20m west and around the corner from Express Corner to get to the following routes.',
         imageSrc: null,
-        relativePath: new URL('@/assets/climbing/cape-banks/walls/the-banks-1.png', import.meta.url).href,
+        relativePath: new URL('@/assets/climbing/cape-banks/walls/the-banks-1.png', import.meta.url)
+          .href,
         routes: [
           {
             id: '61',
@@ -509,7 +536,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1122170721',
             quality: '',
             name: 'Bank Rupt',
-            routeAscents: 'Relative popularity (0) - 1 ascent'
+            ascents: 'Relative popularity (0) - 1 ascent'
           },
           {
             id: '62',
@@ -517,7 +544,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1112935152',
             quality: '',
             name: 'Break the bank',
-            routeAscents: 'Relative popularity (17) - 2 ascents'
+            ascents: 'Relative popularity (17) - 2 ascents'
           },
           {
             id: '63',
@@ -525,7 +552,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1112936202',
             quality: '',
             name: "Don't Bank On It",
-            routeAscents: 'Relative popularity (17) - 2 ascents'
+            ascents: 'Relative popularity (17) - 2 ascents'
           },
           {
             id: '64',
@@ -533,7 +560,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1122170844',
             quality: '',
             name: 'Bank',
-            routeAscents: 'Relative popularity (17) - 2 ascents'
+            ascents: 'Relative popularity (17) - 2 ascents'
           },
           {
             id: '65',
@@ -541,7 +568,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1122174546',
             quality: '',
             name: 'Tyra Banks',
-            routeAscents: 'Relative popularity (0) - 1 ascent'
+            ascents: 'Relative popularity (0) - 1 ascent'
           },
           {
             id: '66',
@@ -549,7 +576,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1122174663',
             quality: '50',
             name: 'Ernie Banks',
-            routeAscents: 'Relative popularity (16) - 2 ascents'
+            ascents: 'Relative popularity (16) - 2 ascents'
           },
           {
             id: '67',
@@ -557,7 +584,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1122174780',
             quality: '',
             name: 'Piggy Bank',
-            routeAscents: 'Relative popularity (0) - 1 ascent'
+            ascents: 'Relative popularity (0) - 1 ascent'
           },
           {
             id: '68',
@@ -565,7 +592,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1117618008',
             quality: '67',
             name: 'Banked Up',
-            routeAscents: 'Relative popularity (17) - 2 ascents'
+            ascents: 'Relative popularity (17) - 2 ascents'
           },
           {
             id: '69',
@@ -573,7 +600,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1122177297',
             quality: '',
             name: 'Resistor Bank',
-            routeAscents: 'Relative popularity (0) - 1 ascent'
+            ascents: 'Relative popularity (0) - 1 ascent'
           }
         ]
       },
@@ -584,7 +611,10 @@ export const climbingLocations = [
         description:
           'On the east side of Cape Banks, just north of the shipwreck is a patch or reasonable rock among lots of choss. A little further north again is a tiny shell beach (flooded at high tide) that is great for a swim.',
         imageSrc: null,
-        relativePath: new URL('@/assets/climbing/cape-banks/walls/sunny-side-1.png', import.meta.url).href,
+        relativePath: new URL(
+          '@/assets/climbing/cape-banks/walls/sunny-side-1.png',
+          import.meta.url
+        ).href,
         routes: [
           {
             id: '71',
@@ -592,7 +622,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1114220817',
             quality: '',
             name: 'Bank Holiday',
-            routeAscents: 'Relative popularity (0) - 1 ascent'
+            ascents: 'Relative popularity (0) - 1 ascent'
           },
           {
             id: '72',
@@ -600,7 +630,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1114220958',
             quality: '',
             name: 'Bank it Up',
-            routeAscents: 'Relative popularity (37) - 5 ascents'
+            ascents: 'Relative popularity (37) - 5 ascents'
           },
           {
             id: '73',
@@ -608,7 +638,7 @@ export const climbingLocations = [
             url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/route/1114221123',
             quality: '',
             name: 'Banksia',
-            routeAscents: 'Relative popularity (45) - 7 ascents'
+            ascents: 'Relative popularity (45) - 7 ascents'
           }
         ]
       }

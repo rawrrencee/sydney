@@ -37,7 +37,7 @@ watch(selectedChild, (val) => {
             <Listbox as="div" class="flex-grow-[1]" v-model="selectedChild">
               <div class="relative items-center">
                 <ListboxButton
-                  class="flex w-full cursor-default rounded-md bg-neutral-100 py-3 pl-2 pr-10 text-left text-sm font-medium text-gray-700 hover:bg-neutral-100 sm:py-1.5 md:bg-neutral-50 md:pr-20"
+                  class="flex w-full cursor-pointer rounded-md bg-neutral-100 py-3 pl-2 pr-10 text-left text-sm font-medium text-gray-700 hover:bg-neutral-200 sm:py-1.5 md:bg-neutral-50 md:pr-20"
                 >
                   <span class="block truncate">{{ selectedChild.name }}</span>
                   <span
@@ -85,17 +85,6 @@ watch(selectedChild, (val) => {
           <template v-else>
             <a href="#" class="ml-4">{{ breadcrumbs.child.name }}</a>
           </template>
-        </div>
-      </li>
-      <li v-if="breadcrumbs.child && breadcrumbs.grandchild">
-        <div class="flex items-center">
-          <ChevronRightIcon class="h-5 w-5 flex-shrink-0 text-gray-400" aria-hidden="true" />
-          <a
-            href="#"
-            aria-current="page"
-            class="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700"
-            >{{ breadcrumbs.grandchild?.title }}</a
-          >
         </div>
       </li>
     </ol>
