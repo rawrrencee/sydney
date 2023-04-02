@@ -2,6 +2,7 @@
 import { itineraryList } from '@/constants/itinerary';
 import { computed, ref, watch } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
+import GridItem from './GridItem.vue';
 import ItineraryBreadcrumbs from './ItineraryBreadcrumbs.vue';
 import ItineraryCollapse from './ItineraryCollapse.vue';
 import ItineraryContainer from './ItineraryContainer.vue';
@@ -11,15 +12,14 @@ const router = useRouter();
 const breadcrumbs = computed(() => {
   const itinerary = itineraryList.find((i) => i.id === route.query?.section);
   const child = itinerary?.data?.find((d) => d.id === route.query?.child);
-  const grandChild = child?.details?.find((d) => d.id === route.query?.grandchild);
+  const grandchild = child?.details?.find((d) => d.id === route.query?.grandchild);
 
   return {
     itinerary,
     ...(child && { child }),
-    ...(grandChild && { grandChild })
+    ...(grandchild && { grandchild })
   };
 });
-
 const selectedChild = ref(breadcrumbs.value?.child ?? null);
 watch(breadcrumbs, () => {
   if (
@@ -43,27 +43,27 @@ const onSelectedChildChanged = (val: any) => {
 <template>
   <div class="flex flex-col gap-2">
     <div class="rounded-lg bg-neutral-50 p-2 shadow-lg">
-      <ItineraryContainer :should-show="!$route.query?.section">
+      <ItineraryContainer v-if="!$route.query?.section" :should-show="!$route.query?.section">
         <template v-if="!$route.query?.section">
           <template v-for="itinerary of itineraryList" :key="itinerary.id">
             <ItineraryCollapse :itinerary="itinerary" />
           </template>
         </template>
       </ItineraryContainer>
-      <ItineraryContainer :should-show="!!$route.query?.section">
+      <ItineraryContainer v-if="!!$route.query?.section" :should-show="!!$route.query?.section">
         <template v-if="!!$route.query?.section">
-          <div class="p-1">
-            <ItineraryBreadcrumbs
-              @update:selected-child="onSelectedChildChanged"
-              :breadcrumbs="breadcrumbs"
-            />
-          </div>
+          <ItineraryBreadcrumbs
+            @update:selected-child="onSelectedChildChanged"
+            :breadcrumbs="breadcrumbs"
+          />
         </template>
       </ItineraryContainer>
-      <ItineraryContainer :should-show="!!$route.query?.child">
-        <template v-if="!!$route.query?.child">
-          <div class="p-1">Test</div>
-        </template>
+      <ItineraryContainer v-if="!!$route.query?.child && breadcrumbs?.child?.details" :should-show="!!$route.query?.child">
+          <div v-if="breadcrumbs.child.details.length > 0" class="grid grid-cols-1 gap-x-4 gap-y-4 pt-2 md:grid-cols-2 lg:grid-cols-3">
+            <template v-for="(detail, i) of breadcrumbs?.child?.details" :key="i">
+              <GridItem :title="detail.title" :subtitle="detail.description" :image-src="detail.imageSrc ?? detail.relativePath" />
+            </template>
+          </div>
       </ItineraryContainer>
     </div>
   </div>
