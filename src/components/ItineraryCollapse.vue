@@ -19,7 +19,7 @@ const router = useRouter();
     v-slot="{ open }"
   >
     <DisclosureButton
-      class="flex w-full justify-between rounded-lg bg-indigo-100 px-4 py-2 text-left text-sm font-medium text-indigo-900 hover:bg-indigo-200 hover:text-indigo-600 focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 focus-visible:ring-opacity-75"
+      class="flex w-full justify-between rounded-lg bg-indigo-100 px-4 py-3 text-left text-sm font-medium text-indigo-900 hover:bg-indigo-200 hover:text-indigo-600 focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 focus-visible:ring-opacity-75"
     >
       <span>{{ itinerary?.sectionTitle }}</span>
       <ChevronUpIcon class="h-5 w-5 text-indigo-500 ui-open:rotate-90 ui-open:transform" />
