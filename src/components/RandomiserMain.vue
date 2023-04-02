@@ -88,7 +88,7 @@ const randomisePassengers = () => {
               alt=""
             />
             <div class="col-span-6 ml-3 flex flex-col gap-1 justify-self-start">
-              <span class="break-all text-sm font-semibold text-neutral-500">
+              <span class="break-all text-sm font-semibold text-neutral-700">
                 {{ driver?.selectedDriver?.handle ?? '' }}
               </span>
               <button
@@ -116,7 +116,7 @@ const randomisePassengers = () => {
 
               <div class="relative mt-2">
                 <ListboxButton
-                  class="relative w-full cursor-default rounded-md bg-white py-1.5 pl-3 pr-10 text-left text-neutral-500 shadow-sm ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-400 sm:text-sm sm:leading-6"
+                  class="relative w-full cursor-default rounded-md bg-white py-1.5 pl-3 pr-10 text-left text-neutral-700 shadow-sm ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-400 sm:text-sm sm:leading-6"
                 >
                   <span class="flex items-center">
                     <img
@@ -167,7 +167,8 @@ const randomisePassengers = () => {
                       <li
                         :class="[
                           active ? 'bg-indigo-400 text-white' : '',
-                          disabled ? 'text-neutral-200' : 'text-neutral-500',
+                          active && !disabled ? 'text-white' : 'text-neutral-700',
+                          disabled ? 'text-neutral-200' : '',
                           'relative cursor-default select-none py-2 pl-3 pr-9'
                         ]"
                       >
@@ -219,7 +220,7 @@ const randomisePassengers = () => {
       </div>
       <template v-if="passengersAllocated">
         <div v-for="(car, i) in cars" :key="i">
-          <div class="mt-6 text-center text-sm font-semibold text-neutral-500 md:text-start">
+          <div class="mt-6 text-center text-sm font-semibold text-neutral-700 md:text-start">
             {{ i === 0 ? '🚗' : '🚙' }} Car {{ i + 1 }}
           </div>
           <div

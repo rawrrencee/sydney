@@ -56,7 +56,12 @@ const router = useRouter();
                 <a
                   :href="`${$route.path}?section=${itinerary?.id}&child=${location.id}`"
                   @click.prevent="
-                    router.push(`${$route.path}?section=${itinerary?.id}&child=${location.id}`)
+                    itinerary?.id &&
+                      location.id &&
+                      router.replace({
+                        path: $route.path,
+                        query: { section: itinerary?.id, child: location.id }
+                      })
                   "
                 >
                   <span aria-hidden="true" class="absolute inset-0" />

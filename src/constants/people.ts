@@ -10,42 +10,34 @@ import { soniayetsofarr } from '@/assets/people/soniayetsofarr';
 export const peopleList = [
   {
     ...aaronsends,
-    handle: 'aaron_sends',
-    canDrive: true
+    handle: 'aaron_sends'
   },
   {
     ...champanzee,
-    handle: 'cham.panzee',
-    canDrive: true
+    handle: 'cham.panzee'
   },
   {
     ...confusednicole,
-    handle: 'confusednicole',
-    canDrive: true
+    handle: 'confusednicole'
   },
   {
     ...iamgandalf98,
-    handle: 'iamgandalf98',
-    canDrive: true
+    handle: 'iamgandalf98'
   },
   {
     ...locksclimbinglog,
-    handle: 'locksclimbinglog',
-    canDrive: true
+    handle: 'locksclimbinglog'
   },
   {
     ...notnicetohold,
-    handle: 'notnicetohold',
-    canDrive: true
+    handle: 'notnicetohold'
   },
   {
     ...rawrrclimbs,
-    handle: '_rawrr.climbs',
-    canDrive: true
+    handle: '_rawrr.climbs'
   },
   {
     ...soniayetsofarr,
-    handle: 'soniayetsofarr',
-    canDrive: false
+    handle: 'soniayetsofarr'
   }
 ];
