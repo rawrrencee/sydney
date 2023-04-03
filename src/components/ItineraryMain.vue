@@ -47,14 +47,15 @@ const onSelectedChildChanged = (val: any) => {
 };
 const onDialogCloseClicked = () => {
   showDialog.value = false;
-  router.replace({
-    path: route.path,
-    query: {
-      section: breadcrumbs?.value.itinerary?.id,
-      child: selectedChild?.value?.id,
-      grandchild: null
-    }
-  });
+  setTimeout(() => {
+    router.replace({
+      path: route.path,
+      query: {
+        section: breadcrumbs?.value.itinerary?.id,
+        child: selectedChild?.value?.id
+      }
+    });
+  }, 200);
 };
 
 watch(breadcrumbs, () => {
@@ -167,8 +168,8 @@ watch(breadcrumbs, () => {
                   <span class="sr-only">Close</span>
                   <XMarkIcon class="h-6 w-6" aria-hidden="true" />
                 </button>
-                <div class="flex w-full flex-col gap-2 sm:mt-9">
-                  <div class="sticky top-0">
+                <div class="flex w-full flex-col gap-2 overflow-scroll sm:mt-9 md:flex-row">
+                  <div class="sticky top-0 md:relative">
                     <Carousel
                       :value="imagesOfGrandchild"
                       :numVisible="1"
@@ -190,19 +191,17 @@ watch(breadcrumbs, () => {
                       </template>
                     </Carousel>
                   </div>
-                  <div
-                    v-for="route of breadcrumbs?.grandchild?.routes"
-                    :key="route.id"
-                    class="px-4"
-                  >
+                  <template v-for="route of breadcrumbs?.grandchild?.routes" :key="route.id">
                     <div class="flex flex-col rounded-md border bg-white p-4 shadow-sm">
-                      <span>{{ route.id }}</span>
-                      <span>{{ route.grade }}</span>
-                      <span>{{ route.quality }}</span>
-                      <span>{{ route.name }}</span>
-                      <span>{{ route.ascents }}</span>
+                      <div class="flex flex-col">
+                        <span>{{ route.id }}</span>
+                        <span>{{ route.grade }}</span>
+                        <span>{{ route.quality }}</span>
+                        <span>{{ route.name }}</span>
+                        <span>{{ route.ascents }}</span>
+                      </div>
                     </div>
-                  </div>
+                  </template>
                 </div>
               </div>
             </DialogPanel>
