@@ -67,7 +67,7 @@ const expandScale = ref('30%');
                     <div class="flex min-h-0 flex-1 flex-col overflow-x-clip overflow-y-scroll">
                       <slot name="top"></slot>
                     </div>
-                    <div class="flex flex-row justify-between py-2">
+                    <div class="flex flex-row items-center justify-between py-2">
                       <div>
                         <slot name="topFooter"></slot>
                       </div>

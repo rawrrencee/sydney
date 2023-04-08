@@ -21,45 +21,54 @@ const selectedSort: Ref<{ key: string; text: string }> = ref(sortOptions[0]);
 watch(
   () => props.routes,
   (routes) => {
-    cloneRoutes.value = routes ? [...routes] : [];
+    if (selectedSort.value) {
+      cloneRoutes.value = getSortedRoutes(selectedSort.value.key);
+    } else {
+      cloneRoutes.value = routes ? [...routes] : [];
+    }
   }
 );
 watch(selectedSort, (val: { key: string; text: string }) => {
   if (val && props.routes) {
-    switch (val.key) {
-      case 'number':
-        cloneRoutes.value = [...props.routes!].sort((x, y) => parseInt(x.id) - parseInt(y.id));
-        break;
-      case 'name':
-        cloneRoutes.value = [...props.routes!].sort((x, y) => {
-          if (x.name < y.name) return -1;
-          if (x.name > y.name) return 1;
-          return 0;
-        });
-        break;
-      case 'grade':
-        cloneRoutes.value = [...props.routes!].sort(
-          (x, y) => parseInt(x.grade.substring(1)) - parseInt(y.grade.substring(1))
-        );
-        break;
-      case 'rating':
-        cloneRoutes.value = [...props.routes!].sort(
-          (x, y) => parseInt(y.quality) - parseInt(x.quality)
-        );
-        break;
-      case 'ascents':
-        cloneRoutes.value = [...props.routes!].sort(
-          (x, y) => parseInt(x.ascents.substring(27, 29)) - parseInt(y.ascents.substring(27, 29))
-        );
-        break;
-      default:
-        break;
-    }
+    cloneRoutes.value = getSortedRoutes(val.key);
   }
 });
 
 const openInNewWindow = (val: string) => {
   window.open(val);
+};
+const getSortedRoutes = (key: string) => {
+  switch (key) {
+    case 'number':
+      return [...props.routes!].sort((x, y) => parseInt(x.id) - parseInt(y.id));
+
+    case 'name':
+      return [...props.routes!].sort((x, y) => {
+        if (x.name < y.name) return -1;
+        if (x.name > y.name) return 1;
+        return 0;
+      });
+
+    case 'grade':
+      return [...props.routes!].sort(
+        (x, y) => parseInt(x.grade.substring(1)) - parseInt(y.grade.substring(1))
+      );
+
+    case 'rating':
+      return [...props.routes!].sort(
+        (x, y) =>
+          parseInt(y.quality === '' ? '0' : y.quality) -
+          parseInt(x.quality === '' ? '0' : x.quality)
+      );
+
+    case 'ascents':
+      return [...props.routes!].sort(
+        (x, y) => parseInt(y.ascents.split('- ')?.[1]) - parseInt(x.ascents.split('- ')?.[1])
+      );
+
+    default:
+      return [];
+  }
 };
 </script>
 <template>
