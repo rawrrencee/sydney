@@ -4,7 +4,7 @@ export const blackCave: ClimbingLocation = {
   id: 'black-cave',
   name: 'Black Cave',
   subtitle: 'via Beatty St',
-  imageSrc: undefined,
+  imageSrc: 'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/black-cave/index.jpeg?raw=true',
   relativePath: new URL('@/assets/climbing/black-cave/index.jpeg', import.meta.url).href,
   areas: [
     {
@@ -12,7 +12,8 @@ export const blackCave: ClimbingLocation = {
       slug: 'black-cave',
       title: 'Black Cave',
       description: 'AKA Manly Cave AKA Forty Basket Beach\n',
-      imageSrc: new URL('@/assets/climbing/black-cave/black-cave-1.jpeg', import.meta.url).href,
+      imageSrc:
+        'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/black-cave/black-cave-1.jpeg?raw=true',
       relativePath: new URL('@/assets/climbing/black-cave/black-cave-1.jpeg', import.meta.url).href,
       routes: [
         {
@@ -24,8 +25,10 @@ export const blackCave: ClimbingLocation = {
           ascents: 'Relative popularity (83) - 91 ascents',
           description:
             "Stand Start on big undergoing on the far LHS of the roof. Climb straight up through juggy pockets and a high pinch. Don't underestimate the topout or the terrible landing.",
-          imageSrc: new URL('@/assets/climbing/black-cave/black-cave-2.jpeg', import.meta.url).href,
-          relativePath: new URL('@/assets/climbing/black-cave/black-cave-2.jpeg', import.meta.url).href
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/black-cave/black-cave-2.jpeg?raw=true',
+          relativePath: new URL('@/assets/climbing/black-cave/black-cave-2.jpeg', import.meta.url)
+            .href
         },
         {
           id: '2',

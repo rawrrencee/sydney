@@ -12,8 +12,8 @@ export const queensPark: ClimbingLocation = {
       slug: 'the-throne-room',
       title: 'The Throne Room',
       description: '',
-      imageSrc: new URL('@/assets/climbing/queens-park/the-throne-room-1.jpeg', import.meta.url)
-        .href,
+      imageSrc:
+        'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/queens-park/the-throne-room-1.jpeg?raw=true',
       relativePath: new URL('@/assets/climbing/queens-park/the-throne-room-1.jpeg', import.meta.url)
         .href,
       routes: [
@@ -106,8 +106,8 @@ export const queensPark: ClimbingLocation = {
           ascents: 'Relative popularity (85) - 29 ascents',
           description:
             'Start slightly inside the cave and move up the steep arete. Big move/dyno to the hole in the ceiling and fun mantle. Have a plan to get back down too.',
-          imageSrc: new URL('@/assets/climbing/queens-park/the-throne-room-2.jpeg', import.meta.url)
-            .href,
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/queens-park/the-throne-room-2.jpeg?raw=true',
           relativePath: new URL(
             '@/assets/climbing/queens-park/the-throne-room-2.jpeg',
             import.meta.url
@@ -120,8 +120,8 @@ export const queensPark: ClimbingLocation = {
       slug: 'left-hand-side',
       title: 'Left Hand Side',
       description: '',
-      imageSrc: new URL('@/assets/climbing/queens-park/left-hand-side-1.jpeg', import.meta.url)
-        .href,
+      imageSrc:
+        'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/queens-park/left-hand-side-1.jpeg?raw=true',
       relativePath: new URL('@/assets/climbing/queens-park/left-hand-side-1.jpeg', import.meta.url)
         .href,
       routes: [
@@ -272,8 +272,8 @@ export const queensPark: ClimbingLocation = {
           ascents: 'Relative popularity (98) - 139 ascents',
           description:
             'Another crag classic.\nTraverse on any line, any direction, between the cave on the left and the arete on the right. Punchy and desperate in spots.',
-          imageSrc: new URL('@/assets/climbing/queens-park/left-hand-side-2.jpeg', import.meta.url)
-            .href,
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/queens-park/left-hand-side-2.jpeg?raw=true',
           relativePath: new URL(
             '@/assets/climbing/queens-park/left-hand-side-2.jpeg',
             import.meta.url
@@ -378,8 +378,8 @@ export const queensPark: ClimbingLocation = {
           ascents: 'Relative popularity (83) - 66 ascents',
           description:
             'Match start on the double jug bottom-right of the bloc and tops out with a mantle using only holds  on the right-hand face. Light sandy rock is out as are jugs on the other side of the face - only use holds on the right of the arete.',
-          imageSrc: new URL('@/assets/climbing/queens-park/left-hand-side-3.jpeg', import.meta.url)
-            .href,
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/queens-park/left-hand-side-3.jpeg?raw=true',
           relativePath: new URL(
             '@/assets/climbing/queens-park/left-hand-side-3.jpeg',
             import.meta.url
@@ -393,8 +393,8 @@ export const queensPark: ClimbingLocation = {
           name: 'Lets Have Fun',
           ascents: 'Relative popularity (28) - 4 ascents',
           description: 'Start at base of fig tree and climb to obvious jug branch finish',
-          imageSrc: new URL('@/assets/climbing/queens-park/left-hand-side-4.jpeg', import.meta.url)
-            .href,
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/queens-park/left-hand-side-4.jpeg?raw=true',
           relativePath: new URL(
             '@/assets/climbing/queens-park/left-hand-side-4.jpeg',
             import.meta.url
@@ -409,8 +409,8 @@ export const queensPark: ClimbingLocation = {
           ascents: 'Relative popularity (41) - 8 ascents',
           description:
             'Can be done left to right or right to left. Both sit start either end and then traverse the lip of the cliff on obvious jugs.',
-          imageSrc: new URL('@/assets/climbing/queens-park/left-hand-side-3.jpeg', import.meta.url)
-            .href,
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/queens-park/left-hand-side-3.jpeg?raw=true',
           relativePath: new URL(
             '@/assets/climbing/queens-park/left-hand-side-3.jpeg',
             import.meta.url
@@ -424,8 +424,8 @@ export const queensPark: ClimbingLocation = {
           name: 'Wool Over Their Eyes',
           ascents: 'Relative popularity (14) - 2 ascents',
           description: '',
-          imageSrc: new URL('@/assets/climbing/queens-park/left-hand-side-4.jpeg', import.meta.url)
-            .href,
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/queens-park/left-hand-side-4.jpeg?raw=true',
           relativePath: new URL(
             '@/assets/climbing/queens-park/left-hand-side-4.jpeg',
             import.meta.url
@@ -449,7 +449,8 @@ export const queensPark: ClimbingLocation = {
       slug: 'the-middle',
       title: 'The Middle',
       description: '',
-      imageSrc: new URL('@/assets/climbing/queens-park/the-middle-1.jpeg', import.meta.url).href,
+      imageSrc:
+        'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/queens-park/the-middle-1.jpeg?raw=true',
       relativePath: new URL('@/assets/climbing/queens-park/the-middle-1.jpeg', import.meta.url)
         .href,
       routes: [
@@ -472,8 +473,8 @@ export const queensPark: ClimbingLocation = {
           name: 'What Even Is Fun?',
           ascents: 'Relative popularity (33) - 5 ascents',
           description: 'Climb let side of tree roots to cool hold 5m up!',
-          imageSrc: new URL('@/assets/climbing/queens-park/the-middle-2.jpeg', import.meta.url)
-            .href,
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/queens-park/the-middle-2.jpeg?raw=true',
           relativePath: new URL('@/assets/climbing/queens-park/the-middle-2.jpeg', import.meta.url)
             .href
         },
@@ -496,8 +497,8 @@ export const queensPark: ClimbingLocation = {
           name: 'Cave Project left',
           ascents: 'Relative popularity (0) - No  ascents',
           description: '',
-          imageSrc: new URL('@/assets/climbing/queens-park/the-middle-3.jpeg', import.meta.url)
-            .href,
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/queens-park/the-middle-3.jpeg?raw=true',
           relativePath: new URL('@/assets/climbing/queens-park/the-middle-3.jpeg', import.meta.url)
             .href
         },
@@ -520,8 +521,8 @@ export const queensPark: ClimbingLocation = {
           name: 'Existential Crisis',
           ascents: 'Relative popularity (23) - 3 ascents',
           description: 'Sit start tree roots only to top out. Descend via cave to the right.',
-          imageSrc: new URL('@/assets/climbing/queens-park/the-middle-4.jpeg', import.meta.url)
-            .href,
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/queens-park/the-middle-4.jpeg?raw=true',
           relativePath: new URL('@/assets/climbing/queens-park/the-middle-4.jpeg', import.meta.url)
             .href
         },
@@ -533,8 +534,8 @@ export const queensPark: ClimbingLocation = {
           name: 'If Problems Grew On Trees',
           ascents: 'Relative popularity (14) - 2 ascents',
           description: 'Climb Pillar like tree route to topout. Descend via cave to the right.',
-          imageSrc: new URL('@/assets/climbing/queens-park/the-middle-5.jpeg', import.meta.url)
-            .href,
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/queens-park/the-middle-5.jpeg?raw=true',
           relativePath: new URL('@/assets/climbing/queens-park/the-middle-5.jpeg', import.meta.url)
             .href
         },
@@ -547,8 +548,8 @@ export const queensPark: ClimbingLocation = {
           ascents: 'Relative popularity (14) - 2 ascents',
           description:
             'Climb holds seems to be old cut steps. Start from footpath jump onto rock no hands problem',
-          imageSrc: new URL('@/assets/climbing/queens-park/the-middle-6.jpeg', import.meta.url)
-            .href,
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/queens-park/the-middle-6.jpeg?raw=true',
           relativePath: new URL('@/assets/climbing/queens-park/the-middle-6.jpeg', import.meta.url)
             .href
         },
@@ -560,8 +561,8 @@ export const queensPark: ClimbingLocation = {
           name: 'Strike While the Irons hot',
           ascents: 'Relative popularity (0) - No  ascents',
           description: 'No hands problem. Footpath start',
-          imageSrc: new URL('@/assets/climbing/queens-park/the-middle-7.jpeg', import.meta.url)
-            .href,
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/queens-park/the-middle-7.jpeg?raw=true',
           relativePath: new URL('@/assets/climbing/queens-park/the-middle-7.jpeg', import.meta.url)
             .href
         },
@@ -644,8 +645,8 @@ export const queensPark: ClimbingLocation = {
           name: "Wagland's Effort",
           ascents: 'Relative popularity (0) - 1 ascent',
           description: '',
-          imageSrc: new URL('@/assets/climbing/queens-park/the-middle-8.jpeg', import.meta.url)
-            .href,
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/queens-park/the-middle-8.jpeg?raw=true',
           relativePath: new URL('@/assets/climbing/queens-park/the-middle-8.jpeg', import.meta.url)
             .href
         }
@@ -656,7 +657,8 @@ export const queensPark: ClimbingLocation = {
       slug: 'south-end',
       title: 'South End',
       description: '',
-      imageSrc: new URL('@/assets/climbing/queens-park/south-end-1.jpeg', import.meta.url).href,
+      imageSrc:
+        'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/queens-park/south-end-1.jpeg?raw=true',
       relativePath: new URL('@/assets/climbing/queens-park/south-end-1.jpeg', import.meta.url).href,
       routes: [
         {
@@ -760,7 +762,8 @@ export const queensPark: ClimbingLocation = {
           ascents: 'Relative popularity (96) - 51 ascents',
           description:
             'Start on the obvious break at the back of the wall, climb out the steepest section and top out right of the pipe.',
-          imageSrc: new URL('@/assets/climbing/queens-park/south-end-9.jpeg', import.meta.url).href,
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/queens-park/south-end-9.jpeg?raw=true',
           relativePath: new URL('@/assets/climbing/queens-park/south-end-9.jpeg', import.meta.url)
             .href
         },

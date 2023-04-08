@@ -4,7 +4,8 @@ export const sissyCrag: ClimbingLocation = {
   id: 'sissy-crag',
   name: 'Sissy Crag',
   subtitle: 'via Bridgeview Cres',
-  imageSrc: undefined,
+  imageSrc:
+    'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/sissy-crag/index.jpeg?raw=true',
   relativePath: new URL('@/assets/climbing/sissy-crag/index.jpeg', import.meta.url).href,
   areas: [
     {
@@ -13,7 +14,8 @@ export const sissyCrag: ClimbingLocation = {
       title: 'Main Wall',
       description:
         'This is the main section of the crag where you will find the majority of the problems. There a few other problems if you keep walking but none as good as you what you can find here.',
-      imageSrc: new URL('@/assets/climbing/sissy-crag/index.jpeg', import.meta.url).href,
+      imageSrc:
+        'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/sissy-crag/index.jpeg?raw=true',
       relativePath: new URL('@/assets/climbing/sissy-crag/index.jpeg', import.meta.url).href,
       routes: []
     },
@@ -22,7 +24,8 @@ export const sissyCrag: ClimbingLocation = {
       slug: 'penis-cling-sector',
       title: 'Penis Cling Sector',
       description: 'The first large shield feature when entering the cave.',
-      imageSrc: new URL('@/assets/climbing/sissy-crag/sissy-crag-1.jpeg', import.meta.url).href,
+      imageSrc:
+        'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/sissy-crag/sissy-crag-1.jpeg?raw=true',
       relativePath: new URL('@/assets/climbing/sissy-crag/sissy-crag-1.jpeg', import.meta.url).href,
       routes: [
         {
@@ -174,7 +177,8 @@ export const sissyCrag: ClimbingLocation = {
       slug: 'silent-bob-sector',
       title: 'Silent Bob Sector',
       description: '',
-      imageSrc: new URL('@/assets/climbing/sissy-crag/sissy-crag-2.jpeg', import.meta.url).href,
+      imageSrc:
+        'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/sissy-crag/sissy-crag-2.jpeg?raw=true',
       relativePath: new URL('@/assets/climbing/sissy-crag/sissy-crag-2.jpeg', import.meta.url).href,
       routes: [
         {
@@ -494,7 +498,8 @@ export const sissyCrag: ClimbingLocation = {
       slug: 'dentalectomy-sector',
       title: 'Dentalectomy Sector',
       description: 'From the slopey wave feature to the small arete feature.',
-      imageSrc: new URL('@/assets/climbing/sissy-crag/sissy-crag-3.jpeg', import.meta.url).href,
+      imageSrc:
+        'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/sissy-crag/sissy-crag-3.jpeg?raw=true',
       relativePath: new URL('@/assets/climbing/sissy-crag/sissy-crag-3.jpeg', import.meta.url).href,
       routes: [
         {
@@ -664,7 +669,8 @@ export const sissyCrag: ClimbingLocation = {
       title: 'Mr Smiley Sector',
       description:
         'Horizontal roof section with some classic easier problems and the must-do Mr. Smiley.',
-      imageSrc: new URL('@/assets/climbing/sissy-crag/sissy-crag-4.jpeg', import.meta.url).href,
+      imageSrc:
+        'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/sissy-crag/sissy-crag-4.jpeg?raw=true',
       relativePath: new URL('@/assets/climbing/sissy-crag/sissy-crag-4.jpeg', import.meta.url).href,
       routes: [
         {
@@ -676,7 +682,8 @@ export const sissyCrag: ClimbingLocation = {
           ascents: 'Relative popularity (72) - 59 ascents',
           description:
             "1,2,7,3,4.\nStart on the low jug at the bottom of the little arete, head right through the underclings and into 'Bill Smith'.",
-          imageSrc: new URL('@/assets/climbing/sissy-crag/sissy-crag-5.jpeg', import.meta.url).href,
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/sissy-crag/sissy-crag-5.jpeg?raw=true',
           relativePath: new URL('@/assets/climbing/sissy-crag/sissy-crag-5.jpeg', import.meta.url)
             .href
         },
@@ -838,7 +845,8 @@ export const sissyCrag: ClimbingLocation = {
       slug: 'travis-sector',
       title: 'Travis Sector',
       description: 'The first of the orange scooped out sections right of the Mr. Smiley roof.',
-      imageSrc: new URL('@/assets/climbing/sissy-crag/sissy-crag-6.jpeg', import.meta.url).href,
+      imageSrc:
+        'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/sissy-crag/sissy-crag-6.jpeg?raw=true',
       relativePath: new URL('@/assets/climbing/sissy-crag/sissy-crag-6.jpeg', import.meta.url).href,
       routes: [
         {
@@ -1091,7 +1099,8 @@ export const sissyCrag: ClimbingLocation = {
       slug: 'the-pillar-sector',
       title: 'The Pillar Sector',
       description: 'The Pillar-like feature at head height separating the scooped out sections.',
-      imageSrc: new URL('@/assets/climbing/sissy-crag/sissy-crag-7.jpeg', import.meta.url).href,
+      imageSrc:
+        'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/sissy-crag/sissy-crag-7.jpeg?raw=true',
       relativePath: new URL('@/assets/climbing/sissy-crag/sissy-crag-7.jpeg', import.meta.url).href,
       routes: [
         {
@@ -1228,7 +1237,8 @@ export const sissyCrag: ClimbingLocation = {
       slug: 'verboten-sector',
       title: 'Verboten Sector',
       description: 'Scooped out orange section right of The Pillar.',
-      imageSrc: new URL('@/assets/climbing/sissy-crag/sissy-crag-8.jpeg', import.meta.url).href,
+      imageSrc:
+        'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/sissy-crag/sissy-crag-8.jpeg?raw=true',
       relativePath: new URL('@/assets/climbing/sissy-crag/sissy-crag-8.jpeg', import.meta.url).href,
       routes: [
         {
@@ -1320,7 +1330,8 @@ export const sissyCrag: ClimbingLocation = {
       slug: 'nuclear-winter-sector',
       title: 'Nuclear Winter Sector',
       description: '',
-      imageSrc: new URL('@/assets/climbing/sissy-crag/sissy-crag-9.jpeg', import.meta.url).href,
+      imageSrc:
+        'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/sissy-crag/sissy-crag-9.jpeg?raw=true',
       relativePath: new URL('@/assets/climbing/sissy-crag/sissy-crag-9.jpeg', import.meta.url).href,
       routes: [
         {
@@ -1482,8 +1493,8 @@ export const sissyCrag: ClimbingLocation = {
           ascents: 'Relative popularity (49) - 16 ascents',
           description:
             'Whilst made to look easy by some, this climb can be bicep destroying. Bring out your big guns. ',
-          imageSrc: new URL('@/assets/climbing/sissy-crag/sissy-crag-10.jpeg', import.meta.url)
-            .href,
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/sissy-crag/sissy-crag-10.jpeg?raw=true',
           relativePath: new URL('@/assets/climbing/sissy-crag/sissy-crag-10.jpeg', import.meta.url)
             .href
         },
@@ -1608,7 +1619,8 @@ export const sissyCrag: ClimbingLocation = {
       slug: 'too-sexy-sector',
       title: 'Too Sexy Sector',
       description: 'Last section of wall before the plateau drops off.',
-      imageSrc: new URL('@/assets/climbing/sissy-crag/sissy-crag-11.jpeg', import.meta.url).href,
+      imageSrc:
+        'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/sissy-crag/sissy-crag-11.jpeg?raw=true',
       relativePath: new URL('@/assets/climbing/sissy-crag/sissy-crag-11.jpeg', import.meta.url)
         .href,
       routes: [
@@ -1644,8 +1656,8 @@ export const sissyCrag: ClimbingLocation = {
           ascents: 'Relative popularity (74) - 67 ascents',
           description:
             'Start matched on the slopey legde 1m or so right of TLTL and move up through the pockets on the right before moving left to the jug on TLTL.',
-          imageSrc: new URL('@/assets/climbing/sissy-crag/sissy-crag-12.jpeg', import.meta.url)
-            .href,
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/sissy-crag/sissy-crag-12.jpeg?raw=true',
           relativePath: new URL('@/assets/climbing/sissy-crag/sissy-crag-12.jpeg', import.meta.url)
             .href
         },
@@ -1704,7 +1716,8 @@ export const sissyCrag: ClimbingLocation = {
       title: 'The Next Episode',
       description:
         "Walk about 50m after the end of the first section of wall to find 'The Next Episode'.",
-      imageSrc: new URL('@/assets/climbing/sissy-crag/sissy-crag-13.jpeg', import.meta.url).href,
+      imageSrc:
+        'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/sissy-crag/sissy-crag-13.jpeg?raw=true',
       relativePath: new URL('@/assets/climbing/sissy-crag/sissy-crag-13.jpeg', import.meta.url)
         .href,
       routes: [
@@ -1727,7 +1740,8 @@ export const sissyCrag: ClimbingLocation = {
       slug: 'bat-wing-cave',
       title: 'Bat Wing cave',
       description: 'Walk another 30m along the cliff to find this cave. You better like spiders!',
-      imageSrc: new URL('@/assets/climbing/sissy-crag/sissy-crag-14.jpeg', import.meta.url).href,
+      imageSrc:
+        'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/sissy-crag/sissy-crag-14.jpeg?raw=true',
       relativePath: new URL('@/assets/climbing/sissy-crag/sissy-crag-14.jpeg', import.meta.url)
         .href,
       routes: [

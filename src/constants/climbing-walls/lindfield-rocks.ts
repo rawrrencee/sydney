@@ -4,7 +4,8 @@ export const lindfieldRocks: ClimbingLocation = {
   id: 'lindfield-rocks',
   name: 'Lindfield Rocks',
   subtitle: 'via Tryon Road Tennis Courts',
-  imageSrc: new URL('@/assets/climbing/lindfield-rocks/index.jpeg', import.meta.url).href,
+  imageSrc:
+    'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/index.jpeg?raw=true',
   relativePath: new URL('@/assets/climbing/lindfield-rocks/index.jpeg', import.meta.url).href,
   areas: [
     {
@@ -12,8 +13,8 @@ export const lindfieldRocks: ClimbingLocation = {
       slug: 'trail-boulders',
       title: 'Trail Boulders',
       description: 'Definitely more lines to be put up.\n',
-      imageSrc: new URL('@/assets/climbing/lindfield-rocks/trail-boulders-1.jpeg', import.meta.url)
-        .href,
+      imageSrc:
+        'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/trail-boulders-1.jpeg?raw=true',
       relativePath: new URL(
         '@/assets/climbing/lindfield-rocks/trail-boulders-1.jpeg',
         import.meta.url
@@ -40,10 +41,8 @@ export const lindfieldRocks: ClimbingLocation = {
           ascents: 'Relative popularity (45) - 4 ascents',
           description:
             'Start in the corner jug, move to left hand undercling/jug STRAIGHT TO THE EDGE, rock up and out',
-          imageSrc: new URL(
-            '@/assets/climbing/lindfield-rocks/trail-boulders-2.jpeg',
-            import.meta.url
-          ).href,
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/trail-boulders-2.jpeg?raw=true',
           relativePath: new URL(
             '@/assets/climbing/lindfield-rocks/trail-boulders-2.jpeg',
             import.meta.url
@@ -68,10 +67,8 @@ export const lindfieldRocks: ClimbingLocation = {
           name: '2',
           ascents: 'Relative popularity (58) - 6 ascents',
           description: 'Starting on the low rail up rightwards through to top out.',
-          imageSrc: new URL(
-            '@/assets/climbing/lindfield-rocks/trail-boulders-3.jpeg',
-            import.meta.url
-          ).href,
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/trail-boulders-3.jpeg?raw=true',
           relativePath: new URL(
             '@/assets/climbing/lindfield-rocks/trail-boulders-3.jpeg',
             import.meta.url
@@ -86,10 +83,8 @@ export const lindfieldRocks: ClimbingLocation = {
           ascents: 'Relative popularity (0) - No  ascents',
           description:
             'OPEN PROJECT. To the left of 2, left arete. Not sure if doable or a route. Undercling, up to the rail, kneebar, right side pull until a pocket, slopers to top out',
-          imageSrc: new URL(
-            '@/assets/climbing/lindfield-rocks/trail-boulders-4.jpeg',
-            import.meta.url
-          ).href,
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/trail-boulders-4.jpeg?raw=true',
           relativePath: new URL(
             '@/assets/climbing/lindfield-rocks/trail-boulders-4.jpeg',
             import.meta.url
@@ -103,10 +98,8 @@ export const lindfieldRocks: ClimbingLocation = {
           name: 'Sand',
           ascents: 'Relative popularity (0) - 1 ascent',
           description: 'Behind 1: Cave start, traverse left, gaston, undercling then go up jugs',
-          imageSrc: new URL(
-            '@/assets/climbing/lindfield-rocks/trail-boulders-5.jpeg',
-            import.meta.url
-          ).href,
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/trail-boulders-5.jpeg?raw=true',
           relativePath: new URL(
             '@/assets/climbing/lindfield-rocks/trail-boulders-5.jpeg',
             import.meta.url
@@ -120,10 +113,8 @@ export const lindfieldRocks: ClimbingLocation = {
           name: '3',
           ascents: 'Relative popularity (100) - 22 ascents',
           description: 'Starting matched in pocket go directly upwards using small crimps.',
-          imageSrc: new URL(
-            '@/assets/climbing/lindfield-rocks/trail-boulders-6.jpeg',
-            import.meta.url
-          ).href,
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/trail-boulders-6.jpeg?raw=true',
           relativePath: new URL(
             '@/assets/climbing/lindfield-rocks/trail-boulders-6.jpeg',
             import.meta.url
@@ -194,8 +185,8 @@ export const lindfieldRocks: ClimbingLocation = {
       slug: 'first-wall',
       title: 'First Wall',
       description: 'Short, fingery problems, some sharp.\n',
-      imageSrc: new URL('@/assets/climbing/lindfield-rocks/first-wall-1.jpeg', import.meta.url)
-        .href,
+      imageSrc:
+        'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/first-wall-1.jpeg?raw=true',
       relativePath: new URL('@/assets/climbing/lindfield-rocks/first-wall-1.jpeg', import.meta.url)
         .href,
       routes: [
@@ -319,9 +310,12 @@ export const lindfieldRocks: ClimbingLocation = {
       slug: 'walkdown-wall',
       title: 'Walkdown Wall',
       description: 'Some nice little problems on this wall.\n',
-      imageSrc: new URL('@/assets/climbing/lindfield-rocks/walkdown-wall-1.jpeg', import.meta.url).href,
-      relativePath: new URL('@/assets/climbing/lindfield-rocks/walkdown-wall-1.jpeg', import.meta.url)
-        .href,
+      imageSrc:
+        'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/walkdown-wall-1.jpeg?raw=true',
+      relativePath: new URL(
+        '@/assets/climbing/lindfield-rocks/walkdown-wall-1.jpeg',
+        import.meta.url
+      ).href,
       routes: [
         {
           id: '1',
@@ -355,10 +349,8 @@ export const lindfieldRocks: ClimbingLocation = {
           name: '3',
           ascents: 'Relative popularity (87) - 124 ascents',
           description: 'On the wall proper, layback the right arete',
-          imageSrc: new URL(
-            '@/assets/climbing/lindfield-rocks/walkdown-wall-2.jpeg',
-            import.meta.url
-          ).href,
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/walkdown-wall-2.jpeg?raw=true',
           relativePath: new URL(
             '@/assets/climbing/lindfield-rocks/walkdown-wall-2.jpeg',
             import.meta.url
@@ -487,8 +479,8 @@ export const lindfieldRocks: ClimbingLocation = {
       title: 'Kenny Boulder',
       description:
         "Also known as 'Layback' slabs, this boulder is the obvious stand-alone boulder on the left of the path\n",
-      imageSrc: new URL('@/assets/climbing/lindfield-rocks/kenny-boulder-1.jpeg', import.meta.url)
-        .href,
+      imageSrc:
+        'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/kenny-boulder-1.jpeg?raw=true',
       relativePath: new URL('@/assets/climbing/lindfield-rocks/index.jpeg', import.meta.url).href,
       routes: [
         {
@@ -521,10 +513,8 @@ export const lindfieldRocks: ClimbingLocation = {
           name: '3',
           ascents: 'Relative popularity (90) - 130 ascents',
           description: 'Layback the right arete of the boulder face.',
-          imageSrc: new URL(
-            '@/assets/climbing/lindfield-rocks/kenny-boulder-2.jpeg',
-            import.meta.url
-          ).href,
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/kenny-boulder-2.jpeg?raw=true',
           relativePath: new URL(
             '@/assets/climbing/lindfield-rocks/kenny-boulder-2.jpeg',
             import.meta.url
@@ -617,10 +607,8 @@ export const lindfieldRocks: ClimbingLocation = {
           ascents: 'Relative popularity (81) - 82 ascents',
           description:
             'Start on low broken undercling, then deviously attain the face and the good holds therein',
-          imageSrc: new URL(
-            '@/assets/climbing/lindfield-rocks/kenny-boulder-3.jpeg',
-            import.meta.url
-          ).href,
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/kenny-boulder-3.jpeg?raw=true',
           relativePath: new URL(
             '@/assets/climbing/lindfield-rocks/kenny-boulder-3.jpeg',
             import.meta.url
@@ -718,10 +706,8 @@ export const lindfieldRocks: ClimbingLocation = {
           ascents: 'Relative popularity (21) - 3 ascents',
           description:
             'Traverse The Nose then right and down through overlaps to link up with problem 7.',
-          imageSrc: new URL(
-            '@/assets/climbing/lindfield-rocks/kenny-boulder-4.jpeg',
-            import.meta.url
-          ).href,
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/kenny-boulder-4.jpeg?raw=true',
           relativePath: new URL(
             '@/assets/climbing/lindfield-rocks/kenny-boulder-4.jpeg',
             import.meta.url
@@ -769,10 +755,8 @@ export const lindfieldRocks: ClimbingLocation = {
           ascents: 'Relative popularity (37) - 7 ascents',
           description:
             "Traverses the block (Hermit's Cave) right-to-left staying just below the top",
-          imageSrc: new URL(
-            '@/assets/climbing/lindfield-rocks/kenny-boulder-5.jpeg',
-            import.meta.url
-          ).href,
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/kenny-boulder-5.jpeg?raw=true',
           relativePath: new URL(
             '@/assets/climbing/lindfield-rocks/kenny-boulder-5.jpeg',
             import.meta.url
@@ -852,10 +836,8 @@ export const lindfieldRocks: ClimbingLocation = {
       slug: 'the-downclimb-slab',
       title: 'The Downclimb Slab',
       description: '',
-      imageSrc: new URL(
-        '@/assets/climbing/lindfield-rocks/the-downclimb-slab-1.jpeg',
-        import.meta.url
-      ).href,
+      imageSrc:
+        'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/the-downclimb-slab-1.jpeg?raw=true',
       relativePath: new URL(
         '@/assets/climbing/lindfield-rocks/the-downclimb-slab-1.jpeg',
         import.meta.url
@@ -891,10 +873,8 @@ export const lindfieldRocks: ClimbingLocation = {
       title: 'Four Cracks Wall',
       description:
         "It's getting taller!\nA popular wall with easy classics. Bolts available at the top of the cliff to protect the trees.\n",
-      imageSrc: new URL(
-        '@/assets/climbing/lindfield-rocks/four-cracks-wall-1.jpeg',
-        import.meta.url
-      ).href,
+      imageSrc:
+        'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/four-cracks-wall-1.jpeg?raw=true',
       relativePath: new URL(
         '@/assets/climbing/lindfield-rocks/four-cracks-wall-1.jpeg',
         import.meta.url
@@ -1020,10 +1000,8 @@ export const lindfieldRocks: ClimbingLocation = {
           name: '9',
           ascents: 'Relative popularity (58) - 21 ascents',
           description: "Bold face to the left of '8 - Twin Cracks'.",
-          imageSrc: new URL(
-            '@/assets/climbing/lindfield-rocks/four-cracks-wall-2.jpeg',
-            import.meta.url
-          ).href,
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/four-cracks-wall-2.jpeg?raw=true',
           relativePath: new URL(
             '@/assets/climbing/lindfield-rocks/four-cracks-wall-2.jpeg',
             import.meta.url
@@ -1128,8 +1106,8 @@ export const lindfieldRocks: ClimbingLocation = {
       title: 'Abseil Wall',
       description:
         "Taller again. A couple of classics here, though they're a little necky. Toprope bolts exist, you might want to consider using them if you're pushing your grade here.\n",
-      imageSrc: new URL('@/assets/climbing/lindfield-rocks/abseil-wall-1.jpeg', import.meta.url)
-        .href,
+      imageSrc:
+        'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/abseil-wall-1.jpeg?raw=true',
       relativePath: new URL('@/assets/climbing/lindfield-rocks/abseil-wall-1.jpeg', import.meta.url)
         .href,
       routes: [
@@ -1165,8 +1143,8 @@ export const lindfieldRocks: ClimbingLocation = {
           name: 'The Window Route',
           ascents: 'Relative popularity (62) - 19 ascents',
           description: 'Climb to and past the obvious square window.',
-          imageSrc: new URL('@/assets/climbing/lindfield-rocks/abseil-wall-2.jpeg', import.meta.url)
-            .href,
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/abseil-wall-2.jpeg?raw=true',
           relativePath: new URL(
             '@/assets/climbing/lindfield-rocks/abseil-wall-2.jpeg',
             import.meta.url
@@ -1315,10 +1293,8 @@ export const lindfieldRocks: ClimbingLocation = {
       slug: 'black-wall/wide-crack-area',
       title: 'Black Wall/Wide Crack Area',
       description: 'Again, high. Not the greatest of landings\n',
-      imageSrc: new URL(
-        '@/assets/climbing/lindfield-rocks/black-wall-wide-crack-area-1.jpeg',
-        import.meta.url
-      ).href,
+      imageSrc:
+        'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/black-wall-wide-crack-area-1.jpeg?raw=true',
       relativePath: new URL(
         '@/assets/climbing/lindfield-rocks/black-wall-wide-crack-area-1.jpeg',
         import.meta.url
@@ -1355,10 +1331,8 @@ export const lindfieldRocks: ClimbingLocation = {
           ascents: 'Relative popularity (37) - 5 ascents',
           description:
             "The left side of the black wall. Still thin but apparently jug heaven compared to '2'.",
-          imageSrc: new URL(
-            '@/assets/climbing/lindfield-rocks/black-wall-wide-crack-area-2.jpeg',
-            import.meta.url
-          ).href,
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/black-wall-wide-crack-area-2.jpeg?raw=true',
           relativePath: new URL(
             '@/assets/climbing/lindfield-rocks/black-wall-wide-crack-area-2.jpeg',
             import.meta.url
@@ -1485,8 +1459,8 @@ export const lindfieldRocks: ClimbingLocation = {
       title: 'One Hold Wall',
       description:
         "aka Eagle's Head, this wall is high, and the landings aren't the best. then again they're not as bad as some!\nPotential descent route in the ledgy corner\n",
-      imageSrc: new URL('@/assets/climbing/lindfield-rocks/one-hold-wall-1.jpeg', import.meta.url)
-        .href,
+      imageSrc:
+        'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/one-hold-wall-1.jpeg?raw=true',
       relativePath: new URL(
         '@/assets/climbing/lindfield-rocks/one-hold-wall-1.jpeg',
         import.meta.url
@@ -1500,10 +1474,8 @@ export const lindfieldRocks: ClimbingLocation = {
           name: '1',
           ascents: 'Relative popularity (90) - 35 ascents',
           description: 'Layback the obvious block feature on the right hand side of the area.',
-          imageSrc: new URL(
-            '@/assets/climbing/lindfield-rocks/one-hold-wall-2.jpeg',
-            import.meta.url
-          ).href,
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/one-hold-wall-2.jpeg?raw=true',
           relativePath: new URL(
             '@/assets/climbing/lindfield-rocks/one-hold-wall-2.jpeg',
             import.meta.url
@@ -1639,8 +1611,8 @@ export const lindfieldRocks: ClimbingLocation = {
       slug: 'pipeline-wall',
       title: 'Pipeline Wall',
       description: 'Fun problems with great variability. However, not the best landing\n',
-      imageSrc: new URL('@/assets/climbing/lindfield-rocks/pipeline-wall-1.jpeg', import.meta.url)
-        .href,
+      imageSrc:
+        'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/pipeline-wall-1.jpeg?raw=true',
       relativePath: new URL(
         '@/assets/climbing/lindfield-rocks/pipeline-wall-1.jpeg',
         import.meta.url
@@ -1666,10 +1638,8 @@ export const lindfieldRocks: ClimbingLocation = {
           name: '2 - The Runnel',
           ascents: 'Relative popularity (70) - 29 ascents',
           description: 'Obvious runnel on the right of the wall.',
-          imageSrc: new URL(
-            '@/assets/climbing/lindfield-rocks/pipeline-wall-2.jpeg',
-            import.meta.url
-          ).href,
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/pipeline-wall-2.jpeg?raw=true',
           relativePath: new URL(
             '@/assets/climbing/lindfield-rocks/pipeline-wall-2.jpeg',
             import.meta.url
@@ -1914,10 +1884,8 @@ export const lindfieldRocks: ClimbingLocation = {
       title: 'Bum Crack/Pocketed Face',
       description:
         'Standalone boulder shaped like a bum!\nSome fun problems with reasonable landings on most\n',
-      imageSrc: new URL(
-        '@/assets/climbing/lindfield-rocks/bum-crack-pocketed-face-1.jpeg',
-        import.meta.url
-      ).href,
+      imageSrc:
+        'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/bum-crack-pocketed-face-1.jpeg?raw=true',
       relativePath: new URL(
         '@/assets/climbing/lindfield-rocks/bum-crack-pocketed-face-1.jpeg',
         import.meta.url
@@ -1955,10 +1923,8 @@ export const lindfieldRocks: ClimbingLocation = {
           ascents: 'Relative popularity (100) - 107 ascents',
           description:
             'Choose your conditions; the slopers are far from positive and dry, cold conditions could make all the difference',
-          imageSrc: new URL(
-            '@/assets/climbing/lindfield-rocks/bum-crack-pocketed-face-2.jpeg',
-            import.meta.url
-          ).href,
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/bum-crack-pocketed-face-2.jpeg?raw=true',
           relativePath: new URL(
             '@/assets/climbing/lindfield-rocks/bum-crack-pocketed-face-2.jpeg',
             import.meta.url
@@ -2028,10 +1994,8 @@ export const lindfieldRocks: ClimbingLocation = {
       slug: 'orange-face/slab-side',
       title: 'Orange Face/Slab Side',
       description: "Some fun dyno's on this boulder, with pretty sketchy landings\n",
-      imageSrc: new URL(
-        '@/assets/climbing/lindfield-rocks/orange-face-slab-side-1.jpeg',
-        import.meta.url
-      ).href,
+      imageSrc:
+        'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/orange-face-slab-side-1.jpeg?raw=true',
       relativePath: new URL(
         '@/assets/climbing/lindfield-rocks/orange-face-slab-side-1.jpeg',
         import.meta.url
@@ -2105,10 +2069,8 @@ export const lindfieldRocks: ClimbingLocation = {
           ascents: 'Relative popularity (67) - 19 ascents',
           description:
             "Right-to-left traverse of the slab face (in the 'Corals' courtyard). Keep your hands on or below the obvious thin horizontal seam at chest level.",
-          imageSrc: new URL(
-            '@/assets/climbing/lindfield-rocks/orange-face-slab-side-2.jpeg',
-            import.meta.url
-          ).href,
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/orange-face-slab-side-2.jpeg?raw=true',
           relativePath: new URL(
             '@/assets/climbing/lindfield-rocks/orange-face-slab-side-2.jpeg',
             import.meta.url
@@ -2157,8 +2119,8 @@ export const lindfieldRocks: ClimbingLocation = {
       title: 'She-Oak Wall',
       description:
         "Home to 'The Blank Wall', a classic V4, and She-Oak Crack, a classic easier crack. The eponymous She-Oak was gone by the early 1990s.\n",
-      imageSrc: new URL('@/assets/climbing/lindfield-rocks/she-oak-wall-1.jpeg', import.meta.url)
-        .href,
+      imageSrc:
+        'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/she-oak-wall-1.jpeg?raw=true',
       relativePath: new URL(
         '@/assets/climbing/lindfield-rocks/she-oak-wall-1.jpeg',
         import.meta.url
@@ -2184,10 +2146,8 @@ export const lindfieldRocks: ClimbingLocation = {
           name: 'The Offwidth',
           ascents: 'Relative popularity (68) - 27 ascents',
           description: 'Too wide to jam, too narrow to chimney, thrutch your way up instead',
-          imageSrc: new URL(
-            '@/assets/climbing/lindfield-rocks/she-oak-wall-2.jpeg',
-            import.meta.url
-          ).href,
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/she-oak-wall-2.jpeg?raw=true',
           relativePath: new URL(
             '@/assets/climbing/lindfield-rocks/she-oak-wall-2.jpeg',
             import.meta.url
@@ -2385,10 +2345,8 @@ export const lindfieldRocks: ClimbingLocation = {
           ascents: 'Relative popularity (82) - 75 ascents',
           description:
             'Start with your right hand in the large pocket and move up via pinches. Finish off right.',
-          imageSrc: new URL(
-            '@/assets/climbing/lindfield-rocks/isolated-rock-overhang-1.jpeg',
-            import.meta.url
-          ).href,
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/isolated-rock-overhang-1.jpeg?raw=true',
           relativePath: new URL(
             '@/assets/climbing/lindfield-rocks/isolated-rock-overhang-1.jpeg',
             import.meta.url
@@ -2507,10 +2465,8 @@ export const lindfieldRocks: ClimbingLocation = {
           ascents: 'Relative popularity (31) - 5 ascents',
           description:
             'Desperate sit start up the crack. Tape up, and use some crimps near the top for this grade. May not be doable pure.',
-          imageSrc: new URL(
-            '@/assets/climbing/lindfield-rocks/isolated-rock-overhang-2.jpeg',
-            import.meta.url
-          ).href,
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/isolated-rock-overhang-2.jpeg?raw=true',
           relativePath: new URL(
             '@/assets/climbing/lindfield-rocks/isolated-rock-overhang-2.jpeg',
             import.meta.url
@@ -2582,10 +2538,8 @@ export const lindfieldRocks: ClimbingLocation = {
           ascents: 'Relative popularity (33) - 3 ascents',
           description:
             'Lip Traverse from the obvious horizontal break right of the roof all the way along the lip to finish in the wide corner crack.',
-          imageSrc: new URL(
-            '@/assets/climbing/lindfield-rocks/the-overhangs-1.jpeg',
-            import.meta.url
-          ).href,
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/the-overhangs-1.jpeg?raw=true',
           relativePath: new URL(
             '@/assets/climbing/lindfield-rocks/the-overhangs-1.jpeg',
             import.meta.url
@@ -2646,10 +2600,8 @@ export const lindfieldRocks: ClimbingLocation = {
           ascents: 'Relative popularity (100) - 28 ascents',
           description:
             'The best problem on this wall. From the wide corner crack traverse left keeping below the roof to finish at or near the crack.',
-          imageSrc: new URL(
-            '@/assets/climbing/lindfield-rocks/the-overhangs-2.jpeg',
-            import.meta.url
-          ).href,
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/the-overhangs-2.jpeg?raw=true',
           relativePath: new URL(
             '@/assets/climbing/lindfield-rocks/the-overhangs-2.jpeg',
             import.meta.url
@@ -2730,8 +2682,8 @@ export const lindfieldRocks: ClimbingLocation = {
           ascents: 'Relative popularity (100) - 281 ascents',
           description:
             'Eponymous super classic left-to-right traverse under the roof and topping out boulder.',
-          imageSrc: new URL('@/assets/climbing/lindfield-rocks/pipe-dreams-1.jpeg', import.meta.url)
-            .href,
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/pipe-dreams-1.jpeg?raw=true',
           relativePath: new URL(
             '@/assets/climbing/lindfield-rocks/pipe-dreams-1.jpeg',
             import.meta.url
