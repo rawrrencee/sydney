@@ -24,6 +24,7 @@ interface ClimbingLocationRoute {
   quality: string;
   name: string;
   ascents: string;
+  description: string;
   imageSrc: string | undefined;
   relativePath: string | undefined;
 }
