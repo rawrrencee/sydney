@@ -5,7 +5,7 @@ export const queensPark: ClimbingLocation = {
   name: 'Queens Park',
   subtitle: 'via Victoria Park',
   url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/area/12011827',
-  imageSrc: undefined,
+  imageSrc: 'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/queens-park/index.jpeg?raw=true',
   relativePath: new URL('@/assets/climbing/queens-park/index.jpeg', import.meta.url).href,
   areas: [
     {

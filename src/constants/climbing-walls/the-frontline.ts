@@ -5,7 +5,7 @@ export const theFrontline: ClimbingLocation = {
   name: 'The Frontline, Balkans',
   subtitle: 'via 8 Larra Cres',
   url: 'https://www.thecrag.com/en/climbing/australia/north-west/the-frontline',
-  imageSrc: undefined,
+  imageSrc: 'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/frontline/index.jpeg?raw=true',
   relativePath: new URL('@/assets/climbing/frontline/index.jpeg', import.meta.url).href,
   areas: [
     {

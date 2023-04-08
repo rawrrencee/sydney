@@ -5,7 +5,8 @@ export const capeBanks: ClimbingLocation = {
   name: 'Cape Banks',
   subtitle: 'via Westpac Lifesaver Helicopter Base',
   url: 'https://www.thecrag.com/climbing/australia/eastern-suburbs/area/1051472037',
-  imageSrc: undefined,
+  imageSrc:
+    'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/cape-banks/index.jpeg?raw=true',
   relativePath: new URL('@/assets/climbing/cape-banks/index.jpeg', import.meta.url).href,
   areas: [
     {
