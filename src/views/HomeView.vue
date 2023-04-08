@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import AnimatedButton from '@/components/Buttons/AnimatedButton.vue';
-import HomeContent from '@/components/HomeContent.vue';
+import HomeContainer from '@/components/HomeContainer.vue';
 import HomeHeader from '@/components/HomeHeader.vue';
 import HomeLinks from '@/components/HomeLinks.vue';
 import ItineraryMain from '@/components/ItineraryMain.vue';
@@ -39,14 +39,14 @@ const openItinerary = () => {
         </template>
         <template #content>
           <template v-if="currentPath === links.itinerary.routeParam">
-            <HomeContent>
+            <HomeContainer>
               <ItineraryMain />
-            </HomeContent>
+            </HomeContainer>
           </template>
           <template v-if="currentPath === links.randomiser.routeParam">
-            <HomeContent :class="['rounded-lg border-gray-200 bg-neutral-50']">
+            <HomeContainer :class="['rounded-lg border-gray-200 bg-neutral-50']">
               <RandomiserMainVue />
-            </HomeContent>
+            </HomeContainer>
           </template>
         </template>
       </HomeLinks>
