@@ -12,8 +12,12 @@ export const capeBanks: ClimbingLocation = {
       slug: 'the-big-straight-wall',
       title: 'The Big Straight Wall',
       description: 'Good sector in high tide and high swell. Good warm ups.',
-      imageSrc: new URL('@/assets/climbing/cape-banks/the-big-straight-wall-1.jpeg', import.meta.url).href,
-      relativePath: new URL('@/assets/climbing/cape-banks/the-big-straight-wall-1.jpeg', import.meta.url).href,
+      imageSrc:
+        'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/cape-banks/the-big-straight-wall-1.jpeg?raw=true',
+      relativePath: new URL(
+        '@/assets/climbing/cape-banks/the-big-straight-wall-1.jpeg',
+        import.meta.url
+      ).href,
       routes: [
         {
           id: '2',
@@ -135,8 +139,10 @@ export const capeBanks: ClimbingLocation = {
       slug: 'suncorp-block',
       title: 'Suncorp Block',
       description: 'Good sector even at high tide and large swell.',
-      imageSrc: new URL('@/assets/climbing/cape-banks/suncorp-block-1.jpeg', import.meta.url).href,
-      relativePath: new URL('@/assets/climbing/cape-banks/suncorp-block-1.jpeg', import.meta.url).href,
+      imageSrc:
+        'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/cape-banks/suncorp-block-1.jpeg?raw=true',
+      relativePath: new URL('@/assets/climbing/cape-banks/suncorp-block-1.jpeg', import.meta.url)
+        .href,
       routes: [
         {
           id: '13',
@@ -193,7 +199,8 @@ export const capeBanks: ClimbingLocation = {
       title: 'Cape Town',
       description:
         'Around the corner heading towards the ocean (East) past ABN AMRO you find the following problems on a large overhanging boulder.',
-      imageSrc: new URL('@/assets/climbing/cape-banks/cape-town-1.jpeg', import.meta.url).href,
+      imageSrc:
+        'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/cape-banks/cape-town-1.jpeg?raw=true',
       relativePath: new URL('@/assets/climbing/cape-banks/cape-town-1.jpeg', import.meta.url).href,
       routes: [
         {
@@ -270,8 +277,10 @@ export const capeBanks: ClimbingLocation = {
           name: 'Blow hole',
           ascents: 'Relative popularity (49) - 8 ascents',
           description: '\nFA: Martijn van Eijkelenborg, 8 Jul 2017',
-          imageSrc: new URL('@/assets/climbing/cape-banks/cape-town-2.jpeg', import.meta.url).href,
-          relativePath: new URL('@/assets/climbing/cape-banks/cape-town-2.jpeg', import.meta.url).href
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/cape-banks/cape-town-2.jpeg?raw=true',
+          relativePath: new URL('@/assets/climbing/cape-banks/cape-town-2.jpeg', import.meta.url)
+            .href
         },
         {
           id: '25',
@@ -293,8 +302,10 @@ export const capeBanks: ClimbingLocation = {
           ascents: 'Relative popularity (0) - 1 ascent',
           description:
             'Boulder in cape town area nestled amongst some rocks. Opposite main cliff face and cape town long low boulder.\nStart in the juicy underclings at top of low scoop. Move up hugging the arete using jugs, sidepulls and slopes, trend left a bit for top out.',
-          imageSrc: new URL('@/assets/climbing/cape-banks/cape-town-3.jpeg', import.meta.url).href,
-          relativePath: new URL('@/assets/climbing/cape-banks/cape-town-3.jpeg', import.meta.url).href
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/cape-banks/cape-town-3.jpeg?raw=true',
+          relativePath: new URL('@/assets/climbing/cape-banks/cape-town-3.jpeg', import.meta.url)
+            .href
         }
       ]
     },
@@ -304,7 +315,8 @@ export const capeBanks: ClimbingLocation = {
       title: 'ING direct',
       description:
         'Back at The Big Straight Wall, the following routes are on the back of the Suncorp boulder',
-      imageSrc: new URL('@/assets/climbing/cape-banks/ing-direct-1.jpeg', import.meta.url).href,
+      imageSrc:
+        'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/cape-banks/ing-direct-1.jpeg?raw=true',
       relativePath: new URL('@/assets/climbing/cape-banks/ing-direct-1.jpeg', import.meta.url).href,
       routes: [
         {
@@ -339,8 +351,10 @@ export const capeBanks: ClimbingLocation = {
           name: 'ING direct',
           ascents: 'Relative popularity (33) - 4 ascents',
           description: 'As for ING up to the hole on the tip, then hard mantle.',
-          imageSrc: new URL('@/assets/climbing/cape-banks/ing-direct-2.jpeg', import.meta.url).href,
-          relativePath: new URL('@/assets/climbing/cape-banks/ing-direct-2.jpeg', import.meta.url).href
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/cape-banks/ing-direct-2.jpeg?raw=true',
+          relativePath: new URL('@/assets/climbing/cape-banks/ing-direct-2.jpeg', import.meta.url)
+            .href
         },
         {
           id: '31',
@@ -384,8 +398,10 @@ export const capeBanks: ClimbingLocation = {
           ascents: 'Relative popularity (37) - 5 ascents',
           description:
             'Start on the far right of the wall with hands matched on the solid lower ledge jugs. Traverse on juggy ledges left and top out once established on the prow.',
-          imageSrc: new URL('@/assets/climbing/cape-banks/ing-direct-3.jpeg', import.meta.url).href,
-          relativePath: new URL('@/assets/climbing/cape-banks/ing-direct-3.jpeg', import.meta.url).href
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/cape-banks/ing-direct-3.jpeg?raw=true',
+          relativePath: new URL('@/assets/climbing/cape-banks/ing-direct-3.jpeg', import.meta.url)
+            .href
         },
         {
           id: '35',
@@ -429,8 +445,10 @@ export const capeBanks: ClimbingLocation = {
       slug: 'the-pyramids',
       title: 'The Pyramids',
       description: 'Pyramid shaped boulder hidden away between sectors ING Direct and BRAD Sector',
-      imageSrc: new URL('@/assets/climbing/cape-banks/the-pyramids-1.jpeg', import.meta.url).href,
-      relativePath: new URL('@/assets/climbing/cape-banks/the-pyramids-1.jpeg', import.meta.url).href,
+      imageSrc:
+        'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/cape-banks/the-pyramids-1.jpeg?raw=true',
+      relativePath: new URL('@/assets/climbing/cape-banks/the-pyramids-1.jpeg', import.meta.url)
+        .href,
       routes: [
         {
           id: '39',
@@ -440,8 +458,10 @@ export const capeBanks: ClimbingLocation = {
           name: 'Pyramid Principle',
           ascents: 'Relative popularity (26) - 3 ascents',
           description: 'Up right fold/groove. Sit start.',
-          imageSrc: new URL('@/assets/climbing/cape-banks/the-pyramids-1.jpeg', import.meta.url).href,
-          relativePath: new URL('@/assets/climbing/cape-banks/the-pyramids-1.jpeg', import.meta.url).href
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/cape-banks/the-pyramids-1.jpeg?raw=true',
+          relativePath: new URL('@/assets/climbing/cape-banks/the-pyramids-1.jpeg', import.meta.url)
+            .href
         },
         {
           id: '40',
@@ -452,8 +472,10 @@ export const capeBanks: ClimbingLocation = {
           ascents: 'Relative popularity (57) - 12 ascents',
           description:
             'The original line starts standing with left hand at elbow height and right hand on the right arete. Head straight up the centre to top out slightly left of the tip.',
-          imageSrc: new URL('@/assets/climbing/cape-banks/the-pyramids-2.jpeg', import.meta.url).href,
-          relativePath: new URL('@/assets/climbing/cape-banks/the-pyramids-2.jpeg', import.meta.url).href
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/cape-banks/the-pyramids-2.jpeg?raw=true',
+          relativePath: new URL('@/assets/climbing/cape-banks/the-pyramids-2.jpeg', import.meta.url)
+            .href
         },
         {
           id: '41',
@@ -474,8 +496,10 @@ export const capeBanks: ClimbingLocation = {
       title: 'BRAD sector',
       description:
         'Shaded sector with some great overhanging sloper action. About 20m south of Pyramid Scheme on a raised platform that stays shaded and dry (even in high swell), and can be accessed from the top directly.',
-      imageSrc: new URL('@/assets/climbing/cape-banks/brad-sector-1.jpeg', import.meta.url).href,
-      relativePath: new URL('@/assets/climbing/cape-banks/brad-sector-1.jpeg', import.meta.url).href,
+      imageSrc:
+        'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/cape-banks/brad-sector-1.jpeg?raw=true',
+      relativePath: new URL('@/assets/climbing/cape-banks/brad-sector-1.jpeg', import.meta.url)
+        .href,
       routes: [
         {
           id: '43',
@@ -533,8 +557,10 @@ export const capeBanks: ClimbingLocation = {
           ascents: 'Relative popularity (68) - 19 ascents',
           description:
             'Start matched on BRAD jug. Move up and left on slopers. Avoids the holds of BRAD.',
-          imageSrc: new URL('@/assets/climbing/cape-banks/brad-sector-2.jpeg', import.meta.url).href,
-          relativePath: new URL('@/assets/climbing/cape-banks/brad-sector-2.jpeg', import.meta.url).href
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/cape-banks/brad-sector-2.jpeg?raw=true',
+          relativePath: new URL('@/assets/climbing/cape-banks/brad-sector-2.jpeg', import.meta.url)
+            .href
         },
         {
           id: '48',
@@ -581,8 +607,10 @@ export const capeBanks: ClimbingLocation = {
           ascents: 'Relative popularity (65) - 17 ascents',
           description:
             'Start on the pocket below the E of the faint red painted SHOER and the crescent crimper right of the bulge. Powerful first move.',
-          imageSrc: new URL('@/assets/climbing/cape-banks/brad-sector-3.jpeg', import.meta.url).href,
-          relativePath: new URL('@/assets/climbing/cape-banks/brad-sector-3.jpeg', import.meta.url).href
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/cape-banks/brad-sector-3.jpeg?raw=true',
+          relativePath: new URL('@/assets/climbing/cape-banks/brad-sector-3.jpeg', import.meta.url)
+            .href
         },
         {
           id: '52',
@@ -605,8 +633,10 @@ export const capeBanks: ClimbingLocation = {
           ascents: 'Relative popularity (51) - 9 ascents',
           description:
             'Sit start at BRAD MAM, go out to jug on BRAD BRAD and traverse back to the BRAD BRAD start hold then up BRAD.',
-          imageSrc: new URL('@/assets/climbing/cape-banks/brad-sector-4.jpeg', import.meta.url).href,
-          relativePath: new URL('@/assets/climbing/cape-banks/brad-sector-4.jpeg', import.meta.url).href
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/cape-banks/brad-sector-4.jpeg?raw=true',
+          relativePath: new URL('@/assets/climbing/cape-banks/brad-sector-4.jpeg', import.meta.url)
+            .href
         },
         {
           id: '54',
@@ -617,8 +647,10 @@ export const capeBanks: ClimbingLocation = {
           ascents: 'Relative popularity (25) - 3 ascents',
           description:
             'Sit start on the prow and work your way up and top out. The separate block on the right is off.',
-          imageSrc: new URL('@/assets/climbing/cape-banks/brad-sector-5.jpeg', import.meta.url).href,
-          relativePath: new URL('@/assets/climbing/cape-banks/brad-sector-5.jpeg', import.meta.url).href
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/cape-banks/brad-sector-5.jpeg?raw=true',
+          relativePath: new URL('@/assets/climbing/cape-banks/brad-sector-5.jpeg', import.meta.url)
+            .href
         },
         {
           id: '55',
@@ -676,8 +708,10 @@ export const capeBanks: ClimbingLocation = {
           ascents: 'Relative popularity (0) - 1 ascent',
           description:
             'Nice exposed climb with somewhat poor landings about 5m left of Express Corner. Look for the large pocket on top to topout.',
-          imageSrc: new URL('@/assets/climbing/cape-banks/brad-sector-6.jpeg', import.meta.url).href,
-          relativePath: new URL('@/assets/climbing/cape-banks/brad-sector-6.jpeg', import.meta.url).href
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/cape-banks/brad-sector-6.jpeg?raw=true',
+          relativePath: new URL('@/assets/climbing/cape-banks/brad-sector-6.jpeg', import.meta.url)
+            .href
         }
       ]
     },
@@ -687,7 +721,8 @@ export const capeBanks: ClimbingLocation = {
       title: 'The Banks',
       description:
         'Walk about 20m west and around the corner from Express Corner to get to the following routes.',
-      imageSrc: new URL('@/assets/climbing/cape-banks/the-banks-1.jpeg', import.meta.url).href,
+      imageSrc:
+        'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/cape-banks/the-banks-1.jpeg?raw=true',
       relativePath: new URL('@/assets/climbing/cape-banks/the-banks-1.jpeg', import.meta.url).href,
       routes: [
         {
@@ -723,8 +758,10 @@ export const capeBanks: ClimbingLocation = {
           ascents: 'Relative popularity (17) - 2 ascents',
           description:
             'Sit start up through positive holds with a punchy shoulder block last move before the top out.',
-          imageSrc: new URL('@/assets/climbing/cape-banks/the-banks-2.jpeg', import.meta.url).href,
-          relativePath: new URL('@/assets/climbing/cape-banks/the-banks-2.jpeg', import.meta.url).href
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/cape-banks/the-banks-2.jpeg?raw=true',
+          relativePath: new URL('@/assets/climbing/cape-banks/the-banks-2.jpeg', import.meta.url)
+            .href
         },
         {
           id: '64',
@@ -747,8 +784,10 @@ export const capeBanks: ClimbingLocation = {
           ascents: 'Relative popularity (0) - 1 ascent',
           description:
             'Sit start 2m right of the elevated bird bath on slopers and up through the blank section to top out.',
-          imageSrc: new URL('@/assets/climbing/cape-banks/the-banks-3.jpeg', import.meta.url).href,
-          relativePath: new URL('@/assets/climbing/cape-banks/the-banks-3.jpeg', import.meta.url).href
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/cape-banks/the-banks-3.jpeg?raw=true',
+          relativePath: new URL('@/assets/climbing/cape-banks/the-banks-3.jpeg', import.meta.url)
+            .href
         },
         {
           id: '66',
@@ -792,8 +831,10 @@ export const capeBanks: ClimbingLocation = {
           name: 'Resistor Bank',
           ascents: 'Relative popularity (0) - 1 ascent',
           description: 'Sitstart 3m left of Banked Up. Follow flakes and top out.',
-          imageSrc: new URL('@/assets/climbing/cape-banks/the-banks-4.jpeg', import.meta.url).href,
-          relativePath: new URL('@/assets/climbing/cape-banks/the-banks-4.jpeg', import.meta.url).href
+          imageSrc:
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/cape-banks/the-banks-4.jpeg?raw=true',
+          relativePath: new URL('@/assets/climbing/cape-banks/the-banks-4.jpeg', import.meta.url)
+            .href
         }
       ]
     },
@@ -803,7 +844,8 @@ export const capeBanks: ClimbingLocation = {
       title: 'Sunny Side',
       description:
         'On the east side of Cape Banks, just north of the shipwreck is a patch or reasonable rock among lots of choss. A little further north again is a tiny shell beach (flooded at high tide) that is great for a swim.',
-      imageSrc: new URL('@/assets/climbing/cape-banks/sunny-side-1.jpeg', import.meta.url).href,
+      imageSrc:
+        'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/cape-banks/sunny-side-1.jpeg?raw=true',
       relativePath: new URL('@/assets/climbing/cape-banks/sunny-side-1.jpeg', import.meta.url).href,
       routes: [
         {
