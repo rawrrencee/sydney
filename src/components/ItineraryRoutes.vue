@@ -131,8 +131,8 @@ const getSortedRoutes = (key: string) => {
         :key="route.id"
       >
         <div class="flex flex-row items-center gap-2">
-          <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-gray-500">
-            <span class="text-xs font-medium leading-none text-white">{{ route.id }}</span>
+          <span class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-gray-500">
+            <span class="text-xs font-semibold leading-none text-white">{{ route.id }}</span>
           </span>
           <span
             class="inline-flex items-center rounded-md px-1.5 py-0.5 text-xs font-medium"

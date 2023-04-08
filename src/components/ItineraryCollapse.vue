@@ -7,7 +7,7 @@ import GridItem from './GridItem.vue';
 const props = defineProps({
   itinerary: Object
 });
-const isExpanded = ref(false);
+const isExpanded = ref(true);
 const getStorageKey = (key: string) => `itinerary__${key}`;
 
 onMounted(() => {

@@ -208,9 +208,13 @@ watch(selectedGrandchild, (val) => {
         </ImagePreviewGroup>
       </div>
       <template v-else>
-        <div class="flex flex-col">
-          <span class="place-self-center pb-5 text-xs font-semibold">No routes found</span>
-          <div class="flex flex-row rounded-md bg-yellow-200 pl-3 pt-10">
+        <div class="flex flex-col rounded-lg bg-yellow-200">
+          <div
+            class="sticky top-0 z-[1] w-full place-self-center rounded-lg bg-yellow-200 pb-3 pt-3 text-center text-xs font-semibold"
+          >
+            No routes found
+          </div>
+          <div class="flex flex-row overflow-x-scroll pl-3 pt-10">
             <CuteAnimalPens />
           </div>
         </div>

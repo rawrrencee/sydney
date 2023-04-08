@@ -56,7 +56,7 @@ const expandScale = ref('30%');
                     </div>
                   </div>
                   <div
-                    class="flex flex-col border-b border-gray-200 px-4 transition-[height] duration-300"
+                    class="flex flex-col border-b border-gray-200 px-4 transition-[height] duration-300 shadow-md"
                     :class="[
                       expandScale === '10%' && 'h-[10%]',
                       expandScale === '30%' && 'h-[30%]',
