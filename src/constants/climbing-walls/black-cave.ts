@@ -12,8 +12,8 @@ export const blackCave: ClimbingLocation = {
       slug: 'black-cave',
       title: 'Black Cave',
       description: 'AKA Manly Cave AKA Forty Basket Beach\n',
-      imageSrc: undefined,
-      relativePath: undefined,
+      imageSrc: new URL('@/assets/climbing/black-cave/black-cave-1.jpeg', import.meta.url).href,
+      relativePath: new URL('@/assets/climbing/black-cave/black-cave-1.jpeg', import.meta.url).href,
       routes: [
         {
           id: '1',
@@ -22,8 +22,10 @@ export const blackCave: ClimbingLocation = {
           quality: '48',
           name: 'Diving into Shallow Water',
           ascents: 'Relative popularity (83) - 91 ascents',
-          imageSrc: undefined,
-          relativePath: undefined
+          description:
+            "Stand Start on big undergoing on the far LHS of the roof. Climb straight up through juggy pockets and a high pinch. Don't underestimate the topout or the terrible landing.",
+          imageSrc: new URL('@/assets/climbing/black-cave/black-cave-2.jpeg', import.meta.url).href,
+          relativePath: new URL('@/assets/climbing/black-cave/black-cave-2.jpeg', import.meta.url).href
         },
         {
           id: '2',
@@ -32,6 +34,8 @@ export const blackCave: ClimbingLocation = {
           quality: '63',
           name: 'Dead Calm',
           ascents: 'Relative popularity (100) - 240 ascents',
+          description:
+            'Stand start on big undercling on the far left of the roof. Climb rightward to top out on the nice sidepull feature.\n  Tsz Ying Yau',
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -42,6 +46,8 @@ export const blackCave: ClimbingLocation = {
           quality: '67',
           name: 'Left To Right',
           ascents: 'Relative popularity (71) - 47 ascents',
+          description:
+            'Start with both hands inside the undercling on the far left. Then traverse left to right on the lip. The roof is out.',
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -52,6 +58,8 @@ export const blackCave: ClimbingLocation = {
           quality: '67',
           name: 'Cruel Sea Reversed',
           ascents: 'Relative popularity (20) - 3 ascents',
+          description:
+            "If you're bored of cruel sea or Aquarius. Starting from the big jug left side of the cave, climbing back through Aquarius staying low on the lip, then with an easy finish up Cave party.",
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -62,6 +70,8 @@ export const blackCave: ClimbingLocation = {
           quality: '66',
           name: 'Shrimpy Waters',
           ascents: 'Relative popularity (65) - 35 ascents',
+          description:
+            'Start on the shelf. Big move to the hueco then top out via the elegant crescent shaped holds just right of Dead Calm. Reachy.',
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -72,6 +82,8 @@ export const blackCave: ClimbingLocation = {
           quality: '94',
           name: 'Deep Blue Sea',
           ascents: 'Relative popularity (51) - 16 ascents',
+          description:
+            'Crazy roof right on the waters edge of the ocean. Sit start from two good crimps at the back of the cave, followed by 8 hard moves in a roof to a cool headwall and top out to the right.',
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -82,6 +94,8 @@ export const blackCave: ClimbingLocation = {
           quality: '67',
           name: 'Water Under the Bridge',
           ascents: 'Relative popularity (0) - 1 ascent',
+          description:
+            "As for 'Deep Blue Sea', once at the lip finish up 'Cruel Sea'\n  Dylan Soin",
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -92,6 +106,8 @@ export const blackCave: ClimbingLocation = {
           quality: '83',
           name: 'The Plunge',
           ascents: 'Relative popularity (82) - 87 ascents',
+          description:
+            'Far right cave problem. Can be done in a number of different ways including a crazy dyno that could potentially send you rolling down to a rocky but somewhat refreshing swim in the ocean. ',
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -102,6 +118,7 @@ export const blackCave: ClimbingLocation = {
           quality: '73',
           name: 'Plunge Pool',
           ascents: 'Relative popularity (48) - 14 ascents',
+          description: 'The Plunge into Aquarius.',
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -112,6 +129,7 @@ export const blackCave: ClimbingLocation = {
           quality: '50',
           name: 'Plunge Pool Variant',
           ascents: 'Relative popularity (13) - 2 ascents',
+          description: 'The Plunge into Cruel Sea.',
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -122,6 +140,8 @@ export const blackCave: ClimbingLocation = {
           quality: '49',
           name: 'Cave Party',
           ascents: 'Relative popularity (96) - 193 ascents',
+          description:
+            'Start at the right side V5 and straight up. Heel hooked and feet off the adjacent rock for the full grade. Good warm up for the V4.',
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -132,6 +152,8 @@ export const blackCave: ClimbingLocation = {
           quality: '52',
           name: 'Lots of Seamen',
           ascents: 'Relative popularity (77) - 68 ascents',
+          description:
+            'Fun eliminate. Start as for Cruel Sea and Aquarius using just the lip holds, then go straight up to the crimp and top out right.',
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -142,6 +164,8 @@ export const blackCave: ClimbingLocation = {
           quality: '67',
           name: 'Right To Left',
           ascents: 'Relative popularity (81) - 84 ascents',
+          description:
+            'Start Matched on the lower far right jug at the lip of the roof. The separated wall on the right is off. ',
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -152,6 +176,8 @@ export const blackCave: ClimbingLocation = {
           quality: '66',
           name: 'Right to Left to Topout',
           ascents: 'Relative popularity (88) - 126 ascents',
+          description:
+            "Same as 'Right to Left' but topout as 'Dead calm' / 'Aquarius' instead of finishing on the starting hold of the V4",
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -162,6 +188,8 @@ export const blackCave: ClimbingLocation = {
           quality: '86',
           name: 'Aquarius',
           ascents: 'Relative popularity (99) - 221 ascents',
+          description:
+            'Traverse right to left as for Cruel Sea into the heuco, but then cut out the crux sequence by going straight towards the topout as for Dead Calm. Stay low all the way with the "upper V5 Lip" being out.',
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -172,6 +200,8 @@ export const blackCave: ClimbingLocation = {
           quality: '79',
           name: 'Cruel Sea',
           ascents: 'Relative popularity (78) - 70 ascents',
+          description:
+            "A great Eliminate. Traverse from right to left using holds in the roof and on the actual lip only . Once you've dropped down to the hueco keep heading left to top out via the short wall on the far LHS of the cave as for DISW. The early topout directly from the Hueco is Aquarius V6.",
           imageSrc: undefined,
           relativePath: undefined
         }

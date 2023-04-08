@@ -18,13 +18,7 @@ export const climbingLocations: ClimbingLocation[] = [
 export const itineraryList = [
   {
     id: 'climbing',
-    sectionTitle: '🧗🏻 Climbing',
+    sectionTitle: '🧗🏻 Climbing Locations',
     data: climbingLocations
-  },
-  {
-    id: 'food',
-    sectionTitle: '🍖 Food',
-    data: []
   }
 ];
-

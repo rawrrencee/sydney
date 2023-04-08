@@ -26,7 +26,9 @@ watch(selectedChild, (val) => {
         @click="() => $router.replace('/itinerary')"
       >
         <Bars3Icon class="h-3 w-3" @click="() => {}" />
-        <a href="/itinerary" @click.prevent="() => {}">{{ breadcrumbs.itinerary.sectionTitle }}</a>
+        <a href="/itinerary" class="hover:text-indigo-600" @click.prevent="() => {}">{{
+          breadcrumbs.itinerary.sectionTitle
+        }}</a>
       </li>
       <li class="w-full flex-grow-[1]" v-if="breadcrumbs.itinerary && breadcrumbs.child">
         <div class="flex">
@@ -83,7 +85,7 @@ watch(selectedChild, (val) => {
             </Listbox>
           </template>
           <template v-else>
-            <a href="#" class="ml-4">{{ breadcrumbs.child.name }}</a>
+            <a href="#" class="ml-4 hover:text-indigo-600">{{ breadcrumbs.child.name }}</a>
           </template>
         </div>
       </li>

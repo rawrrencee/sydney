@@ -1,14 +1,17 @@
 <script setup lang="ts">
 import { itineraryList } from '@/constants/itinerary';
 import { Listbox, ListboxButton, ListboxOption, ListboxOptions } from '@headlessui/vue';
-import { ChevronUpDownIcon, StarIcon } from '@heroicons/vue/20/solid';
+import { ChevronUpDownIcon } from '@heroicons/vue/20/solid';
 import { Image, ImagePreviewGroup } from 'ant-design-vue';
 import { computed, ref, watch } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
+import AnimatedCat from './CssElements/AnimatedCat.vue';
+import CuteAnimalPens from './CssElements/CuteAnimalPens.vue';
 import GridItem from './GridItem.vue';
 import ItineraryBreadcrumbs from './ItineraryBreadcrumbs.vue';
 import ItineraryCollapse from './ItineraryCollapse.vue';
 import ItineraryContainer from './ItineraryContainer.vue';
+import ItineraryRoutes from './ItineraryRoutes.vue';
 import ItinerarySlideover from './ItinerarySlideover.vue';
 
 const route = useRoute();
@@ -44,6 +47,16 @@ const onSelectedChildChanged = (val: any) => {
     router.replace({
       query: { section: breadcrumbs.value.itinerary?.id, child: val?.id }
     });
+  }
+};
+const onUpdateShowSlideover = (val: boolean) => {
+  showDialog.value = val;
+  if (!showDialog.value) {
+    setTimeout(() => {
+      router.replace({
+        query: { section: breadcrumbs?.value?.itinerary?.id, child: selectedChild?.value?.id }
+      });
+    }, 200);
   }
 };
 
@@ -132,24 +145,12 @@ watch(selectedGrandchild, (val) => {
       </ItineraryContainer>
     </div>
   </div>
-  <ItinerarySlideover
-    :show-slideover="showDialog"
-    @update:show-slideover="
-      (val) => {
-        showDialog = val;
-        if (!showDialog) {
-          router.replace({
-            query: { section: breadcrumbs?.itinerary?.id, child: selectedChild?.id }
-          });
-        }
-      }
-    "
-  >
+  <ItinerarySlideover :show-slideover="showDialog" @update:show-slideover="onUpdateShowSlideover">
     <template #header>
       <Listbox as="div" class="flex-grow-[1]" v-model="selectedGrandchild">
         <div class="relative items-center">
           <ListboxButton
-            class="flex w-full cursor-pointer rounded-md bg-neutral-100 py-3 pl-2 pr-10 text-left text-sm font-medium text-gray-700 hover:bg-neutral-200 sm:py-1.5 md:bg-neutral-50 md:pr-20"
+            class="flex w-full cursor-pointer rounded-md bg-neutral-100 py-2 pl-2 pr-10 text-left text-sm font-medium text-gray-700 hover:bg-neutral-200 sm:py-1.5 md:bg-neutral-50 md:pr-20"
           >
             <span class="block truncate">{{ selectedGrandchild?.title }}</span>
             <span class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
@@ -193,61 +194,38 @@ watch(selectedGrandchild, (val) => {
     </template>
 
     <template #top>
-      <div class="flex flex-col items-center gap-4">
+      <div
+        class="flex flex-col items-center gap-4"
+        v-if="grandchildImagePaths && grandchildImagePaths.length > 0"
+      >
         <ImagePreviewGroup>
           <template v-for="(imagePath, i) of grandchildImagePaths" :key="i">
             <Image :src="imagePath" />
           </template>
         </ImagePreviewGroup>
       </div>
+      <template v-else>
+        <div class="flex flex-col">
+          <span class="place-self-center pb-5 text-xs font-semibold">No routes found</span>
+          <div class="flex flex-row rounded-md bg-yellow-200 pl-3 pt-10">
+            <CuteAnimalPens />
+          </div>
+        </div>
+      </template>
     </template>
 
     <template #bottom>
-      <div class="flex flex-col gap-4 divide-y">
-        <div
-          class="flex flex-col gap-2 last:pb-10 [&:not(:first-child)]:pt-4"
-          v-for="(route, i) of breadcrumbs?.grandchild?.routes"
-          :key="i"
-        >
-          <div class="flex flex-row items-center gap-2">
-            <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-gray-500">
-              <span class="text-xs font-medium leading-none text-white">{{ route.id }}</span>
-            </span>
-            <span
-              class="inline-flex items-center rounded-md px-1.5 py-0.5 text-xs font-medium"
-              :class="[
-                parseInt(route.grade.substring(1)) <= 3 && 'bg-emerald-100 text-emerald-800',
-                parseInt(route.grade.substring(1)) > 3 &&
-                  parseInt(route.grade.substring(1)) <= 5 &&
-                  'bg-sky-100 text-sky-800',
-                parseInt(route.grade.substring(1)) > 5 &&
-                  parseInt(route.grade.substring(1)) <= 8 &&
-                  'bg-orange-100 text-orange-800',
-                parseInt(route.grade.substring(1)) > 8 && 'bg-red-100 text-red-800'
-              ]"
-              >{{ route.grade }}</span
-            >
-            <span class="font-semibold">{{ route.name }}</span>
-            <div class="flex items-center">
-              <StarIcon
-                v-for="rating in [0, 25, 50, 75, 100]"
-                :key="rating"
-                :class="[
-                  parseInt(route.quality) > rating ? 'text-yellow-400' : 'text-gray-200',
-                  'h-3 w-3 flex-shrink-0'
-                ]"
-                aria-hidden="true"
-              />
-            </div>
-          </div>
-          <div class="text-xs text-neutral-400">
-            {{ route.ascents }}
-          </div>
-          <div class="text-xs">
-            {{ route.description }}
-          </div>
+      <template
+        v-if="breadcrumbs?.grandchild?.routes?.length && breadcrumbs.grandchild.routes.length > 0"
+      >
+        <ItineraryRoutes :routes="breadcrumbs.grandchild.routes" />
+      </template>
+      <template v-else>
+        <div class="flex h-96 flex-col place-items-center rounded-md bg-black pt-32">
+          <AnimatedCat />
+          <span class="mt-5 font-semibold text-white">No routes found</span>
         </div>
-      </div>
+      </template>
     </template>
   </ItinerarySlideover>
 </template>

@@ -17,7 +17,7 @@ interface ClimbingArea {
   routes: ClimbingLocationRoute[];
 }
 
-interface ClimbingLocationRoute {
+export interface ClimbingLocationRoute {
   id: string;
   grade: string;
   url: string;

@@ -14,7 +14,8 @@ export const theFrontline: ClimbingLocation = {
       description:
         'This part of the Frontline is on the northern side of the small creek that runs parallel to the track. Although home only to a few problems, it certainly offers variety and some pretty good bouldering too.\n',
       imageSrc: new URL('@/assets/climbing/frontline/the-far-side-1.jpeg', import.meta.url).href,
-      relativePath: new URL('@/assets/climbing/frontline/the-far-side-1.jpeg', import.meta.url).href,
+      relativePath: new URL('@/assets/climbing/frontline/the-far-side-1.jpeg', import.meta.url)
+        .href,
       routes: [
         {
           id: '1',
@@ -25,8 +26,10 @@ export const theFrontline: ClimbingLocation = {
           ascents: 'Relative popularity (0) - 1 ascent',
           description:
             "Start matched under roof. Work your way up the left face, traverse along the lip to finish as for 'the bright side var'.",
-          imageSrc: new URL('@/assets/climbing/frontline/the-far-side-2.jpeg', import.meta.url).href,
-          relativePath: new URL('@/assets/climbing/frontline/the-far-side-2.jpeg', import.meta.url).href
+          imageSrc: new URL('@/assets/climbing/frontline/the-far-side-2.jpeg', import.meta.url)
+            .href,
+          relativePath: new URL('@/assets/climbing/frontline/the-far-side-2.jpeg', import.meta.url)
+            .href
         },
         {
           id: '2',
@@ -120,8 +123,10 @@ export const theFrontline: ClimbingLocation = {
           ascents: 'Relative popularity (100) - 163 ascents',
           description:
             'Sit start on hidden double undercling jug in roof and up cool scoops to top out above.',
-          imageSrc: new URL('@/assets/climbing/frontline/the-far-side-3.jpeg', import.meta.url).href,
-          relativePath: new URL('@/assets/climbing/frontline/the-far-side-3.jpeg', import.meta.url).href
+          imageSrc: new URL('@/assets/climbing/frontline/the-far-side-3.jpeg', import.meta.url)
+            .href,
+          relativePath: new URL('@/assets/climbing/frontline/the-far-side-3.jpeg', import.meta.url)
+            .href
         },
         {
           id: '10',
@@ -131,8 +136,10 @@ export const theFrontline: ClimbingLocation = {
           name: 'The DownSide',
           ascents: 'Relative popularity (94) - 123 ascents',
           description: 'Up water runnels.  Gorgeous.',
-          imageSrc: new URL('@/assets/climbing/frontline/the-far-side-4.jpeg', import.meta.url).href,
-          relativePath: new URL('@/assets/climbing/frontline/the-far-side-4.jpeg', import.meta.url).href
+          imageSrc: new URL('@/assets/climbing/frontline/the-far-side-4.jpeg', import.meta.url)
+            .href,
+          relativePath: new URL('@/assets/climbing/frontline/the-far-side-4.jpeg', import.meta.url)
+            .href
         },
         {
           id: '11',
@@ -154,8 +161,10 @@ export const theFrontline: ClimbingLocation = {
           ascents: 'Relative popularity (97) - 142 ascents',
           description:
             'Sit start at small tree on left of cave, traverse right and finish up Hollow Mountain Dreaming.\n  Mauricio Chino',
-          imageSrc: new URL('@/assets/climbing/frontline/the-far-side-5.jpeg', import.meta.url).href,
-          relativePath: new URL('@/assets/climbing/frontline/the-far-side-5.jpeg', import.meta.url).href
+          imageSrc: new URL('@/assets/climbing/frontline/the-far-side-5.jpeg', import.meta.url)
+            .href,
+          relativePath: new URL('@/assets/climbing/frontline/the-far-side-5.jpeg', import.meta.url)
+            .href
         },
         {
           id: '13',
@@ -225,8 +234,10 @@ export const theFrontline: ClimbingLocation = {
           name: 'The Right Side',
           ascents: 'Relative popularity (75) - 44 ascents',
           description: 'Up the flake to the top and mantle away.',
-          imageSrc: new URL('@/assets/climbing/frontline/the-far-side-6.jpeg', import.meta.url).href,
-          relativePath: new URL('@/assets/climbing/frontline/the-far-side-6.jpeg', import.meta.url).href
+          imageSrc: new URL('@/assets/climbing/frontline/the-far-side-6.jpeg', import.meta.url)
+            .href,
+          relativePath: new URL('@/assets/climbing/frontline/the-far-side-6.jpeg', import.meta.url)
+            .href
         },
         {
           id: '19',
@@ -258,8 +269,10 @@ export const theFrontline: ClimbingLocation = {
           name: 'Alpha',
           ascents: 'Relative popularity (81) - 61 ascents',
           description: 'Start on small crimpy bulge and crimp, small edges lead to top out.',
-          imageSrc: new URL('@/assets/climbing/frontline/the-far-side-7.jpeg', import.meta.url).href,
-          relativePath: new URL('@/assets/climbing/frontline/the-far-side-7.jpeg', import.meta.url).href
+          imageSrc: new URL('@/assets/climbing/frontline/the-far-side-7.jpeg', import.meta.url)
+            .href,
+          relativePath: new URL('@/assets/climbing/frontline/the-far-side-7.jpeg', import.meta.url)
+            .href
         },
         {
           id: '22',
@@ -313,8 +326,10 @@ export const theFrontline: ClimbingLocation = {
           name: 'Foxtrot',
           ascents: 'Relative popularity (76) - 47 ascents',
           description: 'Start on the cup jug, blast straight up to top out',
-          imageSrc: new URL('@/assets/climbing/frontline/the-far-side-8.jpeg', import.meta.url).href,
-          relativePath: new URL('@/assets/climbing/frontline/the-far-side-8.jpeg', import.meta.url).href
+          imageSrc: new URL('@/assets/climbing/frontline/the-far-side-8.jpeg', import.meta.url)
+            .href,
+          relativePath: new URL('@/assets/climbing/frontline/the-far-side-8.jpeg', import.meta.url)
+            .href
         },
         {
           id: '27',
@@ -404,8 +419,14 @@ export const theFrontline: ClimbingLocation = {
       title: 'Frontline Left Hand Side',
       description:
         "This area has some very pleasant moderate wall problems and of course the first crack, 'Revelations'.\n",
-      imageSrc: undefined,
-      relativePath: undefined,
+      imageSrc: new URL(
+        '@/assets/climbing/frontline/frontline-left-hand-side-1.jpeg',
+        import.meta.url
+      ).href,
+      relativePath: new URL(
+        '@/assets/climbing/frontline/frontline-left-hand-side-1.jpeg',
+        import.meta.url
+      ).href,
       routes: [
         {
           id: '1',
@@ -415,8 +436,14 @@ export const theFrontline: ClimbingLocation = {
           name: 'Toniglandyl',
           ascents: 'Relative popularity (55) - 30 ascents',
           description: 'Left to right traverse using whatever you find on the way.',
-          imageSrc: undefined,
-          relativePath: undefined
+          imageSrc: new URL(
+            '@/assets/climbing/frontline/frontline-left-hand-side-2.jpeg',
+            import.meta.url
+          ).href,
+          relativePath: new URL(
+            '@/assets/climbing/frontline/frontline-left-hand-side-2.jpeg',
+            import.meta.url
+          ).href
         },
         {
           id: '2',
@@ -506,8 +533,14 @@ export const theFrontline: ClimbingLocation = {
           name: 'That Looks Nice',
           ascents: 'Relative popularity (55) - 30 ascents',
           description: 'It is nice',
-          imageSrc: undefined,
-          relativePath: undefined
+          imageSrc: new URL(
+            '@/assets/climbing/frontline/frontline-left-hand-side-3.jpeg',
+            import.meta.url
+          ).href,
+          relativePath: new URL(
+            '@/assets/climbing/frontline/frontline-left-hand-side-3.jpeg',
+            import.meta.url
+          ).href
         },
         {
           id: '10',
@@ -573,8 +606,14 @@ export const theFrontline: ClimbingLocation = {
           ascents: 'Relative popularity (64) - 50 ascents',
           description:
             'Start on broken horizontal ledge (ie. not the boulder) and stay on the left of the crack.',
-          imageSrc: undefined,
-          relativePath: undefined
+          imageSrc: new URL(
+            '@/assets/climbing/frontline/frontline-left-hand-side-4.jpeg',
+            import.meta.url
+          ).href,
+          relativePath: new URL(
+            '@/assets/climbing/frontline/frontline-left-hand-side-1.jpeg',
+            import.meta.url
+          ).href
         },
         {
           id: '16',
@@ -595,8 +634,14 @@ export const theFrontline: ClimbingLocation = {
           name: '?',
           ascents: 'Relative popularity (51) - 23 ascents',
           description: 'Mantle up the slab',
-          imageSrc: undefined,
-          relativePath: undefined
+          imageSrc: new URL(
+            '@/assets/climbing/frontline/frontline-left-hand-side-5.jpeg',
+            import.meta.url
+          ).href,
+          relativePath: new URL(
+            '@/assets/climbing/frontline/frontline-left-hand-side-5.jpeg',
+            import.meta.url
+          ).href
         },
         {
           id: '18',
@@ -651,8 +696,12 @@ export const theFrontline: ClimbingLocation = {
       slug: 'the-corridor-boulders',
       title: 'The Corridor Boulders',
       description: 'Three boulders with some fun climbing. Dries very quickly.\n',
-      imageSrc: undefined,
-      relativePath: undefined,
+      imageSrc: new URL('@/assets/climbing/frontline/the-corridor-boulders-1.jpeg', import.meta.url)
+        .href,
+      relativePath: new URL(
+        '@/assets/climbing/frontline/the-corridor-boulders-1.jpeg',
+        import.meta.url
+      ).href,
       routes: [
         {
           id: '1',
@@ -686,8 +735,14 @@ export const theFrontline: ClimbingLocation = {
           ascents: 'Relative popularity (74) - 100 ascents',
           description:
             'Up the middle of the eastern rock, from the middle. Up through some slabby crimps',
-          imageSrc: undefined,
-          relativePath: undefined
+          imageSrc: new URL(
+            '@/assets/climbing/frontline/the-corridor-boulders-2.jpeg',
+            import.meta.url
+          ).href,
+          relativePath: new URL(
+            '@/assets/climbing/frontline/the-corridor-boulders-2.jpeg',
+            import.meta.url
+          ).href
         },
         {
           id: '4',
@@ -719,8 +774,14 @@ export const theFrontline: ClimbingLocation = {
           name: 'You Go Slopia',
           ascents: 'Relative popularity (70) - 82 ascents',
           description: 'Right slabby arete of western side. Usually pretty sandy. Bad fall',
-          imageSrc: undefined,
-          relativePath: undefined
+          imageSrc: new URL(
+            '@/assets/climbing/frontline/the-corridor-boulders-3.jpeg',
+            import.meta.url
+          ).href,
+          relativePath: new URL(
+            '@/assets/climbing/frontline/the-corridor-boulders-3.jpeg',
+            import.meta.url
+          ).href
         },
         {
           id: '7',
@@ -786,8 +847,14 @@ export const theFrontline: ClimbingLocation = {
           name: 'The Pincer Movement',
           ascents: 'Relative popularity (100) - 520 ascents',
           description: 'Sit start, pinch, squeeze and wiggle your way up the knife edge arete.',
-          imageSrc: undefined,
-          relativePath: undefined
+          imageSrc: new URL(
+            '@/assets/climbing/frontline/the-corridor-boulders-4.jpeg',
+            import.meta.url
+          ).href,
+          relativePath: new URL(
+            '@/assets/climbing/frontline/the-corridor-boulders-4.jpeg',
+            import.meta.url
+          ).href
         },
         {
           id: '13',
@@ -808,8 +875,14 @@ export const theFrontline: ClimbingLocation = {
           name: 'Missile Silo',
           ascents: 'Relative popularity (73) - 98 ascents',
           description: 'One hard move on small crimps.',
-          imageSrc: undefined,
-          relativePath: undefined
+          imageSrc: new URL(
+            '@/assets/climbing/frontline/the-corridor-boulders-5.jpeg',
+            import.meta.url
+          ).href,
+          relativePath: new URL(
+            '@/assets/climbing/frontline/the-corridor-boulders-5.jpeg',
+            import.meta.url
+          ).href
         },
         {
           id: '15',
@@ -843,8 +916,14 @@ export const theFrontline: ClimbingLocation = {
           ascents: 'Relative popularity (63) - 50 ascents',
           description:
             'Go up from above the low white scoop. Westernmost face of The Corridor Boulders.',
-          imageSrc: undefined,
-          relativePath: undefined
+          imageSrc: new URL(
+            '@/assets/climbing/frontline/the-corridor-boulders-6.jpeg',
+            import.meta.url
+          ).href,
+          relativePath: new URL(
+            '@/assets/climbing/frontline/the-corridor-boulders-6.jpeg',
+            import.meta.url
+          ).href
         },
         {
           id: '18',
@@ -866,8 +945,14 @@ export const theFrontline: ClimbingLocation = {
           name: 'G?',
           ascents: 'Relative popularity (66) - 62 ascents',
           description: '',
-          imageSrc: undefined,
-          relativePath: undefined
+          imageSrc: new URL(
+            '@/assets/climbing/frontline/the-corridor-boulders-7.jpeg',
+            import.meta.url
+          ).href,
+          relativePath: new URL(
+            '@/assets/climbing/frontline/the-corridor-boulders-7.jpeg',
+            import.meta.url
+          ).href
         },
         {
           id: '20',
@@ -889,8 +974,14 @@ export const theFrontline: ClimbingLocation = {
           name: 'Full Metal Jacket',
           ascents: 'Relative popularity (77) - 118 ascents',
           description: 'Sit start from the lowest sidepulls, powerfully up the overhanging arete.',
-          imageSrc: undefined,
-          relativePath: undefined
+          imageSrc: new URL(
+            '@/assets/climbing/frontline/the-corridor-boulders-8.jpeg',
+            import.meta.url
+          ).href,
+          relativePath: new URL(
+            '@/assets/climbing/frontline/the-corridor-boulders-8.jpeg',
+            import.meta.url
+          ).href
         },
         {
           id: '22',
@@ -959,8 +1050,10 @@ export const theFrontline: ClimbingLocation = {
       title: 'The Eastern Bloc',
       description:
         'This medium sized boulder sitting in front of The Main Wall definitely has some little goodies. It is almost never wet.\n',
-      imageSrc: undefined,
-      relativePath: undefined,
+      imageSrc: new URL('@/assets/climbing/frontline/the-eastern-bloc-1.jpeg', import.meta.url)
+        .href,
+      relativePath: new URL('@/assets/climbing/frontline/the-eastern-bloc-1.jpeg', import.meta.url)
+        .href,
       routes: [
         {
           id: '1',
@@ -993,8 +1086,12 @@ export const theFrontline: ClimbingLocation = {
           name: 'Border Patrol',
           ascents: 'Relative popularity (46) - 20 ascents',
           description: 'Trav the whole bloc & finish up Eastern Bloc Arete.',
-          imageSrc: undefined,
-          relativePath: undefined
+          imageSrc: new URL('@/assets/climbing/frontline/the-eastern-bloc-2.jpeg', import.meta.url)
+            .href,
+          relativePath: new URL(
+            '@/assets/climbing/frontline/the-eastern-bloc-2.jpeg',
+            import.meta.url
+          ).href
         },
         {
           id: '4',
@@ -1005,8 +1102,12 @@ export const theFrontline: ClimbingLocation = {
           ascents: 'Relative popularity (48) - 23 ascents',
           description:
             'From break to slopers on top and over without any of the holds on Eastern Bloc Arete or Mission Impossible.',
-          imageSrc: undefined,
-          relativePath: undefined
+          imageSrc: new URL('@/assets/climbing/frontline/the-eastern-bloc-3.jpeg', import.meta.url)
+            .href,
+          relativePath: new URL(
+            '@/assets/climbing/frontline/the-eastern-bloc-3.jpeg',
+            import.meta.url
+          ).href
         },
         {
           id: '5',
@@ -1178,8 +1279,12 @@ export const theFrontline: ClimbingLocation = {
           ascents: 'Relative popularity (86) - 287 ascents',
           description:
             'Just down the hill below the main boulder of The Eastern Bloc. Start at the back of the cave, head out following the biggest jugs you can find to a mantle.  Careful of the cracked footer on the left.',
-          imageSrc: undefined,
-          relativePath: undefined
+          imageSrc: new URL('@/assets/climbing/frontline/the-eastern-bloc-4.jpeg', import.meta.url)
+            .href,
+          relativePath: new URL(
+            '@/assets/climbing/frontline/the-eastern-bloc-4.jpeg',
+            import.meta.url
+          ).href
         },
         {
           id: '20',
@@ -1201,8 +1306,9 @@ export const theFrontline: ClimbingLocation = {
       title: 'The Main Wall',
       description:
         'This is the very impressive overhanging bulging wall, with a cave undercutting its right hand side. It is up to 6m high, and is home to some intimidating and essential Frontline Classics.\n',
-      imageSrc: undefined,
-      relativePath: undefined,
+      imageSrc: new URL('@/assets/climbing/frontline/the-main-wall-1.jpeg', import.meta.url).href,
+      relativePath: new URL('@/assets/climbing/frontline/the-main-wall-1.jpeg', import.meta.url)
+        .href,
       routes: [
         {
           id: '1',
@@ -1235,8 +1341,10 @@ export const theFrontline: ClimbingLocation = {
           name: 'Toe to Toe L/H Variant',
           ascents: 'Relative popularity (13) - 2 ascents',
           description: '',
-          imageSrc: undefined,
-          relativePath: undefined
+          imageSrc: new URL('@/assets/climbing/frontline/the-main-wall-2.jpeg', import.meta.url)
+            .href,
+          relativePath: new URL('@/assets/climbing/frontline/the-main-wall-2.jpeg', import.meta.url)
+            .href
         },
         {
           id: '4',
@@ -1270,8 +1378,10 @@ export const theFrontline: ClimbingLocation = {
           name: 'Woolly Jumper',
           ascents: 'Relative popularity (29) - 5 ascents',
           description: 'Paste your feet on and dyno to slot then up through scoop.',
-          imageSrc: undefined,
-          relativePath: undefined
+          imageSrc: new URL('@/assets/climbing/frontline/the-main-wall-3.jpeg', import.meta.url)
+            .href,
+          relativePath: new URL('@/assets/climbing/frontline/the-main-wall-3.jpeg', import.meta.url)
+            .href
         },
         {
           id: '7',
@@ -1328,8 +1438,10 @@ export const theFrontline: ClimbingLocation = {
           ascents: 'Relative popularity (0) - 1 ascent',
           description:
             'Stand start in the break. Tough move through rounded pinch/layaway dish to slot then up slab. Given V10 by James.',
-          imageSrc: undefined,
-          relativePath: undefined
+          imageSrc: new URL('@/assets/climbing/frontline/the-main-wall-4.jpeg', import.meta.url)
+            .href,
+          relativePath: new URL('@/assets/climbing/frontline/the-main-wall-4.jpeg', import.meta.url)
+            .href
         },
         {
           id: '12',
@@ -1452,8 +1564,10 @@ export const theFrontline: ClimbingLocation = {
           ascents: 'Relative popularity (75) - 61 ascents',
           description:
             'Start matched in the back pocket, across the roof, pull the lip and up the difficult slab.',
-          imageSrc: undefined,
-          relativePath: undefined
+          imageSrc: new URL('@/assets/climbing/frontline/the-main-wall-5.jpeg', import.meta.url)
+            .href,
+          relativePath: new URL('@/assets/climbing/frontline/the-main-wall-5.jpeg', import.meta.url)
+            .href
         },
         {
           id: '23',
@@ -1519,8 +1633,10 @@ export const theFrontline: ClimbingLocation = {
           name: "'E'",
           ascents: 'Relative popularity (56) - 22 ascents',
           description: 'Layback all the way up the corner.',
-          imageSrc: undefined,
-          relativePath: undefined
+          imageSrc: new URL('@/assets/climbing/frontline/the-main-wall-6.jpeg', import.meta.url)
+            .href,
+          relativePath: new URL('@/assets/climbing/frontline/the-main-wall-6.jpeg', import.meta.url)
+            .href
         },
         {
           id: '29',
@@ -1542,8 +1658,10 @@ export const theFrontline: ClimbingLocation = {
           ascents: 'Relative popularity (56) - 22 ascents',
           description:
             'Tip toe up short right and then left trending staircases with nothing touching the rock but your feet.',
-          imageSrc: undefined,
-          relativePath: undefined
+          imageSrc: new URL('@/assets/climbing/frontline/the-main-wall-7.jpeg', import.meta.url)
+            .href,
+          relativePath: new URL('@/assets/climbing/frontline/the-main-wall-7.jpeg', import.meta.url)
+            .href
         },
         {
           id: '31',
@@ -1586,8 +1704,10 @@ export const theFrontline: ClimbingLocation = {
       title: 'Front and Centre',
       description:
         "More classic problems, the most popular being 'Sloper-Dan Milosevic' and 'Diplomatic Immunity'. Starting to get polished.\n",
-      imageSrc: undefined,
-      relativePath: undefined,
+      imageSrc: new URL('@/assets/climbing/frontline/front-and-centre-1.jpeg', import.meta.url)
+        .href,
+      relativePath: new URL('@/assets/climbing/frontline/front-and-centre-1.jpeg', import.meta.url)
+        .href,
       routes: [
         {
           id: '1',
@@ -1633,8 +1753,12 @@ export const theFrontline: ClimbingLocation = {
           name: 'A?',
           ascents: 'Relative popularity (42) - 15 ascents',
           description: 'Start low and go straight up.',
-          imageSrc: undefined,
-          relativePath: undefined
+          imageSrc: new URL('@/assets/climbing/frontline/front-and-centre-2.jpeg', import.meta.url)
+            .href,
+          relativePath: new URL(
+            '@/assets/climbing/frontline/front-and-centre-2.jpeg',
+            import.meta.url
+          ).href
         },
         {
           id: '5',
@@ -1644,8 +1768,12 @@ export const theFrontline: ClimbingLocation = {
           name: 'B?',
           ascents: 'Relative popularity (57) - 42 ascents',
           description: 'Straight up the slab next to the arete.',
-          imageSrc: undefined,
-          relativePath: undefined
+          imageSrc: new URL('@/assets/climbing/frontline/front-and-centre-3.jpeg', import.meta.url)
+            .href,
+          relativePath: new URL(
+            '@/assets/climbing/frontline/front-and-centre-3.jpeg',
+            import.meta.url
+          ).href
         },
         {
           id: '6',
@@ -1700,8 +1828,12 @@ export const theFrontline: ClimbingLocation = {
           name: 'F',
           ascents: 'Relative popularity (58) - 44 ascents',
           description: 'Slab right behind Ali Baba. Stand start off crimp rail, head straight up.',
-          imageSrc: undefined,
-          relativePath: undefined
+          imageSrc: new URL('@/assets/climbing/frontline/front-and-centre-4.jpeg', import.meta.url)
+            .href,
+          relativePath: new URL(
+            '@/assets/climbing/frontline/front-and-centre-4.jpeg',
+            import.meta.url
+          ).href
         },
         {
           id: '11',
@@ -1734,8 +1866,12 @@ export const theFrontline: ClimbingLocation = {
           ascents: 'Relative popularity (57) - 40 ascents',
           description:
             'Start in the big pocket and dyno to top of arete to jug.  Then carefully up ramp.',
-          imageSrc: undefined,
-          relativePath: undefined
+          imageSrc: new URL('@/assets/climbing/frontline/front-and-centre-5.jpeg', import.meta.url)
+            .href,
+          relativePath: new URL(
+            '@/assets/climbing/frontline/front-and-centre-5.jpeg',
+            import.meta.url
+          ).href
         },
         {
           id: '14',
@@ -1746,8 +1882,12 @@ export const theFrontline: ClimbingLocation = {
           ascents: 'Relative popularity (31) - 7 ascents',
           description:
             'Start El Kooko and dyno up left around the corner to the starting jug of Pump Action. Finish as for Pump Action.',
-          imageSrc: undefined,
-          relativePath: undefined
+          imageSrc: new URL('@/assets/climbing/frontline/front-and-centre-6.jpeg', import.meta.url)
+            .href,
+          relativePath: new URL(
+            '@/assets/climbing/frontline/front-and-centre-6.jpeg',
+            import.meta.url
+          ).href
         },
         {
           id: '15',
@@ -1900,8 +2040,12 @@ export const theFrontline: ClimbingLocation = {
           ascents: 'Relative popularity (49) - 24 ascents',
           description:
             "Up the concavity just right of 'Sloper-Dan Milosevic'. Mantle into left undercling then all the way to the rail then over. More sustained and committing than it looks.",
-          imageSrc: undefined,
-          relativePath: undefined
+          imageSrc: new URL('@/assets/climbing/frontline/front-and-centre-7.jpeg', import.meta.url)
+            .href,
+          relativePath: new URL(
+            '@/assets/climbing/frontline/front-and-centre-7.jpeg',
+            import.meta.url
+          ).href
         },
         {
           id: '28',
@@ -2026,8 +2170,12 @@ export const theFrontline: ClimbingLocation = {
           name: 'Diplomatic Solution',
           ascents: 'Relative popularity (91) - 381 ascents',
           description: 'Sit start at the arete with butt on the ground and hands on the shelf.',
-          imageSrc: undefined,
-          relativePath: undefined
+          imageSrc: new URL('@/assets/climbing/frontline/front-and-centre-8.jpeg', import.meta.url)
+            .href,
+          relativePath: new URL(
+            '@/assets/climbing/frontline/front-and-centre-8.jpeg',
+            import.meta.url
+          ).href
         },
         {
           id: '39',
@@ -2048,8 +2196,12 @@ export const theFrontline: ClimbingLocation = {
           name: 'Dumbo The Flying Elephant',
           ascents: 'Relative popularity (28) - 6 ascents',
           description: 'Dyno from the start of Diplomatic Immunity to the top of I Am Twelve.',
-          imageSrc: undefined,
-          relativePath: undefined
+          imageSrc: new URL('@/assets/climbing/frontline/front-and-centre-9.jpeg', import.meta.url)
+            .href,
+          relativePath: new URL(
+            '@/assets/climbing/frontline/front-and-centre-9.jpeg',
+            import.meta.url
+          ).href
         },
         {
           id: '41',
@@ -2072,8 +2224,12 @@ export const theFrontline: ClimbingLocation = {
           ascents: 'Relative popularity (46) - 19 ascents',
           description:
             'Start as of The Invisible Gerka (obvious break), big move left into the pocket, then up and over via jugs. Goodluck shorties!',
-          imageSrc: undefined,
-          relativePath: undefined
+          imageSrc: new URL('@/assets/climbing/frontline/front-and-centre-10.jpeg', import.meta.url)
+            .href,
+          relativePath: new URL(
+            '@/assets/climbing/frontline/front-and-centre-10.jpeg',
+            import.meta.url
+          ).href
         },
         {
           id: '43',
@@ -2131,8 +2287,14 @@ export const theFrontline: ClimbingLocation = {
       title: 'Frontline Right Hand Side',
       description:
         "The Bouldering in this area is a bit of a mixed bag - some crap and some classics such as 'Armistice Day'. Lots of styles, some little roofs, some dirty slabs and a few scary ones too!\n",
-      imageSrc: undefined,
-      relativePath: undefined,
+      imageSrc: new URL(
+        '@/assets/climbing/frontline/frontline-right-hand-side-1.jpeg',
+        import.meta.url
+      ).href,
+      relativePath: new URL(
+        '@/assets/climbing/frontline/frontline-right-hand-side-1.jpeg',
+        import.meta.url
+      ).href,
       routes: [
         {
           id: '1',
@@ -2142,8 +2304,14 @@ export const theFrontline: ClimbingLocation = {
           name: 'A?',
           ascents: 'Relative popularity (36) - 6 ascents',
           description: 'Up the bulging slab.',
-          imageSrc: undefined,
-          relativePath: undefined
+          imageSrc: new URL(
+            '@/assets/climbing/frontline/frontline-right-hand-side-1.jpeg',
+            import.meta.url
+          ).href,
+          relativePath: new URL(
+            '@/assets/climbing/frontline/frontline-right-hand-side-1.jpeg',
+            import.meta.url
+          ).href
         },
         {
           id: '2',
@@ -2186,8 +2354,14 @@ export const theFrontline: ClimbingLocation = {
           name: 'Eden Gardens',
           ascents: 'Relative popularity (33) - 5 ascents',
           description: 'Start in the low slot, then up.',
-          imageSrc: undefined,
-          relativePath: undefined
+          imageSrc: new URL(
+            '@/assets/climbing/frontline/frontline-right-hand-side-2.jpeg',
+            import.meta.url
+          ).href,
+          relativePath: new URL(
+            '@/assets/climbing/frontline/frontline-right-hand-side-2.jpeg',
+            import.meta.url
+          ).href
         },
         {
           id: '7',
@@ -2208,8 +2382,14 @@ export const theFrontline: ClimbingLocation = {
           name: 'Armistice Night',
           ascents: 'Relative popularity (14) - 2 ascents',
           description: 'Same start as Armistice Day but exit left of the roof instead of right.',
-          imageSrc: undefined,
-          relativePath: undefined
+          imageSrc: new URL(
+            '@/assets/climbing/frontline/frontline-right-hand-side-3.jpeg',
+            import.meta.url
+          ).href,
+          relativePath: new URL(
+            '@/assets/climbing/frontline/frontline-right-hand-side-3.jpeg',
+            import.meta.url
+          ).href
         },
         {
           id: '9',
@@ -2230,8 +2410,14 @@ export const theFrontline: ClimbingLocation = {
           name: 'Amnesty',
           ascents: 'Relative popularity (77) - 49 ascents',
           description: 'Up the arete with the awful landing. High but the crux is down low.',
-          imageSrc: undefined,
-          relativePath: undefined
+          imageSrc: new URL(
+            '@/assets/climbing/frontline/frontline-right-hand-side-4.jpeg',
+            import.meta.url
+          ).href,
+          relativePath: new URL(
+            '@/assets/climbing/frontline/frontline-right-hand-side-4.jpeg',
+            import.meta.url
+          ).href
         },
         {
           id: '11',
@@ -2263,8 +2449,14 @@ export const theFrontline: ClimbingLocation = {
           name: 'Who Killed The Kennedys',
           ascents: 'Relative popularity (100) - 157 ascents',
           description: 'Sit start, out the middle of the roof finishing left over the rounded lip.',
-          imageSrc: undefined,
-          relativePath: undefined
+          imageSrc: new URL(
+            '@/assets/climbing/frontline/frontline-right-hand-side-5.jpeg',
+            import.meta.url
+          ).href,
+          relativePath: new URL(
+            '@/assets/climbing/frontline/frontline-right-hand-side-5.jpeg',
+            import.meta.url
+          ).href
         },
         {
           id: '14',
@@ -2320,8 +2512,14 @@ export const theFrontline: ClimbingLocation = {
           name: 'Little Buddha',
           ascents: 'Relative popularity (100) - 158 ascents',
           description: 'Hug your way up this overhanging block.',
-          imageSrc: undefined,
-          relativePath: undefined
+          imageSrc: new URL(
+            '@/assets/climbing/frontline/frontline-right-hand-side-6.jpeg',
+            import.meta.url
+          ).href,
+          relativePath: new URL(
+            '@/assets/climbing/frontline/frontline-right-hand-side-6.jpeg',
+            import.meta.url
+          ).href
         },
         {
           id: '19',
@@ -2342,8 +2540,14 @@ export const theFrontline: ClimbingLocation = {
           name: 'E?',
           ascents: 'Relative popularity (33) - 5 ascents',
           description: 'Up the left side of this face.',
-          imageSrc: undefined,
-          relativePath: undefined
+          imageSrc: new URL(
+            '@/assets/climbing/frontline/frontline-right-hand-side-7.jpeg',
+            import.meta.url
+          ).href,
+          relativePath: new URL(
+            '@/assets/climbing/frontline/frontline-right-hand-side-7.jpeg',
+            import.meta.url
+          ).href
         },
         {
           id: '22',
@@ -2375,8 +2579,9 @@ export const theFrontline: ClimbingLocation = {
       title: 'Montenegro Wall',
       description:
         "Jurassic Park Slab on the left of the main track. Don't let it fool you into thinking it's not worthy. Have a go on one of Sydney's best V2's - 'Opposition In Exile'.\n",
-      imageSrc: undefined,
-      relativePath: undefined,
+      imageSrc: new URL('@/assets/climbing/frontline/montenegro-wall-1.jpeg', import.meta.url).href,
+      relativePath: new URL('@/assets/climbing/frontline/montenegro-wall-1.jpeg', import.meta.url)
+        .href,
       routes: [
         {
           id: '1',
@@ -2387,8 +2592,12 @@ export const theFrontline: ClimbingLocation = {
           ascents: 'Relative popularity (64) - 25 ascents',
           description:
             "A town in Montenegro but this is what you'll do if you fail on this one.  Easy fun mantle.",
-          imageSrc: undefined,
-          relativePath: undefined
+          imageSrc: new URL('@/assets/climbing/frontline/montenegro-wall-1.jpeg', import.meta.url)
+            .href,
+          relativePath: new URL(
+            '@/assets/climbing/frontline/montenegro-wall-1.jpeg',
+            import.meta.url
+          ).href
         },
         {
           id: '2',
@@ -2399,8 +2608,12 @@ export const theFrontline: ClimbingLocation = {
           ascents: 'Relative popularity (95) - 119 ascents',
           description:
             'A river in Montenegro, mantle over little roof without getting your feet wet.',
-          imageSrc: undefined,
-          relativePath: undefined
+          imageSrc: new URL('@/assets/climbing/frontline/montenegro-wall-2.jpeg', import.meta.url)
+            .href,
+          relativePath: new URL(
+            '@/assets/climbing/frontline/montenegro-wall-2.jpeg',
+            import.meta.url
+          ).href
         },
         {
           id: '3',
@@ -2455,8 +2668,9 @@ export const theFrontline: ClimbingLocation = {
       title: 'The Pee Boulder',
       description:
         "The large boulder opposite of 'Montenegro Wall'. Its backside has some fun problems, although the can be pretty short.\n",
-      imageSrc: undefined,
-      relativePath: undefined,
+      imageSrc: new URL('@/assets/climbing/frontline/the-pee-boulder-1.jpeg', import.meta.url).href,
+      relativePath: new URL('@/assets/climbing/frontline/the-pee-boulder-1.jpeg', import.meta.url)
+        .href,
       routes: [
         {
           id: '1',
@@ -2467,8 +2681,12 @@ export const theFrontline: ClimbingLocation = {
           ascents: 'Relative popularity (61) - 22 ascents',
           description:
             'Start up Here Comes The Hercules then traverse the wall from right to left on the lovely rounded holds below the lip.',
-          imageSrc: undefined,
-          relativePath: undefined
+          imageSrc: new URL('@/assets/climbing/frontline/the-pee-boulder-2.jpeg', import.meta.url)
+            .href,
+          relativePath: new URL(
+            '@/assets/climbing/frontline/the-pee-boulder-2.jpeg',
+            import.meta.url
+          ).href
         },
         {
           id: '2',
@@ -2534,8 +2752,12 @@ export const theFrontline: ClimbingLocation = {
           name: 'B?',
           ascents: 'Relative popularity (28) - 4 ascents',
           description: 'Start on low break, good luck with all the vegetation.',
-          imageSrc: undefined,
-          relativePath: undefined
+          imageSrc: new URL('@/assets/climbing/frontline/the-pee-boulder-3.jpeg', import.meta.url)
+            .href,
+          relativePath: new URL(
+            '@/assets/climbing/frontline/the-pee-boulder-3.jpeg',
+            import.meta.url
+          ).href
         },
         {
           id: '8',
@@ -2545,8 +2767,12 @@ export const theFrontline: ClimbingLocation = {
           name: 'Battle of the Skivvies',
           ascents: 'Relative popularity (78) - 53 ascents',
           description: "From undercling stay left of 'Battle of the Shirts'.",
-          imageSrc: undefined,
-          relativePath: undefined
+          imageSrc: new URL('@/assets/climbing/frontline/the-pee-boulder-4.jpeg', import.meta.url)
+            .href,
+          relativePath: new URL(
+            '@/assets/climbing/frontline/the-pee-boulder-4.jpeg',
+            import.meta.url
+          ).href
         },
         {
           id: '9',
@@ -2590,8 +2816,8 @@ export const theFrontline: ClimbingLocation = {
       title: 'Area Q',
       description:
         'The large boulder with routes up to 5m, encompassing some of the hardest and steepest problems.\n',
-      imageSrc: undefined,
-      relativePath: undefined,
+      imageSrc: new URL('@/assets/climbing/frontline/area-q-1.jpeg', import.meta.url).href,
+      relativePath: new URL('@/assets/climbing/frontline/area-q-1.jpeg', import.meta.url).href,
       routes: [
         {
           id: '1',
@@ -2634,8 +2860,8 @@ export const theFrontline: ClimbingLocation = {
           name: 'B?',
           ascents: 'Relative popularity (31) - 5 ascents',
           description: 'Dirty line straight up.',
-          imageSrc: undefined,
-          relativePath: undefined
+          imageSrc: new URL('@/assets/climbing/frontline/area-q-2.jpeg', import.meta.url).href,
+          relativePath: new URL('@/assets/climbing/frontline/area-q-2.jpeg', import.meta.url).href
         },
         {
           id: '5',
@@ -2656,8 +2882,8 @@ export const theFrontline: ClimbingLocation = {
           name: 'D?',
           ascents: 'Relative popularity (42) - 9 ascents',
           description: 'Straight up some good holds.',
-          imageSrc: undefined,
-          relativePath: undefined
+          imageSrc: new URL('@/assets/climbing/frontline/area-q-3.jpeg', import.meta.url).href,
+          relativePath: new URL('@/assets/climbing/frontline/area-q-3.jpeg', import.meta.url).href
         },
         {
           id: '7',
@@ -2667,8 +2893,8 @@ export const theFrontline: ClimbingLocation = {
           name: 'National Pride',
           ascents: 'Relative popularity (81) - 68 ascents',
           description: 'Start just right of the tree. Straight up.',
-          imageSrc: undefined,
-          relativePath: undefined
+          imageSrc: new URL('@/assets/climbing/frontline/area-q-4.jpeg', import.meta.url).href,
+          relativePath: new URL('@/assets/climbing/frontline/area-q-4.jpeg', import.meta.url).href
         },
         {
           id: '8',
@@ -2867,8 +3093,8 @@ export const theFrontline: ClimbingLocation = {
           name: 'Business as Usual',
           ascents: 'Relative popularity (81) - 69 ascents',
           description: 'Hard first move to lovely rounded holds and scary top-out.',
-          imageSrc: undefined,
-          relativePath: undefined
+          imageSrc: new URL('@/assets/climbing/frontline/area-q-5.jpeg', import.meta.url).href,
+          relativePath: new URL('@/assets/climbing/frontline/area-q-5.jpeg', import.meta.url).href
         },
         {
           id: '25',
@@ -2924,8 +3150,8 @@ export const theFrontline: ClimbingLocation = {
       title: 'Roadside',
       description:
         "This medium sized boulder sitting right at the end of frontline very close to the road, hence the name. You can hear cars zooming by while you're topping out on some easy climbs\n",
-      imageSrc: undefined,
-      relativePath: undefined,
+      imageSrc: new URL('@/assets/climbing/frontline/roadside-1.jpeg', import.meta.url).href,
+      relativePath: new URL('@/assets/climbing/frontline/roadside-1.jpeg', import.meta.url).href,
       routes: [
         {
           id: '2',
@@ -2946,8 +3172,8 @@ export const theFrontline: ClimbingLocation = {
           name: 'A?',
           ascents: 'Relative popularity (51) - 14 ascents',
           description: 'Stand start at the blunt arete on opposing slopey sidepulls.',
-          imageSrc: undefined,
-          relativePath: undefined
+          imageSrc: new URL('@/assets/climbing/frontline/roadside-2.jpeg', import.meta.url).href,
+          relativePath: new URL('@/assets/climbing/frontline/roadside-2.jpeg', import.meta.url).href
         },
         {
           id: '4',
@@ -2968,8 +3194,8 @@ export const theFrontline: ClimbingLocation = {
           name: 'C?',
           ascents: 'Relative popularity (53) - 15 ascents',
           description: 'Start from the lower break and head straight up to top out.',
-          imageSrc: undefined,
-          relativePath: undefined
+          imageSrc: new URL('@/assets/climbing/frontline/roadside-3.jpeg', import.meta.url).href,
+          relativePath: new URL('@/assets/climbing/frontline/roadside-3.jpeg', import.meta.url).href
         },
         {
           id: '6',
@@ -3001,8 +3227,8 @@ export const theFrontline: ClimbingLocation = {
           name: 'F?',
           ascents: 'Relative popularity (47) - 11 ascents',
           description: 'Start on the big ledge and go up over the prow.',
-          imageSrc: undefined,
-          relativePath: undefined
+          imageSrc: new URL('@/assets/climbing/frontline/roadside-4.jpeg', import.meta.url).href,
+          relativePath: new URL('@/assets/climbing/frontline/roadside-4.jpeg', import.meta.url).href
         },
         {
           id: '9',
@@ -3012,8 +3238,8 @@ export const theFrontline: ClimbingLocation = {
           name: 'G?',
           ascents: 'Relative popularity (35) - 6 ascents',
           description: 'Straight up the wall.',
-          imageSrc: undefined,
-          relativePath: undefined
+          imageSrc: new URL('@/assets/climbing/frontline/roadside-5.jpeg', import.meta.url).href,
+          relativePath: new URL('@/assets/climbing/frontline/roadside-5.jpeg', import.meta.url).href
         },
         {
           id: '10',
@@ -3023,8 +3249,8 @@ export const theFrontline: ClimbingLocation = {
           name: 'The Beach',
           ascents: 'Relative popularity (14) - 2 ascents',
           description: 'Double undercling start, around bulge to crimps then bust to jugs.',
-          imageSrc: undefined,
-          relativePath: undefined
+          imageSrc: new URL('@/assets/climbing/frontline/roadside-6.jpeg', import.meta.url).href,
+          relativePath: new URL('@/assets/climbing/frontline/roadside-6.jpeg', import.meta.url).href
         },
         {
           id: '11',
@@ -3056,8 +3282,8 @@ export const theFrontline: ClimbingLocation = {
           name: 'H?',
           ascents: 'Relative popularity (89) - 98 ascents',
           description: 'Start low and left of the arete, up through the nice holds.',
-          imageSrc: undefined,
-          relativePath: undefined
+          imageSrc: new URL('@/assets/climbing/frontline/roadside-7.jpeg', import.meta.url).href,
+          relativePath: new URL('@/assets/climbing/frontline/roadside-7.jpeg', import.meta.url).href
         },
         {
           id: '14',
@@ -3080,8 +3306,8 @@ export const theFrontline: ClimbingLocation = {
           ascents: 'Relative popularity (84) - 76 ascents',
           description:
             "Start on the far right side triangle shaped jug near the burnt tree stump and traverse all the rails and jugs to the left linking with boulder 'H?'.",
-          imageSrc: undefined,
-          relativePath: undefined
+          imageSrc: new URL('@/assets/climbing/frontline/roadside-8.jpeg', import.meta.url).href,
+          relativePath: new URL('@/assets/climbing/frontline/roadside-8.jpeg', import.meta.url).href
         },
         {
           id: '16',
@@ -3114,8 +3340,8 @@ export const theFrontline: ClimbingLocation = {
           name: 'Ewe',
           ascents: 'Relative popularity (35) - 6 ascents',
           description: 'Up from the jug to a tricky mantle.',
-          imageSrc: undefined,
-          relativePath: undefined
+          imageSrc: new URL('@/assets/climbing/frontline/roadside-9.jpeg', import.meta.url).href,
+          relativePath: new URL('@/assets/climbing/frontline/roadside-9.jpeg', import.meta.url).href
         },
         {
           id: '19',

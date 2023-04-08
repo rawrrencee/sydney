@@ -51,7 +51,8 @@ for route in routes:
             break
     routeName = route.find('span', {'class': 'name'}).find('span', {'class': 'primary-node-name'}).text
     routeAscents = route.find('span', {'class': 'r-pop'}).find('a').get('title')
-    routeData = { 'id': routeNumber, 'grade': routeGrade, 'url': routeUrl, 'quality': routeQuality, 'name': routeName, 'ascents': routeAscents, 'imageSrc': None, 'relativePath': None }
+    routeDescription = route.find('div', {'class': 'markdown'}).find('p').text if route.find('div', {'class': 'markdown'}).find('p') else ''
+    routeData = { 'id': routeNumber, 'grade': routeGrade, 'url': routeUrl, 'quality': routeQuality, 'name': routeName, 'ascents': routeAscents, 'description': routeDescription, 'imageSrc': None, 'relativePath': None }
     areaRoutes.append(routeData)
 
 areaData = {'id': areaId, 'slug': areaSlug, 'title': areaName, 'description': areaDescription, 'imageSrc': None, 'relativePath': None, 'routes': areaRoutes }

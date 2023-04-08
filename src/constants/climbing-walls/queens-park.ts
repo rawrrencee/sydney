@@ -12,8 +12,10 @@ export const queensPark: ClimbingLocation = {
       slug: 'the-throne-room',
       title: 'The Throne Room',
       description: '',
-      imageSrc: undefined,
-      relativePath: undefined,
+      imageSrc: new URL('@/assets/climbing/queens-park/the-throne-room-1.jpeg', import.meta.url)
+        .href,
+      relativePath: new URL('@/assets/climbing/queens-park/the-throne-room-1.jpeg', import.meta.url)
+        .href,
       routes: [
         {
           id: '1',
@@ -22,6 +24,7 @@ export const queensPark: ClimbingLocation = {
           quality: '',
           name: 'Jeebers',
           ascents: 'Relative popularity (0) - 1 ascent',
+          description: '',
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -32,6 +35,7 @@ export const queensPark: ClimbingLocation = {
           quality: '80',
           name: 'Curvi-linear',
           ascents: 'Relative popularity (58) - 10 ascents',
+          description: '  Sheila Binegas',
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -42,6 +46,7 @@ export const queensPark: ClimbingLocation = {
           quality: '',
           name: 'Gallipolli',
           ascents: 'Relative popularity (28) - 3 ascents',
+          description: '',
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -52,6 +57,8 @@ export const queensPark: ClimbingLocation = {
           quality: '',
           name: 'The pretender',
           ascents: 'Relative popularity (41) - 5 ascents',
+          description:
+            'Start low on small crimps below the big letterbox jug. Punch up to it on various crimps and slopers and jump to the top. \nGood and Fun.',
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -62,6 +69,8 @@ export const queensPark: ClimbingLocation = {
           quality: '64',
           name: 'The Problem Without a Name',
           ascents: 'Relative popularity (100) - 56 ascents',
+          description:
+            'Sit start. Middle of cave using right hand crimp and obvious left hand sidepull on flake. Pop to rail, up to left hand gaston, then to right hand gaston, then cross through to finish on final jug. Match to finish.',
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -72,6 +81,7 @@ export const queensPark: ClimbingLocation = {
           quality: '100',
           name: 'The Contender',
           ascents: 'Relative popularity (45) - 6 ascents',
+          description: '  Patrick John ',
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -82,6 +92,8 @@ export const queensPark: ClimbingLocation = {
           quality: '',
           name: 'Blue-Blood Contention',
           ascents: 'Relative popularity (0) - 1 ascent',
+          description:
+            'Starting right of The Contender and traversing left on small holds to finish on the last move of the Contender.',
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -92,8 +104,14 @@ export const queensPark: ClimbingLocation = {
           quality: '70',
           name: 'Rebirthed',
           ascents: 'Relative popularity (85) - 29 ascents',
-          imageSrc: undefined,
-          relativePath: undefined
+          description:
+            'Start slightly inside the cave and move up the steep arete. Big move/dyno to the hole in the ceiling and fun mantle. Have a plan to get back down too.',
+          imageSrc: new URL('@/assets/climbing/queens-park/the-throne-room-2.jpeg', import.meta.url)
+            .href,
+          relativePath: new URL(
+            '@/assets/climbing/queens-park/the-throne-room-2.jpeg',
+            import.meta.url
+          ).href
         }
       ]
     },
@@ -102,8 +120,10 @@ export const queensPark: ClimbingLocation = {
       slug: 'left-hand-side',
       title: 'Left Hand Side',
       description: '',
-      imageSrc: undefined,
-      relativePath: undefined,
+      imageSrc: new URL('@/assets/climbing/queens-park/left-hand-side-1.jpeg', import.meta.url)
+        .href,
+      relativePath: new URL('@/assets/climbing/queens-park/left-hand-side-1.jpeg', import.meta.url)
+        .href,
       routes: [
         {
           id: '1',
@@ -112,6 +132,8 @@ export const queensPark: ClimbingLocation = {
           quality: '47',
           name: '1/2',
           ascents: 'Relative popularity (77) - 44 ascents',
+          description:
+            'From either set of low little holds, crank up the little wall. [Variant: Eliminate the bigger holds, and crimp your way up]',
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -122,6 +144,7 @@ export const queensPark: ClimbingLocation = {
           quality: '51',
           name: 'Red Dusk',
           ascents: 'Relative popularity (91) - 99 ascents',
+          description: 'Up on jugs and ledges to a cautious top out.',
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -132,6 +155,8 @@ export const queensPark: ClimbingLocation = {
           quality: '60',
           name: '2/3',
           ascents: 'Relative popularity (90) - 91 ascents',
+          description:
+            'Starting in the cave at the break, traverse the easiest line right all the way to the next cave.',
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -142,6 +167,7 @@ export const queensPark: ClimbingLocation = {
           quality: '62',
           name: 'The Extractor',
           ascents: 'Relative popularity (79) - 54 ascents',
+          description: 'Crag classic with some desperate and thin moves.',
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -152,6 +178,7 @@ export const queensPark: ClimbingLocation = {
           quality: '65',
           name: 'The Extractor Variant',
           ascents: 'Relative popularity (66) - 27 ascents',
+          description: 'Start as for the Extractor but stay low all the way to the next cave',
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -162,6 +189,8 @@ export const queensPark: ClimbingLocation = {
           quality: '53',
           name: 'Veronika Voss',
           ascents: 'Relative popularity (84) - 67 ascents',
+          description:
+            "Start below 'The Extractor' and move right and up. Avoid using holds on the edge of cave or break from '2/3' to stay on route. Punchy.",
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -172,6 +201,8 @@ export const queensPark: ClimbingLocation = {
           quality: '60',
           name: 'Willy Messerschmidt',
           ascents: 'Relative popularity (62) - 23 ascents',
+          description:
+            'Starting under the small prow in the middle of the wall, crimp your way to victory ',
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -182,6 +213,8 @@ export const queensPark: ClimbingLocation = {
           quality: '89',
           name: 'Slug Nut',
           ascents: 'Relative popularity (51) - 13 ascents',
+          description:
+            "Same start as 'The Extractor' linked to the dyno finish as 'Nut' and top out.",
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -192,6 +225,7 @@ export const queensPark: ClimbingLocation = {
           quality: '65',
           name: 'Nut',
           ascents: 'Relative popularity (60) - 20 ascents',
+          description: "Start as '6' but dyno straight up to the lip and top out.",
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -202,6 +236,7 @@ export const queensPark: ClimbingLocation = {
           quality: '51',
           name: '6',
           ascents: 'Relative popularity (84) - 68 ascents',
+          description: 'Starting at the flat chalky holds in the scoop, climb up and right.',
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -212,6 +247,8 @@ export const queensPark: ClimbingLocation = {
           quality: '60',
           name: 'Lola',
           ascents: 'Relative popularity (60) - 20 ascents',
+          description:
+            "Low chossy rock 'foot-board' is off. Start left hand on lowest chalked slope and right hand on lowest chalked crimp slightly above it. ",
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -222,6 +259,7 @@ export const queensPark: ClimbingLocation = {
           quality: '48',
           name: 'Daisy',
           ascents: 'Relative popularity (100) - 152 ascents',
+          description: 'Climb the arete on the right finishing at the rooflet',
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -232,8 +270,14 @@ export const queensPark: ClimbingLocation = {
           quality: '64',
           name: 'The Waverley Traverse',
           ascents: 'Relative popularity (98) - 139 ascents',
-          imageSrc: undefined,
-          relativePath: undefined
+          description:
+            'Another crag classic.\nTraverse on any line, any direction, between the cave on the left and the arete on the right. Punchy and desperate in spots.',
+          imageSrc: new URL('@/assets/climbing/queens-park/left-hand-side-2.jpeg', import.meta.url)
+            .href,
+          relativePath: new URL(
+            '@/assets/climbing/queens-park/left-hand-side-2.jpeg',
+            import.meta.url
+          ).href
         },
         {
           id: '14',
@@ -242,6 +286,7 @@ export const queensPark: ClimbingLocation = {
           quality: '49',
           name: '9.',
           ascents: 'Relative popularity (95) - 121 ascents',
+          description: 'Sit start then up via slots. Corner of the cave is off.',
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -252,6 +297,7 @@ export const queensPark: ClimbingLocation = {
           quality: '52',
           name: '10.',
           ascents: 'Relative popularity (94) - 112 ascents',
+          description: 'Sit start then up through the little corner.',
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -262,6 +308,8 @@ export const queensPark: ClimbingLocation = {
           quality: '50',
           name: '11.',
           ascents: 'Relative popularity (96) - 122 ascents',
+          description:
+            'Start low on verical pocket and crimper. The top out mantle is a bit slippery, have a crash mat and spotter for the FA.',
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -272,6 +320,8 @@ export const queensPark: ClimbingLocation = {
           quality: '63',
           name: 'Slap Jack',
           ascents: 'Relative popularity (92) - 102 ascents',
+          description:
+            'Starts on the vertical pocket and small crimper, as per No.11.". The climb then heads diagonally upwards following the line of crimps and slopers. Top out the climb about 1m to the left of "No.14."',
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -282,6 +332,7 @@ export const queensPark: ClimbingLocation = {
           quality: '51',
           name: '12.',
           ascents: 'Relative popularity (81) - 58 ascents',
+          description: '',
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -292,6 +343,7 @@ export const queensPark: ClimbingLocation = {
           quality: '52',
           name: '12 Direct finish',
           ascents: 'Relative popularity (75) - 43 ascents',
+          description: '',
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -302,6 +354,7 @@ export const queensPark: ClimbingLocation = {
           quality: '49',
           name: '13.',
           ascents: 'Relative popularity (94) - 115 ascents',
+          description: 'Start on slopey jugs and head straight up.',
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -312,6 +365,7 @@ export const queensPark: ClimbingLocation = {
           quality: '54',
           name: 'Teen Angst',
           ascents: 'Relative popularity (97) - 128 ascents',
+          description: '',
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -322,8 +376,14 @@ export const queensPark: ClimbingLocation = {
           quality: '57',
           name: 'Whale, Whale, Whale, What Do We Have Here',
           ascents: 'Relative popularity (83) - 66 ascents',
-          imageSrc: undefined,
-          relativePath: undefined
+          description:
+            'Match start on the double jug bottom-right of the bloc and tops out with a mantle using only holds  on the right-hand face. Light sandy rock is out as are jugs on the other side of the face - only use holds on the right of the arete.',
+          imageSrc: new URL('@/assets/climbing/queens-park/left-hand-side-3.jpeg', import.meta.url)
+            .href,
+          relativePath: new URL(
+            '@/assets/climbing/queens-park/left-hand-side-3.jpeg',
+            import.meta.url
+          ).href
         },
         {
           id: '23',
@@ -332,8 +392,13 @@ export const queensPark: ClimbingLocation = {
           quality: '42',
           name: 'Lets Have Fun',
           ascents: 'Relative popularity (28) - 4 ascents',
-          imageSrc: undefined,
-          relativePath: undefined
+          description: 'Start at base of fig tree and climb to obvious jug branch finish',
+          imageSrc: new URL('@/assets/climbing/queens-park/left-hand-side-4.jpeg', import.meta.url)
+            .href,
+          relativePath: new URL(
+            '@/assets/climbing/queens-park/left-hand-side-4.jpeg',
+            import.meta.url
+          ).href
         },
         {
           id: '24',
@@ -342,8 +407,14 @@ export const queensPark: ClimbingLocation = {
           quality: '47',
           name: 'The Paverly Perverse',
           ascents: 'Relative popularity (41) - 8 ascents',
-          imageSrc: undefined,
-          relativePath: undefined
+          description:
+            'Can be done left to right or right to left. Both sit start either end and then traverse the lip of the cliff on obvious jugs.',
+          imageSrc: new URL('@/assets/climbing/queens-park/left-hand-side-3.jpeg', import.meta.url)
+            .href,
+          relativePath: new URL(
+            '@/assets/climbing/queens-park/left-hand-side-3.jpeg',
+            import.meta.url
+          ).href
         },
         {
           id: '25',
@@ -352,8 +423,13 @@ export const queensPark: ClimbingLocation = {
           quality: '',
           name: 'Wool Over Their Eyes',
           ascents: 'Relative popularity (14) - 2 ascents',
-          imageSrc: undefined,
-          relativePath: undefined
+          description: '',
+          imageSrc: new URL('@/assets/climbing/queens-park/left-hand-side-4.jpeg', import.meta.url)
+            .href,
+          relativePath: new URL(
+            '@/assets/climbing/queens-park/left-hand-side-4.jpeg',
+            import.meta.url
+          ).href
         },
         {
           id: '26',
@@ -362,6 +438,7 @@ export const queensPark: ClimbingLocation = {
           quality: '',
           name: 'I Jogged On',
           ascents: 'Relative popularity (28) - 4 ascents',
+          description: '',
           imageSrc: undefined,
           relativePath: undefined
         }
@@ -372,8 +449,9 @@ export const queensPark: ClimbingLocation = {
       slug: 'the-middle',
       title: 'The Middle',
       description: '',
-      imageSrc: undefined,
-      relativePath: undefined,
+      imageSrc: new URL('@/assets/climbing/queens-park/the-middle-1.jpeg', import.meta.url).href,
+      relativePath: new URL('@/assets/climbing/queens-park/the-middle-1.jpeg', import.meta.url)
+        .href,
       routes: [
         {
           id: '1',
@@ -382,6 +460,7 @@ export const queensPark: ClimbingLocation = {
           quality: '',
           name: 'Slab Proj',
           ascents: 'Relative popularity (0) - No  ascents',
+          description: '',
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -392,8 +471,11 @@ export const queensPark: ClimbingLocation = {
           quality: '42',
           name: 'What Even Is Fun?',
           ascents: 'Relative popularity (33) - 5 ascents',
-          imageSrc: undefined,
-          relativePath: undefined
+          description: 'Climb let side of tree roots to cool hold 5m up!',
+          imageSrc: new URL('@/assets/climbing/queens-park/the-middle-2.jpeg', import.meta.url)
+            .href,
+          relativePath: new URL('@/assets/climbing/queens-park/the-middle-2.jpeg', import.meta.url)
+            .href
         },
         {
           id: '3',
@@ -402,6 +484,7 @@ export const queensPark: ClimbingLocation = {
           quality: '67',
           name: 'Exestential Crisis Coming Up',
           ascents: 'Relative popularity (22) - 3 ascents',
+          description: 'Climb right side of tree route till cool hold 5m up',
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -412,8 +495,11 @@ export const queensPark: ClimbingLocation = {
           quality: '',
           name: 'Cave Project left',
           ascents: 'Relative popularity (0) - No  ascents',
-          imageSrc: undefined,
-          relativePath: undefined
+          description: '',
+          imageSrc: new URL('@/assets/climbing/queens-park/the-middle-3.jpeg', import.meta.url)
+            .href,
+          relativePath: new URL('@/assets/climbing/queens-park/the-middle-3.jpeg', import.meta.url)
+            .href
         },
         {
           id: '5',
@@ -422,6 +508,7 @@ export const queensPark: ClimbingLocation = {
           quality: '',
           name: 'Cave project right',
           ascents: 'Relative popularity (0) - No  ascents',
+          description: '',
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -432,8 +519,11 @@ export const queensPark: ClimbingLocation = {
           quality: '50',
           name: 'Existential Crisis',
           ascents: 'Relative popularity (23) - 3 ascents',
-          imageSrc: undefined,
-          relativePath: undefined
+          description: 'Sit start tree roots only to top out. Descend via cave to the right.',
+          imageSrc: new URL('@/assets/climbing/queens-park/the-middle-4.jpeg', import.meta.url)
+            .href,
+          relativePath: new URL('@/assets/climbing/queens-park/the-middle-4.jpeg', import.meta.url)
+            .href
         },
         {
           id: '7',
@@ -442,8 +532,11 @@ export const queensPark: ClimbingLocation = {
           quality: '',
           name: 'If Problems Grew On Trees',
           ascents: 'Relative popularity (14) - 2 ascents',
-          imageSrc: undefined,
-          relativePath: undefined
+          description: 'Climb Pillar like tree route to topout. Descend via cave to the right.',
+          imageSrc: new URL('@/assets/climbing/queens-park/the-middle-5.jpeg', import.meta.url)
+            .href,
+          relativePath: new URL('@/assets/climbing/queens-park/the-middle-5.jpeg', import.meta.url)
+            .href
         },
         {
           id: '8',
@@ -452,8 +545,12 @@ export const queensPark: ClimbingLocation = {
           quality: '',
           name: 'Sorta Like a Gym',
           ascents: 'Relative popularity (14) - 2 ascents',
-          imageSrc: undefined,
-          relativePath: undefined
+          description:
+            'Climb holds seems to be old cut steps. Start from footpath jump onto rock no hands problem',
+          imageSrc: new URL('@/assets/climbing/queens-park/the-middle-6.jpeg', import.meta.url)
+            .href,
+          relativePath: new URL('@/assets/climbing/queens-park/the-middle-6.jpeg', import.meta.url)
+            .href
         },
         {
           id: '9',
@@ -462,8 +559,11 @@ export const queensPark: ClimbingLocation = {
           quality: '',
           name: 'Strike While the Irons hot',
           ascents: 'Relative popularity (0) - No  ascents',
-          imageSrc: undefined,
-          relativePath: undefined
+          description: 'No hands problem. Footpath start',
+          imageSrc: new URL('@/assets/climbing/queens-park/the-middle-7.jpeg', import.meta.url)
+            .href,
+          relativePath: new URL('@/assets/climbing/queens-park/the-middle-7.jpeg', import.meta.url)
+            .href
         },
         {
           id: '10',
@@ -472,6 +572,7 @@ export const queensPark: ClimbingLocation = {
           quality: '',
           name: 'Whipper Snipper',
           ascents: 'Relative popularity (0) - 1 ascent',
+          description: '',
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -482,6 +583,8 @@ export const queensPark: ClimbingLocation = {
           quality: '68',
           name: 'The Last Great Nine',
           ascents: 'Relative popularity (73) - 38 ascents',
+          description:
+            "A more direct finish to 'The Last Great Line'. Sit start at the end of the cave, matching the first hold. Traverse until you reach the RH undercling slot and a LH sidepull crimp. From there, head up and then left to finish on the big jugs.",
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -492,6 +595,8 @@ export const queensPark: ClimbingLocation = {
           quality: '69',
           name: 'The Last Great Line',
           ascents: 'Relative popularity (98) - 132 ascents',
+          description:
+            'Sit start in the back of the cave on the obvious chalked side-pull, then it\'s crimps and slopers to the end. Finish up as for "Werner Heisenburg".',
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -502,6 +607,8 @@ export const queensPark: ClimbingLocation = {
           quality: '57',
           name: 'Cheesecake Bliss',
           ascents: 'Relative popularity (46) - 10 ascents',
+          description:
+            'Start up Werner Heisenburg to the slanted jug then head left to finish up TLGN. \nGrade is up for consensus',
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -512,6 +619,8 @@ export const queensPark: ClimbingLocation = {
           quality: '56',
           name: 'Werner Heisenburg',
           ascents: 'Relative popularity (100) - 146 ascents',
+          description:
+            'Start at the big jug with a few big desperate moves to the end. Finish halfway up the wall',
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -522,6 +631,8 @@ export const queensPark: ClimbingLocation = {
           quality: '52',
           name: 'Call me Susan',
           ascents: 'Relative popularity (65) - 25 ascents',
+          description:
+            'Take a break from TLGL, you probably bloody need it. Match start at the right break, up to the yellow crack traverse finishing at WH.',
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -532,8 +643,11 @@ export const queensPark: ClimbingLocation = {
           quality: '',
           name: "Wagland's Effort",
           ascents: 'Relative popularity (0) - 1 ascent',
-          imageSrc: undefined,
-          relativePath: undefined
+          description: '',
+          imageSrc: new URL('@/assets/climbing/queens-park/the-middle-8.jpeg', import.meta.url)
+            .href,
+          relativePath: new URL('@/assets/climbing/queens-park/the-middle-8.jpeg', import.meta.url)
+            .href
         }
       ]
     },
@@ -542,8 +656,8 @@ export const queensPark: ClimbingLocation = {
       slug: 'south-end',
       title: 'South End',
       description: '',
-      imageSrc: undefined,
-      relativePath: undefined,
+      imageSrc: new URL('@/assets/climbing/queens-park/south-end-1.jpeg', import.meta.url).href,
+      relativePath: new URL('@/assets/climbing/queens-park/south-end-1.jpeg', import.meta.url).href,
       routes: [
         {
           id: '1',
@@ -552,6 +666,7 @@ export const queensPark: ClimbingLocation = {
           quality: '50',
           name: 'No 1',
           ascents: 'Relative popularity (41) - 5 ascents',
+          description: 'Right of the grey streak.',
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -562,6 +677,7 @@ export const queensPark: ClimbingLocation = {
           quality: '',
           name: 'No 2',
           ascents: 'Relative popularity (28) - 3 ascents',
+          description: 'Right of the grey streaks up the pockets.',
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -572,6 +688,8 @@ export const queensPark: ClimbingLocation = {
           quality: '71',
           name: 'Walk in the Park',
           ascents: 'Relative popularity (85) - 32 ascents',
+          description:
+            'From along the above break into the letterbox slot, committing last move to a jug and slopey top.',
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -582,6 +700,8 @@ export const queensPark: ClimbingLocation = {
           quality: '67',
           name: 'No 4',
           ascents: 'Relative popularity (60) - 11 ascents',
+          description:
+            'Just right of "Walk in the Park", up the good holds to the obvious crux and committing top out.',
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -592,6 +712,8 @@ export const queensPark: ClimbingLocation = {
           quality: '100',
           name: 'No 5',
           ascents: 'Relative popularity (49) - 7 ascents',
+          description:
+            'Heads up into a side pull followed by jugs and an awkward pocket, then tops out.',
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -602,6 +724,7 @@ export const queensPark: ClimbingLocation = {
           quality: '78',
           name: 'No 6',
           ascents: 'Relative popularity (70) - 16 ascents',
+          description: 'Big holds and bigger moves to the left of "The Piesker/Child Overhang".',
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -612,6 +735,7 @@ export const queensPark: ClimbingLocation = {
           quality: '73',
           name: 'The Hard 5',
           ascents: 'Relative popularity (60) - 11 ascents',
+          description: 'The same as No.6 - from the match holds head right and dyno to the lip.',
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -622,6 +746,8 @@ export const queensPark: ClimbingLocation = {
           quality: '85',
           name: 'The Piesker/ Child Overhang',
           ascents: 'Relative popularity (100) - 61 ascents',
+          description:
+            'Pull through the slots into a committing last move to the right and top out.',
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -632,8 +758,11 @@ export const queensPark: ClimbingLocation = {
           quality: '88',
           name: 'Pauls Roof',
           ascents: 'Relative popularity (96) - 51 ascents',
-          imageSrc: undefined,
-          relativePath: undefined
+          description:
+            'Start on the obvious break at the back of the wall, climb out the steepest section and top out right of the pipe.',
+          imageSrc: new URL('@/assets/climbing/queens-park/south-end-9.jpeg', import.meta.url).href,
+          relativePath: new URL('@/assets/climbing/queens-park/south-end-9.jpeg', import.meta.url)
+            .href
         },
         {
           id: '10',
@@ -642,6 +771,8 @@ export const queensPark: ClimbingLocation = {
           quality: '',
           name: 'Pirahna',
           ascents: 'Relative popularity (0) - No  ascents',
+          description:
+            'Stand start up the slab in the high break. Follow the steep arete out left to top out. Rocks to the right obviously are out.',
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -652,6 +783,7 @@ export const queensPark: ClimbingLocation = {
           quality: '',
           name: 'Nemo',
           ascents: 'Relative popularity (0) - 1 ascent',
+          description: 'RHV of Piranha. Pretty much the same climb with a much easier mantle.',
           imageSrc: undefined,
           relativePath: undefined
         },
@@ -662,6 +794,7 @@ export const queensPark: ClimbingLocation = {
           quality: '50',
           name: 'Weirner Fassbinder',
           ascents: 'Relative popularity (45) - 6 ascents',
+          description: '',
           imageSrc: undefined,
           relativePath: undefined
         }
