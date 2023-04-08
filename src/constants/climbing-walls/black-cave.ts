@@ -4,6 +4,7 @@ export const blackCave: ClimbingLocation = {
   id: 'black-cave',
   name: 'Black Cave',
   subtitle: 'via Beatty St',
+  url: 'https://www.thecrag.com/en/climbing/australia/northern-beaches/area/524265501',
   imageSrc: 'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/black-cave/index.jpeg?raw=true',
   relativePath: new URL('@/assets/climbing/black-cave/index.jpeg', import.meta.url).href,
   areas: [

@@ -89,8 +89,8 @@ const openInNewWindow = (val: string) => {
                 v-for="option in sortOptions"
                 :key="option.key"
                 :value="option"
-                v-slot="{ active, disabled }"
                 :disabled="selectedSort?.key === option?.key"
+                v-slot="{ active, disabled }"
               >
                 <span
                   :class="[
@@ -99,7 +99,7 @@ const openInNewWindow = (val: string) => {
                       : active
                       ? 'bg-indigo-400 text-white'
                       : 'text-gray-900',
-                    'block cursor-pointer px-4 py-2 text-sm font-medium text-gray-900'
+                    'block cursor-pointer px-4 py-2 text-sm font-medium'
                   ]"
                   >{{ option.text }}</span
                 >

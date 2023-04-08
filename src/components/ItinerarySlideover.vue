@@ -67,11 +67,14 @@ const expandScale = ref('30%');
                     <div class="flex min-h-0 flex-1 flex-col overflow-x-clip overflow-y-scroll">
                       <slot name="top"></slot>
                     </div>
-                    <div class="flex flex-shrink-0 justify-end py-2">
+                    <div class="flex flex-row justify-between py-2">
+                      <div>
+                        <slot name="topFooter"></slot>
+                      </div>
                       <Listbox as="div" v-slot="{ open }" v-model="expandScale">
                         <ListboxButton
                           as="div"
-                          class="flex cursor-pointer flex-row place-items-center gap-1 text-xs text-neutral-400 hover:text-neutral-700"
+                          class="flex cursor-pointer flex-row place-items-center gap-1 text-xs text-neutral-400 hover:text-indigo-700"
                         >
                           <MagnifyingGlassPlusIcon class="h-3 w-3" />
                           <span>Adjust Size</span>
@@ -123,7 +126,7 @@ const expandScale = ref('30%');
                     </div>
                   </div>
                   <div class="flex-1 overflow-x-clip overflow-y-scroll border-t border-gray-200">
-                    <div class="px-6 pt-4">
+                    <div class="px-4 pt-4">
                       <slot name="bottom"></slot>
                     </div>
                   </div>

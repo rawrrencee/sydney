@@ -4,6 +4,7 @@ export const sissyCrag: ClimbingLocation = {
   id: 'sissy-crag',
   name: 'Sissy Crag',
   subtitle: 'via Bridgeview Cres',
+  url: 'https://www.thecrag.com/en/climbing/australia/north-shore/area/12011155',
   imageSrc:
     'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/sissy-crag/index.jpeg?raw=true',
   relativePath: new URL('@/assets/climbing/sissy-crag/index.jpeg', import.meta.url).href,

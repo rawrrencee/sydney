@@ -59,6 +59,9 @@ const onUpdateShowSlideover = (val: boolean) => {
     }, 200);
   }
 };
+const openInNewWindow = (url: string | undefined) => {
+  if (url) window.open(url);
+};
 
 watch(breadcrumbs, () => {
   if (
@@ -213,6 +216,16 @@ watch(selectedGrandchild, (val) => {
         </div>
       </template>
     </template>
+
+    <template #topFooter
+      ><a
+        v-if="breadcrumbs?.child?.url"
+        :href="breadcrumbs?.child?.url"
+        class="text-xs text-neutral-400 hover:text-indigo-600"
+        @click.prevent="() => openInNewWindow(breadcrumbs?.child?.url)"
+        >View at theCrag.com</a
+      ></template
+    >
 
     <template #bottom>
       <template

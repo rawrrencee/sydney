@@ -4,6 +4,7 @@ export const lindfieldRocks: ClimbingLocation = {
   id: 'lindfield-rocks',
   name: 'Lindfield Rocks',
   subtitle: 'via Tryon Road Tennis Courts',
+  url: 'https://www.thecrag.com/en/climbing/australia/north-shore/area/12011227',
   imageSrc:
     'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/index.jpeg?raw=true',
   relativePath: new URL('@/assets/climbing/lindfield-rocks/index.jpeg', import.meta.url).href,
