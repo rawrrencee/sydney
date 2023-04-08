@@ -18,6 +18,12 @@ const sortOptions = [
 const cloneRoutes = ref(props.routes ? [...props.routes] : []);
 const selectedSort: Ref<{ key: string; text: string }> = ref(sortOptions[0]);
 
+watch(
+  () => props.routes,
+  (routes) => {
+    cloneRoutes.value = routes ? [...routes] : [];
+  }
+);
 watch(selectedSort, (val: { key: string; text: string }) => {
   if (val && props.routes) {
     switch (val.key) {
