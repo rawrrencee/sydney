@@ -64,9 +64,13 @@ const getSortedRoutes = (key: string) => {
       );
 
     case 'ascents':
-      return [...props.routes!].sort(
-        (x, y) => parseInt(y.ascents.split('- ')?.[1]) - parseInt(x.ascents.split('- ')?.[1])
-      );
+      return [...props.routes!].sort((x, y) => {
+        let xVal = parseInt(y.ascents.split('- ')?.[1]);
+        let yVal = parseInt(x.ascents.split('- ')?.[1]);
+        if (isNaN(xVal)) xVal = -1;
+        if (isNaN(yVal)) yVal = -1;
+        return xVal - yVal;
+      });
 
     default:
       return [];
@@ -77,15 +81,21 @@ const getSortedRoutes = (key: string) => {
   <div class="flex flex-col gap-2">
     <div class="flex flex-row place-items-center justify-between">
       <span class="text-xs text-neutral-400">Sorting by {{ selectedSort.text }}</span>
-      <Listbox as="div" class="relative inline-block text-left" v-model="selectedSort">
+      <Listbox
+        as="div"
+        class="relative inline-block text-left"
+        v-model="selectedSort"
+        v-slot="{ open }"
+      >
         <div>
           <ListboxButton
-            class="group inline-flex justify-center text-sm font-medium text-gray-700 hover:text-indigo-600"
+            class="group inline-flex justify-center place-items-center font-medium text-gray-700 hover:text-indigo-600 bg-neutral-100 py-0.5 px-2 rounded-md text-xs"
           >
             Sort
             <ChevronDownIcon
-              class="-mr-1 ml-1 h-5 w-5 flex-shrink-0 text-gray-400 group-hover:text-gray-500"
+              class="-mr-1 ml-1 h-5 w-5 flex-shrink-0 text-gray-400 group-hover:text-gray-500 transition-transform"
               aria-hidden="true"
+              :class="{ 'rotate-180 transform': open }"
             />
           </ListboxButton>
         </div>
