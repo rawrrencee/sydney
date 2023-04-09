@@ -1,10 +1,9 @@
 <script setup lang="ts">
 import RouteBadge from './RouteBadge.vue';
 
-const props = defineProps({
+defineProps({
   gradeCounts: Array<any>
 });
-console.log(props.gradeCounts);
 </script>
 
 <template>
