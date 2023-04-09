@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { itineraryList } from '@/constants/itinerary';
+import { unqiueAreaGradeCounts } from '@/helpers/helper';
+import type { ClimbingLocation } from '@/models/ClimbingLocation';
 import {
 Disclosure,
 DisclosureButton,
@@ -18,6 +20,7 @@ import { ChevronUpDownIcon } from '@heroicons/vue/20/solid';
 import { Image, ImagePreviewGroup } from 'ant-design-vue';
 import { computed, ref, watch } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
+import RouteBadgeIterator from './Badge/RouteBadgeIterator.vue';
 import AnimatedCat from './CssElements/AnimatedCat.vue';
 import CuteAnimalPens from './CssElements/CuteAnimalPens.vue';
 import GridItem from './GridItem.vue';
@@ -87,7 +90,10 @@ watch(breadcrumbs, () => {
     breadcrumbs.value.child
   ) {
     selectedChild.value =
-      breadcrumbs.value.itinerary.data.find((d) => d.id === breadcrumbs.value.child?.id) ?? null;
+      breadcrumbs.value.itinerary.data.find(
+        (d: ClimbingLocation) => d.id === breadcrumbs.value.child?.id
+      ) ?? null;
+    showSlideover.value = !!breadcrumbs.value?.grandchild;
   }
 
   if (
@@ -170,7 +176,7 @@ watch(selectedGrandchild, (val) => {
               :on-click="
                 () => {
                   showSlideover = true;
-                  $router.replace({
+                  $router.push({
                     path: $route.path,
                     query: {
                       section: breadcrumbs?.itinerary?.id,
@@ -180,7 +186,13 @@ watch(selectedGrandchild, (val) => {
                   });
                 }
               "
-            />
+            >
+              <template #footer>
+                <div class="flex flex-row flex-wrap justify-center gap-2">
+                  <RouteBadgeIterator :grade-counts="unqiueAreaGradeCounts(area.routes)" />
+                </div>
+              </template>
+            </GridItem>
           </template>
         </div>
       </ItineraryContainer>
@@ -211,7 +223,7 @@ watch(selectedGrandchild, (val) => {
             leave-to-class="opacity-0"
           >
             <ListboxOptions
-              class="absolute z-10 mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-sm shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+              class="absolute z-30 mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-sm shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
             >
               <ListboxOption
                 as="template"
@@ -336,56 +348,53 @@ watch(selectedGrandchild, (val) => {
               leave-to="translate-x-full"
             >
               <div class="flex flex-col gap-3 divide-y text-xs">
-                <div class="flex flex-col">
-                  <div class="bg-indigo-50 p-4">
-                    <span class="text-sm font-semibold">Area Details</span>
-                  </div>
-                  <div class="flex flex-col gap-4 p-4">
-                    <div class="flex flex-col gap-0.5">
-                      <span class="text-xs text-neutral-400">Name</span>
-                      <span class="text-neutral-900">{{ breadcrumbs?.grandchild?.title }}</span>
+                <template
+                  v-for="tab in [
+                    { key: 'area', text: 'Area Details' },
+                    { key: 'location', text: 'Location Details' }
+                  ]"
+                >
+                  <div class="flex flex-col">
+                    <div class="bg-indigo-50 p-4">
+                      <span class="text-sm font-semibold">{{ tab.text }}</span>
                     </div>
-                    <div class="flex flex-col gap-0.5">
-                      <span class="text-xs text-neutral-400">Description</span>
-                      <span class="text-neutral-900">{{
-                        breadcrumbs?.grandchild?.description
-                      }}</span>
-                    </div>
-                    <div class="flex flex-col gap-0.5">
-                      <span class="text-xs text-neutral-400">Approach</span>
-                      <span class="text-neutral-900">{{
-                        breadcrumbs?.grandchild?.approach && breadcrumbs?.grandchild?.approach != ''
-                          ? breadcrumbs.grandchild.approach
-                          : 'Not available'
-                      }}</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex flex-col">
-                  <div class="bg-indigo-50 p-4">
-                    <span class="text-sm font-semibold">Location Details</span>
-                  </div>
-                  <div class="flex flex-col gap-4 px-4 pb-10 pt-4">
-                    <div class="flex flex-col gap-0.5">
-                      <span class="text-xs text-neutral-400">Name</span>
-                      <span class="text-neutral-900">{{ breadcrumbs?.child?.name }}</span>
-                    </div>
-                    <div class="flex flex-col gap-0.5">
-                      <span class="text-xs text-neutral-400">Description</span>
-                      <span class="whitespace-pre-wrap text-neutral-900">{{
-                        breadcrumbs?.child?.description
-                      }}</span>
-                    </div>
-                    <div class="flex flex-col gap-0.5">
-                      <span class="text-xs text-neutral-400">Approach</span>
-                      <span class="whitespace-pre-wrap text-neutral-900">{{
-                        breadcrumbs?.child?.approach && breadcrumbs?.child?.approach != ''
-                          ? breadcrumbs.child.approach
-                          : 'Not available'
-                      }}</span>
+                    <div class="flex flex-col gap-4 p-4">
+                      <div v-if="tab.key === 'location'">
+                        <Image
+                          :src="breadcrumbs?.child?.imageSrc ?? breadcrumbs?.child?.relativePath"
+                        />
+                      </div>
+                      <div class="flex flex-col gap-0.5">
+                        <span class="text-xs text-neutral-400">Name</span>
+                        <span class="text-neutral-900">{{
+                          tab.key === 'area'
+                            ? breadcrumbs?.grandchild?.title
+                            : breadcrumbs?.child?.name
+                        }}</span>
+                      </div>
+                      <div class="flex flex-col gap-0.5">
+                        <span class="text-xs text-neutral-400">Description</span>
+                        <span class="text-neutral-900">{{
+                          tab.key === 'area'
+                            ? breadcrumbs?.grandchild?.description
+                            : breadcrumbs?.child?.description
+                        }}</span>
+                      </div>
+                      <div class="flex flex-col gap-0.5">
+                        <span class="text-xs text-neutral-400">Approach</span>
+                        <span class="text-neutral-900">{{
+                          (tab.key === 'area'
+                            ? breadcrumbs?.grandchild?.approach
+                            : breadcrumbs?.child?.approach) !== ''
+                            ? tab.key === 'area'
+                              ? breadcrumbs?.grandchild?.approach
+                              : breadcrumbs?.child?.approach
+                            : 'Not available'
+                        }}</span>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </template>
               </div>
             </TransitionRoot>
           </TabPanel>

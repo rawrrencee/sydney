@@ -226,7 +226,7 @@ export const theFrontline: ClimbingLocation = {
         },
         {
           id: '17',
-          grade: '',
+          grade: 'V999',
           url: 'https://www.thecrag.com/en/climbing/australia/north-west/the-frontline/route/2128173009',
           quality: '',
           name: 'CLOSED Project',

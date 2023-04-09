@@ -10,7 +10,7 @@ export interface ClimbingLocation {
   areas: ClimbingArea[];
 }
 
-interface ClimbingArea {
+export interface ClimbingArea {
   id: string;
   slug: string;
   title: string;

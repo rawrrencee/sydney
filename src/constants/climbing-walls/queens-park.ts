@@ -776,8 +776,8 @@ export const queensPark: ClimbingLocation = {
           description:
             'Start on the obvious break at the back of the wall, climb out the steepest section and top out right of the pipe.',
           imageSrc:
-            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/queens-park/south-end-9.jpeg?raw=true',
-          relativePath: new URL('@/assets/climbing/queens-park/south-end-9.jpeg', import.meta.url)
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/queens-park/south-end-2.jpeg?raw=true',
+          relativePath: new URL('@/assets/climbing/queens-park/south-end-2.jpeg', import.meta.url)
             .href
         },
         {

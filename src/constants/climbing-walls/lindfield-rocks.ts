@@ -2372,8 +2372,12 @@ export const lindfieldRocks: ClimbingLocation = {
       approach:
         "A standalone rock left of the Blank Wall, marking the end of the crag proper. 'Problems' described are on the face directly opposite snout rock. Tons of variants of course exist.\n",
       url: 'https://www.thecrag.com/en/climbing/australia/north-shore/area/13111393',
-      imageSrc: undefined,
-      relativePath: undefined,
+      imageSrc:
+        'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/isolated-rock-overhang-1.jpeg?raw=true',
+      relativePath: new URL(
+        '@/assets/climbing/lindfield-rocks/isolated-rock-overhang-1.jpeg',
+        import.meta.url
+      ).href,
       routes: [
         {
           id: '1',
@@ -2384,12 +2388,8 @@ export const lindfieldRocks: ClimbingLocation = {
           ascents: 'Relative popularity (82) - 75 ascents',
           description:
             'Start with your right hand in the large pocket and move up via pinches. Finish off right.',
-          imageSrc:
-            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/isolated-rock-overhang-1.jpeg?raw=true',
-          relativePath: new URL(
-            '@/assets/climbing/lindfield-rocks/isolated-rock-overhang-1.jpeg',
-            import.meta.url
-          ).href
+          imageSrc: undefined,
+          relativePath: undefined
         },
         {
           id: '2',
@@ -2568,8 +2568,12 @@ export const lindfieldRocks: ClimbingLocation = {
       approach:
         'To the left and slightly separate from the main crag, an area of overhanging sandstone up off the path\n',
       url: 'https://www.thecrag.com/en/climbing/australia/north-shore/area/13111417',
-      imageSrc: undefined,
-      relativePath: undefined,
+      imageSrc:
+        'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/the-overhangs-1.jpeg?raw=true',
+      relativePath: new URL(
+        '@/assets/climbing/lindfield-rocks/the-overhangs-1.jpeg',
+        import.meta.url
+      ).href,
       routes: [
         {
           id: '1',
@@ -2580,12 +2584,8 @@ export const lindfieldRocks: ClimbingLocation = {
           ascents: 'Relative popularity (33) - 3 ascents',
           description:
             'Lip Traverse from the obvious horizontal break right of the roof all the way along the lip to finish in the wide corner crack.',
-          imageSrc:
-            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/the-overhangs-1.jpeg?raw=true',
-          relativePath: new URL(
-            '@/assets/climbing/lindfield-rocks/the-overhangs-1.jpeg',
-            import.meta.url
-          ).href
+          imageSrc: undefined,
+          relativePath: undefined
         },
         {
           id: '2',
@@ -2715,8 +2715,10 @@ export const lindfieldRocks: ClimbingLocation = {
       approach:
         'Follow the track past the overhangs to some steps, turn left and walk for about 100m to find the area on your right. Climbs described left to right\n',
       url: 'https://www.thecrag.com/en/climbing/australia/north-shore/area/13111441',
-      imageSrc: undefined,
-      relativePath: undefined,
+      imageSrc:
+        'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/pipe-dreams-1.jpeg?raw=true',
+      relativePath: new URL('@/assets/climbing/lindfield-rocks/pipe-dreams-1.jpeg', import.meta.url)
+        .href,
       routes: [
         {
           id: '1',
@@ -2727,12 +2729,8 @@ export const lindfieldRocks: ClimbingLocation = {
           ascents: 'Relative popularity (100) - 281 ascents',
           description:
             'Eponymous super classic left-to-right traverse under the roof and topping out boulder.',
-          imageSrc:
-            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/pipe-dreams-1.jpeg?raw=true',
-          relativePath: new URL(
-            '@/assets/climbing/lindfield-rocks/pipe-dreams-1.jpeg',
-            import.meta.url
-          ).href
+          imageSrc: undefined,
+          relativePath: undefined
         },
         {
           id: '2',

@@ -1,8 +1,10 @@
 <script setup lang="ts">
+import { getRelativeGrade } from '@/helpers/helper';
 import type { ClimbingLocationRoute } from '@/models/ClimbingLocation';
 import { Listbox, ListboxButton, ListboxOption, ListboxOptions } from '@headlessui/vue';
 import { ArrowTopRightOnSquareIcon, ChevronDownIcon, StarIcon } from '@heroicons/vue/20/solid';
 import { ref, watch, type Ref } from 'vue';
+import RouteBadge from './Badge/RouteBadge.vue';
 
 const props = defineProps({
   routes: Array<ClimbingLocationRoute>
@@ -51,7 +53,7 @@ const getSortedRoutes = (key: string) => {
 
     case 'grade':
       return [...props.routes!].sort(
-        (x, y) => parseInt(x.grade.substring(1)) - parseInt(y.grade.substring(1))
+        (x, y) => getRelativeGrade(x.grade) - getRelativeGrade(y.grade)
       );
 
     case 'rating':
@@ -134,20 +136,7 @@ const getSortedRoutes = (key: string) => {
           <span class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-gray-500">
             <span class="text-xs font-semibold leading-none text-white">{{ route.id }}</span>
           </span>
-          <span
-            class="inline-flex items-center rounded-md px-1.5 py-0.5 text-xs font-medium"
-            :class="[
-              parseInt(route.grade.substring(1)) <= 3 && 'bg-emerald-100 text-emerald-800',
-              parseInt(route.grade.substring(1)) > 3 &&
-                parseInt(route.grade.substring(1)) <= 5 &&
-                'bg-sky-100 text-sky-800',
-              parseInt(route.grade.substring(1)) > 5 &&
-                parseInt(route.grade.substring(1)) <= 8 &&
-                'bg-orange-100 text-orange-800',
-              parseInt(route.grade.substring(1)) > 8 && 'bg-red-100 text-red-800'
-            ]"
-            >{{ route.grade }}</span
-          >
+          <RouteBadge :grade-int="getRelativeGrade(route.grade)" :grade-string="route.grade" />
           <span class="font-semibold">{{ route.name }}</span>
           <div class="flex items-center">
             <StarIcon
