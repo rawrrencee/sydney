@@ -5,5 +5,9 @@ module.exports = {
   theme: {
     extend: {}
   },
-  plugins: [require('@headlessui/tailwindcss'), require('@tailwindcss/aspect-ratio')]
+  plugins: [
+    require('@headlessui/tailwindcss'),
+    require('@tailwindcss/aspect-ratio'),
+    require('@tailwindcss/forms'),
+  ]
 };

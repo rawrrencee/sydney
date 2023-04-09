@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { ClimbingLocationRoute } from '@/models/ClimbingLocation';
 import { Listbox, ListboxButton, ListboxOption, ListboxOptions } from '@headlessui/vue';
-import { ArrowRightOnRectangleIcon, ChevronDownIcon, StarIcon } from '@heroicons/vue/20/solid';
+import { ArrowTopRightOnSquareIcon, ChevronDownIcon, StarIcon } from '@heroicons/vue/20/solid';
 import { ref, watch, type Ref } from 'vue';
 
 const props = defineProps({
@@ -164,7 +164,7 @@ const getSortedRoutes = (key: string) => {
             class="ml-auto flex cursor-pointer flex-row rounded-md px-2 py-2 hover:bg-neutral-200"
             @click="openInNewWindow(route.url)"
           >
-            <ArrowRightOnRectangleIcon class="h-3 w-3" />
+            <ArrowTopRightOnSquareIcon class="h-3 w-3" />
           </div>
         </div>
         <div class="text-xs text-neutral-400">

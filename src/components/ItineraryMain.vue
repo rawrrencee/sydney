@@ -1,6 +1,19 @@
 <script setup lang="ts">
 import { itineraryList } from '@/constants/itinerary';
-import { Listbox, ListboxButton, ListboxOption, ListboxOptions } from '@headlessui/vue';
+import {
+Disclosure,
+DisclosureButton,
+Listbox,
+ListboxButton,
+ListboxOption,
+ListboxOptions,
+Tab,
+TabGroup,
+TabList,
+TabPanel,
+TabPanels,
+TransitionRoot
+} from '@headlessui/vue';
 import { ChevronUpDownIcon } from '@heroicons/vue/20/solid';
 import { Image, ImagePreviewGroup } from 'ant-design-vue';
 import { computed, ref, watch } from 'vue';
@@ -40,7 +53,11 @@ const grandchildImagePaths = computed(() => {
 
 const selectedChild = ref(breadcrumbs.value?.child ?? null);
 const selectedGrandchild = ref(breadcrumbs.value?.grandchild ?? null);
-const showDialog = ref(!!breadcrumbs.value?.grandchild);
+const showSlideover = ref(!!breadcrumbs.value?.grandchild);
+const grandchildTabs = ref([
+  { key: 'routes', text: 'Routes', current: true },
+  { key: 'areaDetails', text: 'Area Details', current: false }
+]);
 
 const onSelectedChildChanged = (val: any) => {
   if (val?.id !== breadcrumbs.value.child?.id) {
@@ -50,8 +67,8 @@ const onSelectedChildChanged = (val: any) => {
   }
 };
 const onUpdateShowSlideover = (val: boolean) => {
-  showDialog.value = val;
-  if (!showDialog.value) {
+  showSlideover.value = val;
+  if (!showSlideover.value) {
     setTimeout(() => {
       router.replace({
         query: { section: breadcrumbs?.value?.itinerary?.id, child: selectedChild?.value?.id }
@@ -114,6 +131,27 @@ watch(selectedGrandchild, (val) => {
             @update:selected-child="onSelectedChildChanged"
             :breadcrumbs="breadcrumbs"
           />
+
+          <div class="flex flex-col text-xs">
+            <div class="flex flex-col gap-4 px-1 py-2 text-left sm:p-4">
+              <div v-for="(sectionName, i) in ['Description', 'Approach']" :key="i">
+                <Disclosure v-slot="{ open }">
+                  <span class="text-neutral-400">{{ sectionName }}</span>
+                  <DisclosureButton
+                    as="div"
+                    class="cursor-pointer whitespace-pre-wrap text-left text-neutral-900"
+                    :class="[!open && 'line-clamp-2']"
+                  >
+                    <span>{{
+                      sectionName === 'Description'
+                        ? breadcrumbs?.child?.description
+                        : breadcrumbs?.child?.approach
+                    }}</span>
+                  </DisclosureButton>
+                </Disclosure>
+              </div>
+            </div>
+          </div>
         </template>
       </ItineraryContainer>
       <ItineraryContainer
@@ -131,7 +169,7 @@ watch(selectedGrandchild, (val) => {
               :image-src="area.imageSrc || area.relativePath"
               :on-click="
                 () => {
-                  showDialog = true;
+                  showSlideover = true;
                   $router.replace({
                     path: $route.path,
                     query: {
@@ -148,7 +186,10 @@ watch(selectedGrandchild, (val) => {
       </ItineraryContainer>
     </div>
   </div>
-  <ItinerarySlideover :show-slideover="showDialog" @update:show-slideover="onUpdateShowSlideover">
+  <ItinerarySlideover
+    :show-slideover="showSlideover"
+    @update:show-slideover="onUpdateShowSlideover"
+  >
     <template #header>
       <Listbox as="div" class="flex-grow-[1]" v-model="selectedGrandchild">
         <div class="relative items-center">
@@ -202,7 +243,7 @@ watch(selectedGrandchild, (val) => {
         v-if="grandchildImagePaths && grandchildImagePaths.length > 0"
       >
         <ImagePreviewGroup>
-          <template v-for="(imagePath, i) of grandchildImagePaths" :key="i">
+          <template v-for="(imagePath, i) in grandchildImagePaths" :key="i">
             <Image :src="imagePath" />
           </template>
         </ImagePreviewGroup>
@@ -221,28 +262,135 @@ watch(selectedGrandchild, (val) => {
       </template>
     </template>
 
-    <template #topFooter
-      ><a
+    <template #topFooter>
+      <a
         v-if="breadcrumbs?.child?.url"
         :href="breadcrumbs?.child?.url"
         class="text-xs text-neutral-400 hover:text-indigo-600"
-        @click.prevent="() => openInNewWindow(breadcrumbs?.child?.url)"
+        @click.prevent="
+          () => openInNewWindow(breadcrumbs?.grandchild?.url ?? breadcrumbs?.child?.url)
+        "
         >View at theCrag.com</a
-      ></template
-    >
+      >
+    </template>
 
     <template #bottom>
-      <template
-        v-if="breadcrumbs?.grandchild?.routes?.length && breadcrumbs.grandchild.routes.length > 0"
-      >
-        <ItineraryRoutes :routes="breadcrumbs.grandchild.routes" />
-      </template>
-      <template v-else>
-        <div class="flex h-96 flex-col place-items-center rounded-md bg-black pt-32">
-          <AnimatedCat />
-          <span class="mt-5 font-semibold text-white">No routes found</span>
-        </div>
-      </template>
+      <TabGroup v-slot="{ selectedIndex }">
+        <TabList as="div" class="sticky top-0 isolate z-20 flex divide-x divide-gray-200 shadow-md">
+          <Tab as="template" v-slot="{ selected }" v-for="tab in grandchildTabs" :key="tab.key">
+            <div
+              :class="[
+                selected ? 'text-gray-900' : 'text-gray-500 hover:text-gray-700',
+                'group relative min-w-0 flex-1 cursor-pointer overflow-hidden bg-white px-2 py-2 text-center text-xs font-medium hover:bg-gray-50 focus:z-10'
+              ]"
+              :aria-current="selected ? 'page' : undefined"
+            >
+              <span>{{ tab.text }}</span>
+              <span
+                aria-hidden="true"
+                :class="[
+                  selected ? 'bg-indigo-500' : 'bg-transparent',
+                  'absolute inset-x-0 bottom-0 h-0.5'
+                ]"
+              />
+            </div>
+          </Tab>
+        </TabList>
+        <TabPanels>
+          <TabPanel static>
+            <TransitionRoot
+              :show="selectedIndex === 0"
+              enter="transition ease-in-out duration-300 transform"
+              enter-from="-translate-x-full"
+              enter-to="translate-x-0"
+              leave="transition ease-in-out duration-300 transform"
+              leave-from="translate-x-0"
+              leave-to="-translate-x-full"
+            >
+              <div class="px-4 pt-4">
+                <template
+                  v-if="
+                    breadcrumbs?.grandchild?.routes?.length &&
+                    breadcrumbs.grandchild.routes.length > 0
+                  "
+                >
+                  <ItineraryRoutes :routes="breadcrumbs.grandchild.routes" />
+                </template>
+                <template v-else>
+                  <div class="flex h-96 flex-col place-items-center rounded-md bg-black pt-32">
+                    <AnimatedCat />
+                    <span class="mt-5 font-semibold text-white">No routes found</span>
+                  </div>
+                </template>
+              </div>
+            </TransitionRoot>
+          </TabPanel>
+          <TabPanel static>
+            <TransitionRoot
+              :show="selectedIndex === 1"
+              enter="transition ease-in-out duration-300 transform"
+              enter-from="translate-x-full"
+              enter-to="translate-x-0"
+              leave="transition ease-in-out duration-300 transform"
+              leave-from="translate-x-0"
+              leave-to="translate-x-full"
+            >
+              <div class="flex flex-col gap-3 divide-y text-xs">
+                <div class="flex flex-col">
+                  <div class="bg-indigo-50 p-4">
+                    <span class="text-sm font-semibold">Area Details</span>
+                  </div>
+                  <div class="flex flex-col gap-4 p-4">
+                    <div class="flex flex-col gap-0.5">
+                      <span class="text-xs text-neutral-400">Name</span>
+                      <span class="text-neutral-900">{{ breadcrumbs?.grandchild?.title }}</span>
+                    </div>
+                    <div class="flex flex-col gap-0.5">
+                      <span class="text-xs text-neutral-400">Description</span>
+                      <span class="text-neutral-900">{{
+                        breadcrumbs?.grandchild?.description
+                      }}</span>
+                    </div>
+                    <div class="flex flex-col gap-0.5">
+                      <span class="text-xs text-neutral-400">Approach</span>
+                      <span class="text-neutral-900">{{
+                        breadcrumbs?.grandchild?.approach && breadcrumbs?.grandchild?.approach != ''
+                          ? breadcrumbs.grandchild.approach
+                          : 'Not available'
+                      }}</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex flex-col">
+                  <div class="bg-indigo-50 p-4">
+                    <span class="text-sm font-semibold">Location Details</span>
+                  </div>
+                  <div class="flex flex-col gap-4 px-4 pb-10 pt-4">
+                    <div class="flex flex-col gap-0.5">
+                      <span class="text-xs text-neutral-400">Name</span>
+                      <span class="text-neutral-900">{{ breadcrumbs?.child?.name }}</span>
+                    </div>
+                    <div class="flex flex-col gap-0.5">
+                      <span class="text-xs text-neutral-400">Description</span>
+                      <span class="whitespace-pre-wrap text-neutral-900">{{
+                        breadcrumbs?.child?.description
+                      }}</span>
+                    </div>
+                    <div class="flex flex-col gap-0.5">
+                      <span class="text-xs text-neutral-400">Approach</span>
+                      <span class="whitespace-pre-wrap text-neutral-900">{{
+                        breadcrumbs?.child?.approach && breadcrumbs?.child?.approach != ''
+                          ? breadcrumbs.child.approach
+                          : 'Not available'
+                      }}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </TransitionRoot>
+          </TabPanel>
+        </TabPanels>
+      </TabGroup>
     </template>
   </ItinerarySlideover>
 </template>

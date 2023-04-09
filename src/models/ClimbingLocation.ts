@@ -2,6 +2,8 @@ export interface ClimbingLocation {
   id: string;
   name: string;
   subtitle: string;
+  description: string;
+  approach: string;
   url?: string | undefined;
   imageSrc: string | undefined;
   relativePath: string | undefined;
@@ -13,6 +15,7 @@ interface ClimbingArea {
   slug: string;
   title: string;
   description: string;
+  approach: string;
   url?: string | undefined;
   imageSrc: string | undefined;
   relativePath: string | undefined;

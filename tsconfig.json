@@ -8,10 +8,15 @@
     },
     "types": ["vite-plugin-pwa/client"]
   },
-
   "references": [
     {
       "path": "./tsconfig.node.json"
     }
-  ]
+  ],
+  "typescript.tsserver.watchOptions": {
+    "watchDirectory": "useFsEvents",
+    "watchFile": "useFsEvents",
+    "useFsEvents": true,
+    "usePolling": false
+  }
 }

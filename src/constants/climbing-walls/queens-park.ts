@@ -4,8 +4,12 @@ export const queensPark: ClimbingLocation = {
   id: 'queens-park',
   name: 'Queens Park',
   subtitle: 'via Victoria Park',
+  description: '',
+  approach:
+    '2 hrs street parking E.g Henry St, John St. Less than 5 mins walk, literally a walk in the park.\n',
   url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/area/12011827',
-  imageSrc: 'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/queens-park/index.jpeg?raw=true',
+  imageSrc:
+    'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/queens-park/index.jpeg?raw=true',
   relativePath: new URL('@/assets/climbing/queens-park/index.jpeg', import.meta.url).href,
   areas: [
     {
@@ -13,6 +17,8 @@ export const queensPark: ClimbingLocation = {
       slug: 'the-throne-room',
       title: 'The Throne Room',
       description: '',
+      approach: '',
+      url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/area/13126129',
       imageSrc:
         'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/queens-park/the-throne-room-1.jpeg?raw=true',
       relativePath: new URL('@/assets/climbing/queens-park/the-throne-room-1.jpeg', import.meta.url)
@@ -121,6 +127,8 @@ export const queensPark: ClimbingLocation = {
       slug: 'left-hand-side',
       title: 'Left Hand Side',
       description: '',
+      approach: '',
+      url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/area/13126057',
       imageSrc:
         'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/queens-park/left-hand-side-1.jpeg?raw=true',
       relativePath: new URL('@/assets/climbing/queens-park/left-hand-side-1.jpeg', import.meta.url)
@@ -450,6 +458,8 @@ export const queensPark: ClimbingLocation = {
       slug: 'the-middle',
       title: 'The Middle',
       description: '',
+      approach: '',
+      url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/area/13126081',
       imageSrc:
         'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/queens-park/the-middle-1.jpeg?raw=true',
       relativePath: new URL('@/assets/climbing/queens-park/the-middle-1.jpeg', import.meta.url)
@@ -658,6 +668,8 @@ export const queensPark: ClimbingLocation = {
       slug: 'south-end',
       title: 'South End',
       description: '',
+      approach: '',
+      url: 'https://www.thecrag.com/en/climbing/australia/eastern-suburbs/area/13126105',
       imageSrc:
         'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/queens-park/south-end-1.jpeg?raw=true',
       relativePath: new URL('@/assets/climbing/queens-park/south-end-1.jpeg', import.meta.url).href,

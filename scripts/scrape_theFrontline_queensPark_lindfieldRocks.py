@@ -42,6 +42,7 @@ for location in locations:
         areaId = areaSoup.find('body').get('data-nid')
         areaName = areaSoup.find('span', {'class': 'heading__t'}).text.strip() if areaSoup.find('span', {'class': 'heading__t'}) else ''
         areaSlug = areaName.lower().replace(' ', '-')
+        areaUrl = 'https://www.thecrag.com' + areaSoup.find('li', {'class': 'selected'}).find('a').get('href')
 
         areaDescription = ''
         areaDescriptions = areaSoup.find('div', {'class': 'description'}).find_all('p') if areaSoup.find('div', {'class': 'description'}) else []
@@ -71,15 +72,14 @@ for location in locations:
             routeData = { 'id': routeNumber, 'grade': routeGrade, 'url': routeUrl, 'quality': routeQuality, 'name': routeName, 'ascents': routeAscents, 'description': routeDescription, 'imageSrc': None, 'relativePath': None }
             areaRoutes.append(routeData)
         
-        areaData = {'id': areaId, 'slug': areaSlug, 'title': areaName, 'description': areaDescription, 'imageSrc': None, 'relativePath': None, 'routes': areaRoutes }
+        areaData = {'id': areaId, 'slug': areaSlug, 'title': areaName, 'description': areaDescription, 'approach': areaApproach, 'url': areaUrl, 'imageSrc': None, 'relativePath': None, 'routes': areaRoutes }
         areaDetails.append(areaData)
     
-    locationData.append({'id': locationSlug, 'name': locationName, 'subtitle': None, 'imageSrc': None, 'relativePath': None, 'areas': areaDetails })
+    locationData.append({'id': locationSlug, 'name': locationName, 'subtitle': None, 'description': locationDescription, 'approach': locationApproach, 'imageSrc': None, 'relativePath': None, 'areas': areaDetails })
 
 
 # Convert the list of JSON data to a JSON string
 json_string = json.dumps(locationData)
 
 # Print the JSON string
-print(json_string)
 subprocess.run("pbcopy", text=True, input=json_string)
