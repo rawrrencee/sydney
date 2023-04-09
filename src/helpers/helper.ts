@@ -7,16 +7,34 @@ export const getRelativeGrade = (grade: string) => {
   return gradeInt;
 };
 
+export const getCleanGrade = (grade: string) => {
+  let gradeString = '';
+  const relativeGrade = getRelativeGrade(grade);
+  switch (relativeGrade) {
+    case -1:
+      gradeString = 'VB';
+      break;
+    case 999:
+      gradeString = 'Others';
+      break;
+    default:
+      gradeString = `V${relativeGrade}`;
+      break;
+  }
+  return gradeString;
+};
+
 const getGradeMap = (routes: ClimbingLocationRoute[]) => {
   const gradeMap = new Map<string, number>();
   [...routes]
     .filter((r) => r.grade.includes('V'))
     .sort((x, y) => getRelativeGrade(x.grade) - getRelativeGrade(y.grade))
     .forEach((r) => {
-      if (!gradeMap.has(r.grade)) {
-        gradeMap.set(r.grade, 1);
+      let gradeString = getCleanGrade(r.grade);
+      if (!gradeMap.has(gradeString)) {
+        gradeMap.set(gradeString, 1);
       } else {
-        gradeMap.set(r.grade, gradeMap.get(r.grade)! + 1);
+        gradeMap.set(gradeString, gradeMap.get(gradeString)! + 1);
       }
     });
 
@@ -33,21 +51,11 @@ export const unqiueAreaGradeCounts = (routes: ClimbingLocationRoute[]) => {
 };
 
 export const unqiueLocationGradeCounts = (areas: ClimbingArea[]) => {
-  const gradeMap = new Map<string, number>();
   let routes: ClimbingLocationRoute[] = [];
   areas.forEach((a) => {
     routes = [...routes, ...a.routes];
   });
-  [...routes]
-    .filter((r) => r.grade.includes('V'))
-    .sort((x, y) => getRelativeGrade(x.grade) - getRelativeGrade(y.grade))
-    .forEach((r) => {
-      if (!gradeMap.has(r.grade)) {
-        gradeMap.set(r.grade, 1);
-      } else {
-        gradeMap.set(r.grade, gradeMap.get(r.grade)! + 1);
-      }
-    });
+  const gradeMap = getGradeMap(routes);
   return Array.from(gradeMap.keys()).map((k) => ({
     grade: k,
     gradeInt: getRelativeGrade(k),

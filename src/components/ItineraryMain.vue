@@ -176,7 +176,7 @@ watch(selectedGrandchild, (val) => {
               :on-click="
                 () => {
                   showSlideover = true;
-                  $router.push({
+                  $router.replace({
                     path: $route.path,
                     query: {
                       section: breadcrumbs?.itinerary?.id,

@@ -59,7 +59,7 @@ watch(isExpanded, (val) => {
                 () => {
                   itinerary?.id &&
                     location.id &&
-                    $router.push({
+                    $router.replace({
                       path: $route.path,
                       query: { section: itinerary?.id, child: location.id }
                     });

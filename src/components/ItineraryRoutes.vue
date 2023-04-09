@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { getRelativeGrade } from '@/helpers/helper';
+import { getCleanGrade, getRelativeGrade } from '@/helpers/helper';
 import type { ClimbingLocationRoute } from '@/models/ClimbingLocation';
 import { Listbox, ListboxButton, ListboxOption, ListboxOptions } from '@headlessui/vue';
 import { ArrowTopRightOnSquareIcon, ChevronDownIcon, StarIcon } from '@heroicons/vue/20/solid';
@@ -143,10 +143,10 @@ const getSortedRoutes = (key: string) => {
         :key="route.id"
       >
         <div class="flex flex-row items-center gap-2">
-          <span class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-gray-500">
+          <span class="flex-shrink-0 inline-flex h-7 w-7 items-center justify-center rounded-full bg-gray-500">
             <span class="text-xs font-semibold leading-none text-white">{{ route.id }}</span>
           </span>
-          <RouteBadge :grade-int="getRelativeGrade(route.grade)" :grade-string="route.grade" />
+          <RouteBadge :grade-int="getRelativeGrade(route.grade)" :grade-string="getCleanGrade(route.grade)" />
           <span class="font-semibold">{{ route.name }}</span>
           <div class="flex items-center">
             <StarIcon
