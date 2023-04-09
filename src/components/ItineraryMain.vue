@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { itineraryList } from '@/constants/itinerary';
-import { unqiueAreaGradeCounts } from '@/helpers/helper';
+import { getImageSrc, unqiueAreaGradeCounts } from '@/helpers/helper';
 import type { ClimbingLocation } from '@/models/ClimbingLocation';
 import {
 Disclosure,
@@ -46,9 +46,9 @@ const breadcrumbs = computed(() => {
 const grandchildImagePaths = computed(() => {
   const routeImagePaths = breadcrumbs?.value?.grandchild?.routes
     .filter((r) => !!r.imageSrc)
-    .map((r) => r.imageSrc!);
-  if (breadcrumbs?.value?.grandchild?.imageSrc) {
-    return [breadcrumbs?.value?.grandchild?.imageSrc].concat(routeImagePaths!);
+    .map((r) => getImageSrc(r));
+  if (getImageSrc(breadcrumbs?.value?.grandchild)) {
+    return [getImageSrc(breadcrumbs?.value?.grandchild)].concat(routeImagePaths!);
   } else {
     return routeImagePaths;
   }
@@ -172,7 +172,7 @@ watch(selectedGrandchild, (val) => {
             <GridItem
               :title="area.title"
               :subtitle="area.description"
-              :image-src="area.imageSrc || area.relativePath"
+              :image-src="getImageSrc(area)"
               :on-click="
                 () => {
                   showSlideover = true;
@@ -360,9 +360,7 @@ watch(selectedGrandchild, (val) => {
                     </div>
                     <div class="flex flex-col gap-4 p-4">
                       <div v-if="tab.key === 'location'">
-                        <Image
-                          :src="breadcrumbs?.child?.imageSrc ?? breadcrumbs?.child?.relativePath"
-                        />
+                        <Image :src="getImageSrc(breadcrumbs?.child)" />
                       </div>
                       <div class="flex flex-col gap-0.5">
                         <span class="text-xs text-neutral-400">Name</span>

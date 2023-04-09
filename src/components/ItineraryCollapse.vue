@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { unqiueLocationGradeCounts } from '@/helpers/helper';
+import { getImageSrc, unqiueLocationGradeCounts } from '@/helpers/helper';
 import { Disclosure, DisclosureButton, DisclosurePanel, TransitionRoot } from '@headlessui/vue';
 import { ChevronRightIcon } from '@heroicons/vue/20/solid';
 import { onMounted, ref, watch } from 'vue';
@@ -53,7 +53,7 @@ watch(isExpanded, (val) => {
         >
           <template v-for="(location, i) of itinerary?.data" :key="i">
             <GridItem
-              :image-src="location.imageSrc ?? location.relativePath"
+              :image-src="getImageSrc(location)"
               :href="`${$route.path}?section=${itinerary?.id}&child=${location.id}`"
               :on-click="
                 () => {

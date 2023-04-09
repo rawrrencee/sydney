@@ -1,5 +1,11 @@
 import type { ClimbingArea, ClimbingLocationRoute } from '@/models/ClimbingLocation';
 
+export const getImageSrc = (obj: any) => {
+  const useCdn = import.meta.env.VITE_USE_CDN;
+  if (useCdn === 'TRUE' && obj?.relativePath) return obj.relativePath;
+  else return obj?.imageSrc;
+};
+
 export const getRelativeGrade = (grade: string) => {
   if (grade?.toLocaleUpperCase().includes('VB')) return -1;
   let gradeInt = parseInt(grade.substring(1));
