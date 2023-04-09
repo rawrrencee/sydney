@@ -15,7 +15,7 @@ defineProps({
     v-motion
     :initial="{ opacity: 0 }"
     :enter="{ opacity: 1 }"
-    class="relative cursor-pointer overflow-hidden rounded-lg bg-white shadow-md"
+    class="relative cursor-pointer rounded-lg bg-white pb-1 shadow-md"
   >
     <div
       class="min-h-80 aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none lg:h-80"
@@ -29,7 +29,10 @@ defineProps({
         />
       </template>
     </div>
-    <div class="flex flex-1 flex-col space-y-2 p-4">
+    <div class="p-4">
+      <slot name="footer"></slot>
+    </div>
+    <div class="flex flex-1 flex-col space-y-2 px-4 pb-2">
       <h3 class="text-sm font-medium text-neutral-900">
         <a :href="href" class="hover:text-indigo-400" @click.prevent="onClick ? onClick() : null">
           <span aria-hidden="true" class="absolute inset-0" />

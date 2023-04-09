@@ -55,11 +55,11 @@ for route in routes:
     routeData = { 'id': routeNumber, 'grade': routeGrade, 'url': routeUrl, 'quality': routeQuality, 'name': routeName, 'ascents': routeAscents, 'description': routeDescription, 'imageSrc': None, 'relativePath': None }
     areaRoutes.append(routeData)
 
-areaData = {'id': areaId, 'slug': areaSlug, 'title': areaName, 'description': areaDescription, 'imageSrc': None, 'relativePath': None, 'routes': areaRoutes }
+areaData = {'id': areaId, 'slug': areaSlug, 'title': areaName, 'description': areaDescription, 'approach': areaApproach, 'imageSrc': None, 'relativePath': None, 'routes': areaRoutes }
 areaDetails.append(areaData)
 
 # Convert the list of JSON data to a JSON string
-json_string = json.dumps({'id': locationSlug, 'name': locationName, 'subtitle': None, 'imageSrc': None, 'relativePath': None, 'areas': areaDetails })
+json_string = json.dumps({'id': locationSlug, 'name': locationName, 'subtitle': None, 'description': locationDescription, 'approach': locationApproach, 'imageSrc': None, 'relativePath': None, 'areas': areaDetails })
 
 # Print the JSON string
 print(json_string)

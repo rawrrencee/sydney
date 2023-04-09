@@ -4,8 +4,12 @@ export const blackCave: ClimbingLocation = {
   id: 'black-cave',
   name: 'Black Cave',
   subtitle: 'via Beatty St',
+  description: 'AKA Manly Cave AKA Forty Basket Beach\n',
+  approach:
+    'Park on Beatty St and take a narrow walkway from about halfway down the street, with stairs all the way to the beach. Hang a right and then walk along the rocky shoreline a couple of hundred meters to the crag. http://youtu.be/5SUPg5N0hvw\n',
   url: 'https://www.thecrag.com/en/climbing/australia/northern-beaches/area/524265501',
-  imageSrc: 'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/black-cave/index.jpeg?raw=true',
+  imageSrc:
+    'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/black-cave/index.jpeg?raw=true',
   relativePath: new URL('@/assets/climbing/black-cave/index.jpeg', import.meta.url).href,
   areas: [
     {
@@ -13,6 +17,8 @@ export const blackCave: ClimbingLocation = {
       slug: 'black-cave',
       title: 'Black Cave',
       description: 'AKA Manly Cave AKA Forty Basket Beach\n',
+      approach:
+        'Park on Beatty St and take a narrow walkway from about halfway down the street, with stairs all the way to the beach. Hang a right and then walk along the rocky shoreline a couple of hundred meters to the crag. http://youtu.be/5SUPg5N0hvw\n',
       imageSrc:
         'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/black-cave/black-cave-1.jpeg?raw=true',
       relativePath: new URL('@/assets/climbing/black-cave/black-cave-1.jpeg', import.meta.url).href,

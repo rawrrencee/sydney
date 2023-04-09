@@ -29,10 +29,11 @@ for location in locations:
 
     areaDetails = []
     for area in areas:
-        id = area.get('data-nid')
-        title = area.find('span', {'class': 'primary-node-name'}).text.strip()
-        description = area.find('div', {'class': 'markdown'}).text.strip() if area.find('div', {'class': 'markdown'}) else ''
-        slug = title.lower().replace(' ', '-')
+        areaId = area.get('data-nid')
+        areaName = area.find('span', {'class': 'primary-node-name'}).text.strip()
+        areaSlug = areaName.lower().replace(' ', '-')
+        areaDescription = area.find('div', {'class': 'markdown'}).text.strip() if area.find('div', {'class': 'markdown'}) else ''
+        areaApproach = ''
 
         allRoutes = []
         allSiblings = area.find_next_siblings('div')
@@ -60,10 +61,10 @@ for location in locations:
             routeData = { 'id': routeNumber, 'grade': routeGrade, 'url': routeUrl, 'quality': routeQuality, 'name': routeName, 'ascents': routeAscents, 'description': routeDescription, 'imageSrc': None, 'relativePath': None }
             areaRoutes.append(routeData)
 
-        areaData = {'id': id, 'slug': slug, 'title': title, 'description': description, 'imageSrc': None, 'relativePath': None, 'routes': areaRoutes}
+        areaData = {'id': areaId, 'slug': areaSlug, 'title': areaName, 'description': areaDescription, 'approach': areaApproach, 'imageSrc': None, 'relativePath': None, 'routes': areaRoutes }
         areaDetails.append(areaData)
 
-    locationData.append({'id': locationSlug, 'name': locationName, 'subtitle': None, 'imageSrc': None, 'relativePath': None, 'areas': areaDetails })
+    locationData.append({'id': locationSlug, 'name': locationName, 'subtitle': None, 'description': locationDescription, 'approach': locationApproach, 'imageSrc': None, 'relativePath': None, 'areas': areaDetails })
 
 # Convert the list of JSON data to a JSON string
 json_string = json.dumps(locationData)

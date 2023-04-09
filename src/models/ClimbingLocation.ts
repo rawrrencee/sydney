@@ -2,17 +2,20 @@ export interface ClimbingLocation {
   id: string;
   name: string;
   subtitle: string;
+  description: string;
+  approach: string;
   url?: string | undefined;
   imageSrc: string | undefined;
   relativePath: string | undefined;
   areas: ClimbingArea[];
 }
 
-interface ClimbingArea {
+export interface ClimbingArea {
   id: string;
   slug: string;
   title: string;
   description: string;
+  approach: string;
   url?: string | undefined;
   imageSrc: string | undefined;
   relativePath: string | undefined;

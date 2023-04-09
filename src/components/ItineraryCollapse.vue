@@ -1,7 +1,9 @@
 <script setup lang="ts">
+import { unqiueLocationGradeCounts } from '@/helpers/helper';
 import { Disclosure, DisclosureButton, DisclosurePanel, TransitionRoot } from '@headlessui/vue';
 import { ChevronRightIcon } from '@heroicons/vue/20/solid';
 import { onMounted, ref, watch } from 'vue';
+import RouteBadgeIterator from './Badge/RouteBadgeIterator.vue';
 import GridItem from './GridItem.vue';
 
 const props = defineProps({
@@ -57,7 +59,7 @@ watch(isExpanded, (val) => {
                 () => {
                   itinerary?.id &&
                     location.id &&
-                    $router.replace({
+                    $router.push({
                       path: $route.path,
                       query: { section: itinerary?.id, child: location.id }
                     });
@@ -65,12 +67,15 @@ watch(isExpanded, (val) => {
               "
               :title="location.name"
               :subtitle="location.subtitle"
-            />
+            >
+              <template #footer>
+                <div class="flex flex-row flex-wrap justify-center gap-2">
+                  <RouteBadgeIterator :grade-counts="unqiueLocationGradeCounts(location.areas)" />
+                </div>
+              </template>
+            </GridItem>
           </template>
         </div>
-        <template v-else>
-          <span class="px-2 py-2">WIP</span>
-        </template>
       </DisclosurePanel>
     </TransitionRoot>
   </Disclosure>

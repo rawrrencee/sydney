@@ -5,7 +5,12 @@ export const theFrontline: ClimbingLocation = {
   name: 'The Frontline, Balkans',
   subtitle: 'via 8 Larra Cres',
   url: 'https://www.thecrag.com/en/climbing/australia/north-west/the-frontline',
-  imageSrc: 'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/frontline/index.jpeg?raw=true',
+  description:
+    'The Frontline was the first area discovered and developed in the Balkans.  It is the biggest area with about 150 individual problems ranging from V0- to V13.  There are excellent problems of all grades and styles.\nThese cliffs and boulders are generally west and south-facing and receive plenty of afternoon sun so they are perfect for cold winter afternoons and hot summer mornings.  In summer they can get very hot.  The rock is fast drying and clean but beware of the crimps, some have broken with "interesting" consequences.  Learn to pull gently and evenly on the holds and tread very carefully.\n',
+  approach:
+    'Referring to the location map park 50m into Larra Cr. just off Mill Dr. North Rocks next to the Bush-Fire Brigade trailer.  Walk down the chained-off driveway, saying hello to all the local barking dogs, and turn left when you hit the grass at the bottom.  About 30m along there is a well worn path down the hill with a small creek on your right, follow this path for about 50m.  When you hit the cliff-line turn left and scramble down wherever you please, this is the Frontline area (left side).\nAlternatively, from the Trenches, go down the hill, cross the creek and then back up the hill.  Make sure you stick to the established paths!\n',
+  imageSrc:
+    'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/frontline/index.jpeg?raw=true',
   relativePath: new URL('@/assets/climbing/frontline/index.jpeg', import.meta.url).href,
   areas: [
     {
@@ -14,6 +19,9 @@ export const theFrontline: ClimbingLocation = {
       title: 'The Far Side',
       description:
         'This part of the Frontline is on the northern side of the small creek that runs parallel to the track. Although home only to a few problems, it certainly offers variety and some pretty good bouldering too.\n',
+      approach:
+        'On the way down to the Frontline turn right instead of left once down the rocky face meeting the adjacent track.\n',
+      url: 'https://www.thecrag.com/en/climbing/australia/north-west/the-frontline/area/15272011',
       imageSrc:
         'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/frontline/the-far-side-1.jpeg?raw=true',
       relativePath: new URL('@/assets/climbing/frontline/the-far-side-1.jpeg', import.meta.url)
@@ -218,7 +226,7 @@ export const theFrontline: ClimbingLocation = {
         },
         {
           id: '17',
-          grade: '',
+          grade: 'V999',
           url: 'https://www.thecrag.com/en/climbing/australia/north-west/the-frontline/route/2128173009',
           quality: '',
           name: 'CLOSED Project',
@@ -421,6 +429,9 @@ export const theFrontline: ClimbingLocation = {
       title: 'Frontline Left Hand Side',
       description:
         "This area has some very pleasant moderate wall problems and of course the first crack, 'Revelations'.\n",
+      approach:
+        "On the way down the track this is the first area you'll get to (unless you skipped it by taking an early left, in which case you are now at the The Main Wall).\n",
+      url: 'https://www.thecrag.com/en/climbing/australia/north-west/frontline-left-hand-side',
       imageSrc:
         'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/frontline/frontline-left-hand-side-1.jpeg?raw=true',
       relativePath: new URL(
@@ -688,6 +699,8 @@ export const theFrontline: ClimbingLocation = {
       slug: 'the-corridor-boulders',
       title: 'The Corridor Boulders',
       description: 'Three boulders with some fun climbing. Dries very quickly.\n',
+      approach: '',
+      url: 'https://www.thecrag.com/en/climbing/australia/north-west/the-corridor-boulders',
       imageSrc:
         'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/frontline/the-corridor-boulders-1.jpeg?raw=true',
       relativePath: new URL(
@@ -1028,6 +1041,8 @@ export const theFrontline: ClimbingLocation = {
       title: 'The Eastern Bloc',
       description:
         'This medium sized boulder sitting in front of The Main Wall definitely has some little goodies. It is almost never wet.\n',
+      approach: 'Mid way through the Frontline just after the corridor boulders.\n',
+      url: 'https://www.thecrag.com/en/climbing/australia/north-west/the-eastern-bloc',
       imageSrc:
         'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/frontline/the-eastern-bloc-1.jpeg?raw=true',
       relativePath: new URL('@/assets/climbing/frontline/the-eastern-bloc-1.jpeg', import.meta.url)
@@ -1284,6 +1299,8 @@ export const theFrontline: ClimbingLocation = {
       title: 'The Main Wall',
       description:
         'This is the very impressive overhanging bulging wall, with a cave undercutting its right hand side. It is up to 6m high, and is home to some intimidating and essential Frontline Classics.\n',
+      approach: '',
+      url: 'https://www.thecrag.com/en/climbing/australia/north-west/the-frontline/area/15271987',
       imageSrc:
         'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/frontline/the-main-wall-1.jpeg?raw=true',
       relativePath: new URL('@/assets/climbing/frontline/the-main-wall-1.jpeg', import.meta.url)
@@ -1683,6 +1700,8 @@ export const theFrontline: ClimbingLocation = {
       title: 'Front and Centre',
       description:
         "More classic problems, the most popular being 'Sloper-Dan Milosevic' and 'Diplomatic Immunity'. Starting to get polished.\n",
+      approach: '',
+      url: 'https://www.thecrag.com/en/climbing/australia/north-west/front-and-centre',
       imageSrc:
         'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/frontline/front-and-centre-1.jpeg?raw=true',
       relativePath: new URL('@/assets/climbing/frontline/front-and-centre-1.jpeg', import.meta.url)
@@ -2266,6 +2285,8 @@ export const theFrontline: ClimbingLocation = {
       title: 'Frontline Right Hand Side',
       description:
         "The Bouldering in this area is a bit of a mixed bag - some crap and some classics such as 'Armistice Day'. Lots of styles, some little roofs, some dirty slabs and a few scary ones too!\n",
+      approach: '',
+      url: 'https://www.thecrag.com/en/climbing/australia/north-west/the-frontline/area/15272035',
       imageSrc:
         'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/frontline/frontline-right-hand-side-1.jpeg?raw=true',
       relativePath: new URL(
@@ -2542,6 +2563,8 @@ export const theFrontline: ClimbingLocation = {
       title: 'Montenegro Wall',
       description:
         "Jurassic Park Slab on the left of the main track. Don't let it fool you into thinking it's not worthy. Have a go on one of Sydney's best V2's - 'Opposition In Exile'.\n",
+      approach: '',
+      url: 'https://www.thecrag.com/en/climbing/australia/north-west/the-frontline/area/15272083',
       imageSrc:
         'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/frontline/montenegro-wall-1.jpeg?raw=true',
       relativePath: new URL('@/assets/climbing/frontline/montenegro-wall-1.jpeg', import.meta.url)
@@ -2632,6 +2655,8 @@ export const theFrontline: ClimbingLocation = {
       title: 'The Pee Boulder',
       description:
         "The large boulder opposite of 'Montenegro Wall'. Its backside has some fun problems, although the can be pretty short.\n",
+      approach: '',
+      url: 'https://www.thecrag.com/en/climbing/australia/north-west/the-frontline/area/15272059',
       imageSrc:
         'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/frontline/the-pee-boulder-1.jpeg?raw=true',
       relativePath: new URL('@/assets/climbing/frontline/the-pee-boulder-1.jpeg', import.meta.url)
@@ -2781,6 +2806,9 @@ export const theFrontline: ClimbingLocation = {
       title: 'Area Q',
       description:
         'The large boulder with routes up to 5m, encompassing some of the hardest and steepest problems.\n',
+      approach:
+        "Keep heading South following the obvious track. Area Q is after the Pee Boulder and Montenegro Wall. There's one more boulder if you keep going which is Roadside.\n",
+      url: 'https://www.thecrag.com/en/climbing/australia/north-west/the-frontline/area/15272107',
       imageSrc:
         'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/frontline/area-q-1.jpeg?raw=true',
       relativePath: new URL('@/assets/climbing/frontline/area-q-1.jpeg', import.meta.url).href,
@@ -3120,6 +3148,8 @@ export const theFrontline: ClimbingLocation = {
       title: 'Roadside',
       description:
         "This medium sized boulder sitting right at the end of frontline very close to the road, hence the name. You can hear cars zooming by while you're topping out on some easy climbs\n",
+      approach: 'Keep walking past Area Q and you can see it from there. Just a few more steps.\n',
+      url: 'https://www.thecrag.com/en/climbing/australia/north-west/the-frontline/area/15272131',
       imageSrc:
         'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/frontline/roadside-1.jpeg?raw=true',
       relativePath: new URL('@/assets/climbing/frontline/roadside-1.jpeg', import.meta.url).href,

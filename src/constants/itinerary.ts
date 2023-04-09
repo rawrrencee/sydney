@@ -1,4 +1,5 @@
 import type { ClimbingLocation } from '@/models/ClimbingLocation';
+import type { Itinerary } from '@/models/Itinerary';
 import { blackCave } from './climbing-walls/black-cave';
 import { capeBanks } from './climbing-walls/cape-banks';
 import { lindfieldRocks } from './climbing-walls/lindfield-rocks';
@@ -15,7 +16,7 @@ export const climbingLocations: ClimbingLocation[] = [
   { ...lindfieldRocks }
 ];
 
-export const itineraryList = [
+export const itineraryList: Itinerary[] = [
   {
     id: 'climbing',
     sectionTitle: '🧗🏻 Climbing Locations',

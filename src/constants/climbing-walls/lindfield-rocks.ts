@@ -5,6 +5,10 @@ export const lindfieldRocks: ClimbingLocation = {
   name: 'Lindfield Rocks',
   subtitle: 'via Tryon Road Tennis Courts',
   url: 'https://www.thecrag.com/en/climbing/australia/north-shore/area/12011227',
+  description:
+    "Highly popular, historic bouldering destination. Mostly vertical, with some steeper stuff, some highball, some safe.\nMillions of variations on the described problems exist, and everything's been done. Have fun and explore. \nComments on grades and star ratings are welcomed.\nUseful Info: 'Problems' are described right-to-left. Take care with landings. Most high problems have toprope bolts in place to save erosion and tree damage - use them if you're toproping! If it's damp/sandy, try to stay off to minimise wear.\nProblem selection based on 'Sydney Bouldering', 2001 Peter Balint et al, which you really should buy as a Sydney boulderer.\n",
+  approach:
+    "Near the corner of Archbold Road and Tryon Road in Lindfield is a small driveway (turn right off Archbold before it becomes Eastern Arterial Road and it's immediately after).\nPark up and follow the trail to the right of the tennis courts for two minutes to the crag. Convenience!\n",
   imageSrc:
     'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/index.jpeg?raw=true',
   relativePath: new URL('@/assets/climbing/lindfield-rocks/index.jpeg', import.meta.url).href,
@@ -14,6 +18,9 @@ export const lindfieldRocks: ClimbingLocation = {
       slug: 'trail-boulders',
       title: 'Trail Boulders',
       description: 'Definitely more lines to be put up.\n',
+      approach:
+        'When walking through the track, take a left turn into the bush before the stairs. The boulder will be obvious.\n',
+      url: 'https://www.thecrag.com/en/climbing/australia/north-shore/area/3710220327',
       imageSrc:
         'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/trail-boulders-1.jpeg?raw=true',
       relativePath: new URL(
@@ -186,6 +193,8 @@ export const lindfieldRocks: ClimbingLocation = {
       slug: 'first-wall',
       title: 'First Wall',
       description: 'Short, fingery problems, some sharp.\n',
+      approach: 'Immediately left of the steps as you enter the crag\n',
+      url: 'https://www.thecrag.com/en/climbing/australia/north-shore/area/13111129',
       imageSrc:
         'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/first-wall-1.jpeg?raw=true',
       relativePath: new URL('@/assets/climbing/lindfield-rocks/first-wall-1.jpeg', import.meta.url)
@@ -311,6 +320,9 @@ export const lindfieldRocks: ClimbingLocation = {
       slug: 'walkdown-wall',
       title: 'Walkdown Wall',
       description: 'Some nice little problems on this wall.\n',
+      approach:
+        "Immediately left of 'First Wall' is the common descent for this area. To the left of that is a vertical wall with prominent breaks and a big crack towards its left hand end (Problem #9)\n",
+      url: 'https://www.thecrag.com/en/climbing/australia/north-shore/area/13111153',
       imageSrc:
         'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/walkdown-wall-1.jpeg?raw=true',
       relativePath: new URL(
@@ -480,6 +492,9 @@ export const lindfieldRocks: ClimbingLocation = {
       title: 'Kenny Boulder',
       description:
         "Also known as 'Layback' slabs, this boulder is the obvious stand-alone boulder on the left of the path\n",
+      approach:
+        "Right opposite 'Four Cracks Wall' and obvious as you walk in. 'Problems' described anticlockwise round the boulder from the descent route (problem #1)\n",
+      url: 'https://www.thecrag.com/en/climbing/australia/north-shore/area/13111177',
       imageSrc:
         'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/kenny-boulder-1.jpeg?raw=true',
       relativePath: new URL('@/assets/climbing/lindfield-rocks/index.jpeg', import.meta.url).href,
@@ -837,6 +852,8 @@ export const lindfieldRocks: ClimbingLocation = {
       slug: 'the-downclimb-slab',
       title: 'The Downclimb Slab',
       description: '',
+      approach: '',
+      url: 'https://www.thecrag.com/en/climbing/australia/north-shore/area/217708731',
       imageSrc:
         'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/the-downclimb-slab-1.jpeg?raw=true',
       relativePath: new URL(
@@ -874,6 +891,8 @@ export const lindfieldRocks: ClimbingLocation = {
       title: 'Four Cracks Wall',
       description:
         "It's getting taller!\nA popular wall with easy classics. Bolts available at the top of the cliff to protect the trees.\n",
+      approach: "Obvious wall with cracks opposite the 'Kenny Boulder'\n",
+      url: 'https://www.thecrag.com/en/climbing/australia/north-shore/area/13111201',
       imageSrc:
         'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/four-cracks-wall-1.jpeg?raw=true',
       relativePath: new URL(
@@ -1107,6 +1126,9 @@ export const lindfieldRocks: ClimbingLocation = {
       title: 'Abseil Wall',
       description:
         "Taller again. A couple of classics here, though they're a little necky. Toprope bolts exist, you might want to consider using them if you're pushing your grade here.\n",
+      approach:
+        "Prominent vertical wall with a tree on the right hand side, left of 'Four Cracks Wall'.\n",
+      url: 'https://www.thecrag.com/en/climbing/australia/north-shore/area/13111225',
       imageSrc:
         'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/abseil-wall-1.jpeg?raw=true',
       relativePath: new URL('@/assets/climbing/lindfield-rocks/abseil-wall-1.jpeg', import.meta.url)
@@ -1294,6 +1316,8 @@ export const lindfieldRocks: ClimbingLocation = {
       slug: 'black-wall/wide-crack-area',
       title: 'Black Wall/Wide Crack Area',
       description: 'Again, high. Not the greatest of landings\n',
+      approach: "Obvious bay left of 'Abseil Wall'\n",
+      url: 'https://www.thecrag.com/en/climbing/australia/north-shore/area/13111249',
       imageSrc:
         'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/black-wall-wide-crack-area-1.jpeg?raw=true',
       relativePath: new URL(
@@ -1460,6 +1484,8 @@ export const lindfieldRocks: ClimbingLocation = {
       title: 'One Hold Wall',
       description:
         "aka Eagle's Head, this wall is high, and the landings aren't the best. then again they're not as bad as some!\nPotential descent route in the ledgy corner\n",
+      approach: 'Left of Black Wall/Wide Crack, another small bay\n',
+      url: 'https://www.thecrag.com/en/climbing/australia/north-shore/area/13111273',
       imageSrc:
         'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/one-hold-wall-1.jpeg?raw=true',
       relativePath: new URL(
@@ -1612,6 +1638,8 @@ export const lindfieldRocks: ClimbingLocation = {
       slug: 'pipeline-wall',
       title: 'Pipeline Wall',
       description: 'Fun problems with great variability. However, not the best landing\n',
+      approach: "Behind 'Bum Crack/Pocketed Face'\n",
+      url: 'https://www.thecrag.com/en/climbing/australia/north-shore/area/13111297',
       imageSrc:
         'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/pipeline-wall-1.jpeg?raw=true',
       relativePath: new URL(
@@ -1885,6 +1913,8 @@ export const lindfieldRocks: ClimbingLocation = {
       title: 'Bum Crack/Pocketed Face',
       description:
         'Standalone boulder shaped like a bum!\nSome fun problems with reasonable landings on most\n',
+      approach: 'left of the One Hold Wall\n',
+      url: 'https://www.thecrag.com/en/climbing/australia/north-shore/area/13111321',
       imageSrc:
         'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/bum-crack-pocketed-face-1.jpeg?raw=true',
       relativePath: new URL(
@@ -1995,6 +2025,8 @@ export const lindfieldRocks: ClimbingLocation = {
       slug: 'orange-face/slab-side',
       title: 'Orange Face/Slab Side',
       description: "Some fun dyno's on this boulder, with pretty sketchy landings\n",
+      approach: 'Left hand side of Bum Crack/Pocketed Face\n',
+      url: 'https://www.thecrag.com/en/climbing/australia/north-shore/area/13111345',
       imageSrc:
         'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/orange-face-slab-side-1.jpeg?raw=true',
       relativePath: new URL(
@@ -2120,6 +2152,9 @@ export const lindfieldRocks: ClimbingLocation = {
       title: 'She-Oak Wall',
       description:
         "Home to 'The Blank Wall', a classic V4, and She-Oak Crack, a classic easier crack. The eponymous She-Oak was gone by the early 1990s.\n",
+      approach:
+        "Immediately left of 'Snout Rock' and 'Corals', a steep slab with a ripply top marks 'The Blank Wall', abutted by a pair of diverging cracks on the left\n",
+      url: 'https://www.thecrag.com/en/climbing/australia/north-shore/area/13111369',
       imageSrc:
         'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/she-oak-wall-1.jpeg?raw=true',
       relativePath: new URL(
@@ -2334,8 +2369,15 @@ export const lindfieldRocks: ClimbingLocation = {
       title: 'Isolated Rock/Overhang',
       description:
         'Tall, demanding attention and much talked-of. "The Overhang" at Lindfield is one of those "have you done..." problems\n',
-      imageSrc: undefined,
-      relativePath: undefined,
+      approach:
+        "A standalone rock left of the Blank Wall, marking the end of the crag proper. 'Problems' described are on the face directly opposite snout rock. Tons of variants of course exist.\n",
+      url: 'https://www.thecrag.com/en/climbing/australia/north-shore/area/13111393',
+      imageSrc:
+        'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/isolated-rock-overhang-1.jpeg?raw=true',
+      relativePath: new URL(
+        '@/assets/climbing/lindfield-rocks/isolated-rock-overhang-1.jpeg',
+        import.meta.url
+      ).href,
       routes: [
         {
           id: '1',
@@ -2346,12 +2388,8 @@ export const lindfieldRocks: ClimbingLocation = {
           ascents: 'Relative popularity (82) - 75 ascents',
           description:
             'Start with your right hand in the large pocket and move up via pinches. Finish off right.',
-          imageSrc:
-            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/isolated-rock-overhang-1.jpeg?raw=true',
-          relativePath: new URL(
-            '@/assets/climbing/lindfield-rocks/isolated-rock-overhang-1.jpeg',
-            import.meta.url
-          ).href
+          imageSrc: undefined,
+          relativePath: undefined
         },
         {
           id: '2',
@@ -2527,8 +2565,15 @@ export const lindfieldRocks: ClimbingLocation = {
       slug: 'the-overhangs',
       title: 'The Overhangs',
       description: "Not to be confused the 'The Overhang'.\n",
-      imageSrc: undefined,
-      relativePath: undefined,
+      approach:
+        'To the left and slightly separate from the main crag, an area of overhanging sandstone up off the path\n',
+      url: 'https://www.thecrag.com/en/climbing/australia/north-shore/area/13111417',
+      imageSrc:
+        'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/the-overhangs-1.jpeg?raw=true',
+      relativePath: new URL(
+        '@/assets/climbing/lindfield-rocks/the-overhangs-1.jpeg',
+        import.meta.url
+      ).href,
       routes: [
         {
           id: '1',
@@ -2539,12 +2584,8 @@ export const lindfieldRocks: ClimbingLocation = {
           ascents: 'Relative popularity (33) - 3 ascents',
           description:
             'Lip Traverse from the obvious horizontal break right of the roof all the way along the lip to finish in the wide corner crack.',
-          imageSrc:
-            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/the-overhangs-1.jpeg?raw=true',
-          relativePath: new URL(
-            '@/assets/climbing/lindfield-rocks/the-overhangs-1.jpeg',
-            import.meta.url
-          ).href
+          imageSrc: undefined,
+          relativePath: undefined
         },
         {
           id: '2',
@@ -2671,8 +2712,13 @@ export const lindfieldRocks: ClimbingLocation = {
       slug: 'pipe-dreams',
       title: 'Pipe Dreams',
       description: 'Steep, thugy bouldering and a classic traverse\n',
-      imageSrc: undefined,
-      relativePath: undefined,
+      approach:
+        'Follow the track past the overhangs to some steps, turn left and walk for about 100m to find the area on your right. Climbs described left to right\n',
+      url: 'https://www.thecrag.com/en/climbing/australia/north-shore/area/13111441',
+      imageSrc:
+        'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/pipe-dreams-1.jpeg?raw=true',
+      relativePath: new URL('@/assets/climbing/lindfield-rocks/pipe-dreams-1.jpeg', import.meta.url)
+        .href,
       routes: [
         {
           id: '1',
@@ -2683,12 +2729,8 @@ export const lindfieldRocks: ClimbingLocation = {
           ascents: 'Relative popularity (100) - 281 ascents',
           description:
             'Eponymous super classic left-to-right traverse under the roof and topping out boulder.',
-          imageSrc:
-            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/lindfield-rocks/pipe-dreams-1.jpeg?raw=true',
-          relativePath: new URL(
-            '@/assets/climbing/lindfield-rocks/pipe-dreams-1.jpeg',
-            import.meta.url
-          ).href
+          imageSrc: undefined,
+          relativePath: undefined
         },
         {
           id: '2',

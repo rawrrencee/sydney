@@ -23,7 +23,7 @@ watch(selectedChild, (val) => {
       <li
         v-if="breadcrumbs.itinerary?.sectionTitle"
         class="flex w-full flex-shrink-0 cursor-pointer place-items-center gap-2 rounded-md bg-indigo-100 p-3 text-sm font-medium text-indigo-600 hover:bg-indigo-200 sm:w-fit sm:px-2 sm:py-1.5 md:pl-2"
-        @click="() => $router.replace('/itinerary')"
+        @click="() => $router.push('/itinerary')"
       >
         <Bars3Icon class="h-3 w-3" @click="() => {}" />
         <a href="/itinerary" class="hover:text-indigo-600" @click.prevent="() => {}">{{

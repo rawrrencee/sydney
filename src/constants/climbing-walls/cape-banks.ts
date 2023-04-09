@@ -4,6 +4,10 @@ export const capeBanks: ClimbingLocation = {
   id: 'cape-banks',
   name: 'Cape Banks',
   subtitle: 'via Westpac Lifesaver Helicopter Base',
+  description:
+    'The best crag of Little Bay. Bouldering on the Southern tip of the Cape Banks peninsula. Very scenic  with crashing waves and often a nice sea breeze. At high tide/swell, head for the BRAD sector or The Big Straight Wall to find dry rock. Different orientations so there is always something in the shade. Bring a brush as the holds are forever a little sandy. A tiny shell beach just north of the shipwreck on the east side of the Cape is a great spot for a swim or alternatively good swimming back at the bridge (on the Bay side).\n',
+  approach:
+    'Park at the end of Cape Banks Road at the Westpac Lifesaver Helicopter Base and follow the fire trail south. Cross the foot bridge to the Cape and stay high to get to the South end of the Cape where you walk down a ramp and get to The Big Straight Wall sector or scramble down into the BRAD sector. Note that the Botany Bay National Park gates close at 20:30.\n',
   url: 'https://www.thecrag.com/climbing/australia/eastern-suburbs/area/1051472037',
   imageSrc:
     'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/cape-banks/index.jpeg?raw=true',
@@ -14,6 +18,7 @@ export const capeBanks: ClimbingLocation = {
       slug: 'the-big-straight-wall',
       title: 'The Big Straight Wall',
       description: 'Good sector in high tide and high swell. Good warm ups.',
+      approach: '',
       imageSrc:
         'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/cape-banks/the-big-straight-wall-1.jpeg?raw=true',
       relativePath: new URL(
@@ -141,6 +146,7 @@ export const capeBanks: ClimbingLocation = {
       slug: 'suncorp-block',
       title: 'Suncorp Block',
       description: 'Good sector even at high tide and large swell.',
+      approach: '',
       imageSrc:
         'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/cape-banks/suncorp-block-1.jpeg?raw=true',
       relativePath: new URL('@/assets/climbing/cape-banks/suncorp-block-1.jpeg', import.meta.url)
@@ -201,6 +207,7 @@ export const capeBanks: ClimbingLocation = {
       title: 'Cape Town',
       description:
         'Around the corner heading towards the ocean (East) past ABN AMRO you find the following problems on a large overhanging boulder.',
+      approach: '',
       imageSrc:
         'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/cape-banks/cape-town-1.jpeg?raw=true',
       relativePath: new URL('@/assets/climbing/cape-banks/cape-town-1.jpeg', import.meta.url).href,
@@ -317,6 +324,7 @@ export const capeBanks: ClimbingLocation = {
       title: 'ING direct',
       description:
         'Back at The Big Straight Wall, the following routes are on the back of the Suncorp boulder',
+      approach: '',
       imageSrc:
         'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/cape-banks/ing-direct-1.jpeg?raw=true',
       relativePath: new URL('@/assets/climbing/cape-banks/ing-direct-1.jpeg', import.meta.url).href,
@@ -447,6 +455,7 @@ export const capeBanks: ClimbingLocation = {
       slug: 'the-pyramids',
       title: 'The Pyramids',
       description: 'Pyramid shaped boulder hidden away between sectors ING Direct and BRAD Sector',
+      approach: '',
       imageSrc:
         'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/cape-banks/the-pyramids-1.jpeg?raw=true',
       relativePath: new URL('@/assets/climbing/cape-banks/the-pyramids-1.jpeg', import.meta.url)
@@ -498,6 +507,7 @@ export const capeBanks: ClimbingLocation = {
       title: 'BRAD sector',
       description:
         'Shaded sector with some great overhanging sloper action. About 20m south of Pyramid Scheme on a raised platform that stays shaded and dry (even in high swell), and can be accessed from the top directly.',
+      approach: '',
       imageSrc:
         'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/cape-banks/brad-sector-1.jpeg?raw=true',
       relativePath: new URL('@/assets/climbing/cape-banks/brad-sector-1.jpeg', import.meta.url)
@@ -723,6 +733,7 @@ export const capeBanks: ClimbingLocation = {
       title: 'The Banks',
       description:
         'Walk about 20m west and around the corner from Express Corner to get to the following routes.',
+      approach: '',
       imageSrc:
         'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/cape-banks/the-banks-1.jpeg?raw=true',
       relativePath: new URL('@/assets/climbing/cape-banks/the-banks-1.jpeg', import.meta.url).href,
@@ -846,6 +857,7 @@ export const capeBanks: ClimbingLocation = {
       title: 'Sunny Side',
       description:
         'On the east side of Cape Banks, just north of the shipwreck is a patch or reasonable rock among lots of choss. A little further north again is a tiny shell beach (flooded at high tide) that is great for a swim.',
+      approach: '',
       imageSrc:
         'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/cape-banks/sunny-side-1.jpeg?raw=true',
       relativePath: new URL('@/assets/climbing/cape-banks/sunny-side-1.jpeg', import.meta.url).href,

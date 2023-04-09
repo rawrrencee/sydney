@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import {
-  Dialog,
-  DialogPanel,
-  Listbox,
-  ListboxButton,
-  ListboxOption,
-  ListboxOptions,
-  TransitionChild,
-  TransitionRoot
+Dialog,
+DialogPanel,
+Listbox,
+ListboxButton,
+ListboxOption,
+ListboxOptions,
+TransitionChild,
+TransitionRoot
 } from '@headlessui/vue';
 import { ChevronDownIcon, MagnifyingGlassPlusIcon } from '@heroicons/vue/20/solid';
 import { XMarkIcon } from '@heroicons/vue/24/outline';
@@ -56,7 +56,7 @@ const expandScale = ref('30%');
                     </div>
                   </div>
                   <div
-                    class="flex flex-col border-b border-gray-200 px-4 transition-[height] duration-300 shadow-md"
+                    class="flex flex-col border-b border-gray-200 px-4 shadow-md transition-[height] duration-300"
                     :class="[
                       expandScale === '10%' && 'h-[10%]',
                       expandScale === '30%' && 'h-[30%]',
@@ -92,7 +92,7 @@ const expandScale = ref('30%');
                           leave-to-class="translate-y-1 opacity-0"
                         >
                           <ListboxOptions
-                            class="absolute z-10 ml-10 mt-1 flex w-14 flex-col gap-1 rounded-md bg-white shadow-lg"
+                            class="absolute z-30 ml-10 mt-1 flex w-14 flex-col gap-1 rounded-md bg-white shadow-lg"
                           >
                             <ListboxOption
                               as="template"
@@ -126,9 +126,7 @@ const expandScale = ref('30%');
                     </div>
                   </div>
                   <div class="flex-1 overflow-x-clip overflow-y-scroll border-t border-gray-200">
-                    <div class="px-4 pt-4">
-                      <slot name="bottom"></slot>
-                    </div>
+                    <slot name="bottom"></slot>
                   </div>
                 </div>
               </DialogPanel>
