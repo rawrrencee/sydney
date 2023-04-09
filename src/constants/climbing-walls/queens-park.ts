@@ -419,7 +419,7 @@ export const queensPark: ClimbingLocation = {
           description:
             'Can be done left to right or right to left. Both sit start either end and then traverse the lip of the cliff on obvious jugs.',
           imageSrc:
-            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/queens-park/left-hand-side-3.jpeg?raw=true',
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/queens-park/left-hand-side-5.jpeg?raw=true',
           relativePath: new URL(
             '@/assets/climbing/queens-park/left-hand-side-3.jpeg',
             import.meta.url
@@ -434,7 +434,7 @@ export const queensPark: ClimbingLocation = {
           ascents: 'Relative popularity (14) - 2 ascents',
           description: '',
           imageSrc:
-            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/queens-park/left-hand-side-4.jpeg?raw=true',
+            'https://github.com/rawrrencee/sydney/blob/main/src/assets/climbing/queens-park/left-hand-side-6.jpeg?raw=true',
           relativePath: new URL(
             '@/assets/climbing/queens-park/left-hand-side-4.jpeg',
             import.meta.url
