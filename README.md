@@ -1,7 +1,23 @@
-# sydney
+# Sydney Companion App
 
-This template should help get you started developing with Vue 3 in Vite.
+<img width="200" alt="image" src="https://user-images.githubusercontent.com/43084055/230781066-3f52a39f-edd7-492e-a0b6-c4491fa27f29.png">
+<p float="left">
+   <img width="203" alt="image" src="https://user-images.githubusercontent.com/43084055/230781620-1e113dad-96c6-4f9a-90c9-80d29739fb2b.png">
+   <img width="200" alt="image" src="https://user-images.githubusercontent.com/43084055/230781113-c5a1bb4f-cbf3-446b-af59-3ecd0eb6af24.png">
+   <img width="200" alt="image" src="https://user-images.githubusercontent.com/43084055/230781123-0b9f6d53-81e0-4722-a8fa-dcecde467c82.png">
+   <img width="200" alt="image" src="https://user-images.githubusercontent.com/43084055/230781143-98d4c294-9135-45b3-957d-96608fdef8d3.png">
+</p>
 
+## Technologies used:
+* Vuejs + Vite
+* Tailwind CSS
+* Headless UI
+* Ant Design (Image preview component)
+* @vueuse/motion
+
+This web application was a way for me to get acquainted with Vuejs and Tailwind before I move on to building bigger projects. Several experimentations were done with transitions, colour choices, layouts while still maintaining a (hopefully) consistent user experience.
+
+---
 ## Recommended IDE Setup
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
