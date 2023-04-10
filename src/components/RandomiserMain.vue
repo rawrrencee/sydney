@@ -2,11 +2,11 @@
 import AnimatedGradientButton from '@/components/Buttons/AnimatedGradientButton.vue';
 import { peopleList } from '@/constants/people';
 import {
-  Listbox,
-  ListboxButton,
-  ListboxLabel,
-  ListboxOption,
-  ListboxOptions
+Listbox,
+ListboxButton,
+ListboxLabel,
+ListboxOption,
+ListboxOptions
 } from '@headlessui/vue';
 import { CheckIcon, ChevronUpDownIcon, XCircleIcon } from '@heroicons/vue/20/solid';
 import { ArrowUturnRightIcon } from '@heroicons/vue/24/solid';
@@ -166,9 +166,11 @@ const randomisePassengers = () => {
                     >
                       <li
                         :class="[
-                          active ? 'bg-indigo-400 text-white' : '',
-                          active && !disabled ? 'text-white' : 'text-neutral-700',
-                          disabled ? 'text-neutral-200' : '',
+                          disabled
+                            ? 'text-neutral-200'
+                            : active
+                            ? 'bg-indigo-400 text-white'
+                            : 'text-neutral-700',
                           'relative cursor-default select-none py-2 pl-3 pr-9'
                         ]"
                       >
