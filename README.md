@@ -1,6 +1,8 @@
 # Sydney Companion App
 [![Netlify Status](https://api.netlify.com/api/v1/badges/7c37b2ca-3e2d-4bdd-ae82-89d489c0a9e5/deploy-status)](https://app.netlify.com/sites/lawrencelim/deploys)
 
+https://github.com/rawrrencee/sydney/assets/43084055/247c9bd7-5c37-4ca2-990c-8b4f933362be
+
 <p float="left">
    <img width="204" alt="image" src="https://user-images.githubusercontent.com/43084055/230781066-3f52a39f-edd7-492e-a0b6-c4491fa27f29.png">
    <img width="203" alt="image" src="https://user-images.githubusercontent.com/43084055/230781620-1e113dad-96c6-4f9a-90c9-80d29739fb2b.png">
